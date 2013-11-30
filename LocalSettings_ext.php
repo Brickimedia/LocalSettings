@@ -89,7 +89,6 @@ $wgAutoConfirmAge = 86400*3;
 $wgAutoConfirmCount = 5;
 
 // More extensions
-require_once( "$IP/extensions/videoflash.php" );// Allows in-page embedding of videos from many sources. http://www.mediawiki.org/wiki/Extension:VideoFlash
 require_once( "$IP/extensions/BlogPage/Blog.php" );
 require_once( "$IP/extensions/VoteNY/Vote.php" );
 require_once( "$IP/extensions/Comments/Comment.php" );

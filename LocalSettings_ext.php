@@ -10,7 +10,6 @@ $wgPFStringLengthLimit = 10000;
 require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 $wgPFEnableStringFunctions = true;
 require_once( "$IP/extensions/Renameuser/Renameuser.php" );
-require_once( "$IP/extensions/Vector/Vector.php" );
 require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
 require_once( "$IP/extensions/Interwiki/Interwiki.php" );
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
@@ -52,10 +51,6 @@ $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 1;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
-
-// Vector Skin
-require_once( "$IP/extensions/Vector/Vector.php" );
-$wgVectorUseSimpleSearch = true;
 
 // DISPLAYTITLE
 $wgRestrictDisplayTitle = false;
@@ -110,7 +105,7 @@ require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
 
 // Skins
 //LS_global MUST be before deepsea is included!
-//require_once( "$IP/skins/DeepSea/DeepSea.php" ); 
+//require_once( "$IP/skins/DeepSea/DeepSea.php" );
 #require_once( "$IP/skins/monaco/monaco.php" );
 $wgSkipSkins = array( 'liamobile' );
 

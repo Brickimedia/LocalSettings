@@ -107,7 +107,7 @@ require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
 
 // Skins
 //LS_global MUST be before deepsea is included!
-//require_once( "$IP/skins/DeepSea/DeepSea.php" );
+require_once( "$IP/skins/DeepSea/DeepSea.php" );
 #require_once( "$IP/skins/monaco/monaco.php" );
 $wgSkipSkins = array( 'liamobile' );
 

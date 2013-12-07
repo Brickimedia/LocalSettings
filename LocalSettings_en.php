@@ -168,7 +168,7 @@ if( !$bmMobile ){
 	require_once( "$IP/extensions/UserDailyContribs/UserDailyContribs.php" );
 	require_once( "$IP/extensions/ClickTracking/ClickTracking.php" );
 	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
-	require_once( "$IP/extensions/ArticleFeedback/ArticleFeedback.php" );
+	require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
 
 	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
 	$wgArticleFeedbackDashboard = true;

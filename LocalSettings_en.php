@@ -165,8 +165,6 @@ require_once("$IP/extensions/Verbatim/verbatim.php");
 # Article Ratings
 global $bmMobile;
 if( !$bmMobile ){
-	require_once( "$IP/extensions/UserDailyContribs/UserDailyContribs.php" );
-	require_once( "$IP/extensions/ClickTracking/ClickTracking.php" );
 	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
 	require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
 

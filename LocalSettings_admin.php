@@ -46,14 +46,6 @@ $wgUserLevels = array(
 );
 $wgUserProfileDisplay['stats'] = true;
 
-
-#GlobalNewUsers
-require_once("$IP/extensions/GlobalNewUsers/GlobalNewUsers.php");
-
-$wgShowSQLErrors = true;
-
-
-require_once("$IP/extensions/WhosGloballyOnline/WhosGloballyOnline.php");
 require_once("$IP/extensions/MediaWikiChat/MediaWikiChat.php");
 
 $wgGroupPermissions['bureaucrat']['userrights'] = true;

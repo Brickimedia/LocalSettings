@@ -206,8 +206,6 @@ require_once( $ls_path );
 require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
 
-require_once( "$IP/skins/Custard/Custard.php" );
-
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;
 

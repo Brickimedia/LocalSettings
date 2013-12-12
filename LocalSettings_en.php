@@ -49,6 +49,8 @@ $smwgNamespaceIndex = 100;
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 enableSemantics('en.brickimedia.org');
 
+$smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
+
 $smwgNamespacesWithSemanticLinks = array(
 	              NS_MAIN => true,
 	              NS_TALK => false,

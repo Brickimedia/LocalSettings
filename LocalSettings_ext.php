@@ -31,18 +31,20 @@ require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
 require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php" );
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
-        "What is Brickimedia about?" => "LEGO",
-        'Please write the magic word, "passion", here:' => 'passion',
-        'Type the code word, 567, here:' => '567',
-        'What is half of 8?' => '4',
+	"What is Brickimedia about?" => "LEGO",
+	'Please write the magic word, "passion", here:' => 'passion',
+	'Type the code word, 567, here:' => '567',
+	'What is half of 8?' => '4',
+	'Type the digit nine' => '9',
+	'Write 7 in letters' => 'seven'
 );
 foreach ( $arr as $key => $value ) {
-        $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
+	$wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
 }
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
 $wgGroupPermissions['bot']['skipcaptcha'] = true;
 $wgGroupPermissions['sysadmin']['skipcatcha'] = true;
-$wgCaptchaTriggers['edit']          = true;
+$wgCaptchaTriggers['edit'] = true;
 
 // Short URLs
 $wgArticlePath = "/wiki/$1";
@@ -75,9 +77,9 @@ $wgFooterIcons['brickimedia']['brickimedia'] = array(
 // Terms of Use link in footer
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfTOULink';
 function lfTOULink( $sk, &$tpl ) {
-        $tpl->set( 'termsofuse', $sk->footerLink( 'termsofuse', 'termsofusepage' ) );
-        $tpl->data['footerlinks']['places'][] = 'termsofuse';
-        return true;
+	$tpl->set( 'termsofuse', $sk->footerLink( 'termsofuse', 'termsofusepage' ) );
+	$tpl->data['footerlinks']['places'][] = 'termsofuse';
+	return true;
 }
 $wgExtensionMessagesFiles['TermsOfUse'] = dirname( __FILE__ ) . '/extensions/i18n/TermsOfUse.i18n.php';
 
@@ -93,6 +95,8 @@ $wgAutoConfirmCount = 5;
 require_once( "$IP/extensions/BlogPage/Blog.php" );
 require_once( "$IP/extensions/VoteNY/Vote.php" );
 require_once( "$IP/extensions/Comments/Comment.php" );
+	unset( $wgGroupPermissions['commentadmin'] );
+	$wgGroupPermissions['sysop']['commentadmin'] = true;
 require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
 require_once( "$IP/extensions/DPLForum/DPLforum.php" );
 require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
@@ -123,7 +127,11 @@ $wgShowExceptionDetails = true;
 
 // WikiForum
 require_once( "$IP/extensions/WikiForum/WikiForum.php" );
-$wgWikiForumAllowAnonymous = false; //disabled because of spam
+	$wgWikiForumAllowAnonymous = false; //disabled because of spam
+	unset( $wgAvailableRights['wikiforum-admin'] );
+	unset( $wgAvailableRights['wikiforum-moderator'] );
+	unset( $wgGroupPermissions['forumadmin']['wikiforum-admin'] );
+	unset( $wgGroupPermissions['forumadmin']['wikiforum-moderator'] );
 
 // OggHandler
 //require( "$IP/extensions/OggHandler/OggHandler.php" );
@@ -137,20 +145,14 @@ $wgAllowExternalImages = true;
 
 // HTML (feel free to disable; testing still)
 include_once("$IP/extensions/HTMLTags/HTMLTags.php");
-$wgHTMLTagsAttributes['iframe'] = array( 'src', 'width', 'height', 'style' );
-$wgHTMLTagsAttributes['form'] = array( 'action', 'method' );
-$wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
-$wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );
-
-// SMW Factbox
-$smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
+	$wgHTMLTagsAttributes['iframe'] = array( 'src', 'width', 'height', 'style' );
+	$wgHTMLTagsAttributes['form'] = array( 'action', 'method' );
+	$wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
+	$wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );
 
 // Special:RandomWiki
 //require_once("$IP/extensions/RandomWiki/RandomWiki.php");
 //require_once ('extensions/FooterManager/FooterManager.php');
-
-// EveryXLoad (hooks for scripts that don't need to run every pageload
-//require_once("$IP/extensions/EveryXLoad/EveryXLoad.php");
 
 // WhosOnline
 //require_once("$IP/extensions/WhosOnline/WhosOnline.php");

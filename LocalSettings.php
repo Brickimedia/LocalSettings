@@ -220,7 +220,7 @@ $wgSharedUploadPath = 'http://images.brickimedia.org';
 $wgSharedUploadDirectory = '/var/www/images';
 $wgHashedSharedUploadDirectory = true;
 $wgUploadDirectory = '/var/www/images'; // these 2 must also be set for SocialProfile
-$wgUploadPath = 'http://image.brickimedia.org';
+$wgUploadPath = 'http://images.brickimedia.org';
 
 $wgFetchCommonsDescriptions = true;
 $wgSharedUploadDBname = 'meta';  # DB-Name of PoolWiki

@@ -217,7 +217,7 @@ $wgShellLocale = "en_US.utf8";
 
 $wgUseSharedUploads = true;
 $wgSharedUploadPath = 'http://meta.brickimedia.org/images/';
-$wgSharedUploadDirectory = '/var/www/wiki/images';
+$wgSharedUploadDirectory = '/var/www/images';
 $wgHashedSharedUploadDirectory = true;
 
 $wgFetchCommonsDescriptions = true;

@@ -216,7 +216,7 @@ $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgShellLocale = "en_US.utf8";
 
 $wgUseSharedUploads = true;
-$wgSharedUploadPath = 'http://meta.brickimedia.org/images/';
+$wgSharedUploadPath = 'http://images.brickimedia.org';
 $wgSharedUploadDirectory = '/var/www/images';
 $wgHashedSharedUploadDirectory = true;
 

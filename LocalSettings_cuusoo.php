@@ -7,8 +7,8 @@ $wgNamespaceAliases['Cuusoo_Wiki'] = NS_PROJECT;
 $wgNamespaceAliases['CW'] = NS_PROJECT;
 
 $wgDBprefix = "";
-$wgLogo = "$wgUploadPath/3/37/CUUSOO_Wiki_Logo.png";
-$wgFavicon = "$wgUploadPath/favicons/cuusoo.ico";
+$wgLogo = "http://images.brickimedia.org/3/37/CUUSOO_Wiki_Logo.png";
+$wgFavicon = "http://images.brickimedia.org/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 

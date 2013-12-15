@@ -7,8 +7,8 @@ $wgNamespaceAliases['BC'] = NS_PROJECT;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 
 $wgDBprefix         = "";
-$wgLogo             = "$wgUploadPath/4/4e/Customs-Logo.png";
-$wgFavicon          = "$wgUploadPath/favicons/favicon.ico";
+$wgLogo             = "http://images.brickimedia.org/4/4e/Customs-Logo.png";
+$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'monobook';

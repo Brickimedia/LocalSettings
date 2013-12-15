@@ -6,8 +6,8 @@ $wgMetaNamespace = "Brickipedia";
 $wgNamespaceAliases['BP'] = NS_PROJECT;
 
 $wgDBprefix         = "";
-$wgLogo             = "$wgUploadPath/a/ab/Brickipedia-Wiki-Logo.png";
-$wgFavicon          = "$wgUploadPath/favicons/favicon.ico";
+$wgLogo             = "http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png";
+$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'refreshed';

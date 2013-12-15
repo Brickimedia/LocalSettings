@@ -66,3 +66,4 @@ $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 $wgDefaultUserOptions['wikilove-enabled'] = 1;
+$wgUseInstantCommons = true;

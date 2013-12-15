@@ -16,6 +16,7 @@ require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
 require_once( "$IP/extensions/EditUser/EditUser.php" );
 require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
+require_once( "$IP/extensions/CSS/CSS.php" );
 
 // User rights
 require_once( "$IP/UserRights.php" );

@@ -7,8 +7,8 @@ $wgNamespaceAliases['BC'] = NS_PROJECT;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 
 $wgDBprefix         = "";
-$wgLogo             = "http://meta.brickimedia.org/images/4/4e/Customs-Logo.png";
-$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
+$wgLogo             = "$wgUploadPath/4/4e/Customs-Logo.png";
+$wgFavicon          = "$wgUploadPath/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'monobook';
@@ -72,6 +72,3 @@ $wgUserProfileDisplay['stats'] = true;
 
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-#beta test group
-$wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read

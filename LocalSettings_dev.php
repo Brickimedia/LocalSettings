@@ -5,8 +5,8 @@ $wgSitename      = "Brickimedia Development";
 $wgMetaNamespace = "Development";
 
 $wgDBprefix         = "";
-$wgLogo             = "http://meta.brickimedia.org/images/thumb/b/bd/Brickimedia_Technical.png/160px-Brickimedia_Technical.png";
-$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
+$wgLogo             = "$wgUploadPath/thumb/b/bd/Brickimedia_Technical.png/160px-Brickimedia_Technical.png";
+$wgFavicon          = "$wgUploadPath/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 

@@ -6,8 +6,8 @@ $wgMetaNamespace = "Brickipedia";
 $wgNamespaceAliases['BP'] = NS_PROJECT;
 
 $wgDBprefix         = "";
-$wgLogo             = "http://meta.brickimedia.org/images/a/ab/Brickipedia-Wiki-Logo.png";
-$wgFavicon          = "$wgScriptPath/images/favicons/favicon.ico";
+$wgLogo             = "$wgUploadPath/a/ab/Brickipedia-Wiki-Logo.png";
+$wgFavicon          = "$wgUploadPath/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'refreshed';
@@ -173,9 +173,6 @@ if( !$bmMobile ){
 	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
 	$wgArticleFeedbackDashboard = true;
 }
-
-#beta test group
-$wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
 
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
 require_once( "$IP/extensions/CSS/CSS.php" );

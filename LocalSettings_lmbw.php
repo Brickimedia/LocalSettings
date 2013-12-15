@@ -6,7 +6,7 @@ $wgMetaNamespace = "LMBW";
 
 $wgDBprefix         = "";
 $wgLogo             = "";
-$wgFavicon          = "$wgScriptPath/images/favicons/lmbw.ico";
+$wgFavicon          = "$wgUploadPath/favicons/lmbw.ico";
 
 $wgLanguageCode = "en";
 $wgGroupPermissions['*']['edit'] = true;
@@ -20,6 +20,3 @@ $wgGroupPermissions['import']['apihighlimits'] = true;
 $wgGroupPermissions['autoconfirmed']['edit'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
-
-#beta test group
-$wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read

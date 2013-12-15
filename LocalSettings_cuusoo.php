@@ -7,8 +7,8 @@ $wgNamespaceAliases['Cuusoo_Wiki'] = NS_PROJECT;
 $wgNamespaceAliases['CW'] = NS_PROJECT;
 
 $wgDBprefix = "";
-$wgLogo = "http://meta.brickimedia.org/images/3/37/CUUSOO_Wiki_Logo.png";
-$wgFavicon = "$wgScriptPath/images/favicons/cuusoo.ico";
+$wgLogo = "$wgUploadPath/3/37/CUUSOO_Wiki_Logo.png";
+$wgFavicon = "$wgUploadPath/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 
@@ -59,7 +59,3 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #Verbatim tag
 require_once("$IP/extensions/Verbatim/verbatim.php");
-
-#beta test group
-$wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
-$wgRemoveGroups['*'][] = 'betatest';

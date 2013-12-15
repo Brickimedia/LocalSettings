@@ -62,3 +62,4 @@ require_once("$IP/extensions/Verbatim/verbatim.php");
 
 #beta test group
 $wgGroupPermissions['betatest']['read'] = true; //allow beta testers to read
+$wgRemoveGroups['*'][] = 'betatest';

@@ -63,3 +63,5 @@ $wgShowSQLErrors = true;
 $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['editinterface'] = true;
+
+require_once( "$IP/extensions/WikiLove/WikiLove.php" );

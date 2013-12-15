@@ -54,8 +54,11 @@ $wgUsePathInfo = true;
 require_once( "$IP/extensions/WikiEditor/WikiEditor.php" );
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
-$wgDefaultUserOptions['wikieditor-preview'] = 1;
+$wgDefaultUserOptions['wikieditor-preview'] = 0;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
+
+// Experimental live preview
+$wgDefaultUserOptions['uselivepreview'] = 1;
 
 // DISPLAYTITLE
 $wgRestrictDisplayTitle = false;

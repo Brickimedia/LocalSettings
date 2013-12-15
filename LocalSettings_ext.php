@@ -228,3 +228,8 @@ $newTalkGlobalDatabases = array(
 		)
 );
 
+// Email settings
+$wgEnotifWatchlist = true;
+$wgEnotifUserTalk = true;
+$wgDefaultUserOptions['enotifwatchlistpages'] = 0;
+$wgDefaultUserOptions['enotifusertalkpages'] = 1;

@@ -234,3 +234,7 @@ $wgEnotifWatchlist = true;
 $wgEnotifUserTalk = true;
 $wgDefaultUserOptions['enotifwatchlistpages'] = 0;
 $wgDefaultUserOptions['enotifusertalkpages'] = 1;
+
+// WikiLove
+require_once( "$IP/extensions/WikiLove/WikiLove.php" );
+$wgDefaultUserOptions['wikilove-enabled'] = 1;

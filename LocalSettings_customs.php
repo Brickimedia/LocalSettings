@@ -74,6 +74,3 @@ $wgUserProfileDisplay['stats'] = true;
 
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
-
-$wgGroupPermissions['betatest']['read'] = true;
-$wgRemoveGroups['sysop'][] = 'betatest';

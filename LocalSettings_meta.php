@@ -1,10 +1,11 @@
 <?php
 
-$wgSitename         = "Brickimedia Meta";
-$wgMetaNamespace    = "Brickimedia";
-$wgLogo             = "http://meta.brickimedia.org/skins/common/images/common-logo.png";
-$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
-$wgPasswordSender   = "Brickimedia Meta";
+$wgSitename           = "Brickimedia Meta";
+$wgMetaNamespace      = "Brickimedia";
+$wgLogo               = "http://meta.brickimedia.org/skins/common/images/common-logo.png";
+$wgFavicon            = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgPasswordSender     = "meta";
+$wgPasswordSenderName = "Brickimedia Meta";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'refreshed';

@@ -5,6 +5,7 @@ $wgSitename      = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
 $wgNamespaceAliases['BC'] = NS_PROJECT;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
+$wgPasswordSender = "Brickimedia Customs";
 
 $wgDBprefix         = "";
 $wgLogo             = "http://images.brickimedia.org/4/4e/Customs-Logo.png";

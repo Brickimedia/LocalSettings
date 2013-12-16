@@ -5,6 +5,7 @@ $wgSitename      = "LEGO CUUSOO Wiki";
 $wgMetaNamespace = "LEGO_CUUSOO_Wiki";
 $wgNamespaceAliases['Cuusoo_Wiki'] = NS_PROJECT;
 $wgNamespaceAliases['CW'] = NS_PROJECT;
+$wgPasswordSender = "LEGO CUUSOO Wiki";
 
 $wgDBprefix = "";
 $wgLogo = "http://images.brickimedia.org/3/37/CUUSOO_Wiki_Logo.png";

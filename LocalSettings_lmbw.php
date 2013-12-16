@@ -1,8 +1,9 @@
 <?php
 
 //$wgReadOnly = "Sorry, content is currently being imported. Any actions that will modify the database have been disabled";
-$wgSitename      = "Lego Message Boards Wiki";
-$wgMetaNamespace = "LMBW";
+$wgSitename       = "LEGO Message Boards Wiki";
+$wgMetaNamespace  = "LMBW";
+$wgPasswordSender = "LEGO Message Boards Wiki";
 
 $wgDBprefix         = "";
 $wgLogo             = "";

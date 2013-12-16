@@ -4,6 +4,7 @@
 $wgSitename      = "Brickipedia";
 $wgMetaNamespace = "Brickipedia";
 $wgNamespaceAliases['BP'] = NS_PROJECT;
+$wgPasswordSender = "Brickipedia";
 
 $wgDBprefix         = "";
 $wgLogo             = "http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png";

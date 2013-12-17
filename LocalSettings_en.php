@@ -125,7 +125,20 @@ $wgUserLevels = array(
 );
 $wgUserProfileDisplay['stats'] = true;
 
-#Review and inventory namespace
+#Magazine, Inventory and Review namespaces
+define("NS_MAGAZINE", 112);
+define("NS_MAGAZINE_TALK", 113)
+$wgExtraNamespaces[NS_MAGAZINE] = "Magazine";
+$wgExtraNamespaces[NS_MAGAZINE_TALK] = "Magazine_talk";
+$wgContentNamespaces[] = 112;
+
+define("NS_INVENTORY", 114);
+define("NS_INVENTORY_TALK", 115);
+$wgExtraNamespaces[NS_INVENTORY] = "Inventory";
+$wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
+$wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
+$wgContentNamespaces[] = 114;
+
 define("NS_REVIEW", 118);
 define("NS_REVIEW_TALK", 119);
 $wgExtraNamespaces[NS_REVIEW] = "Review";
@@ -135,13 +148,6 @@ $wgGroupPermissions['*']['editreview'] = false;
 $wgGroupPermissions['autoconfirmed']['editreview'] = true;
 $wgGroupPermissions['sysop']['editreview'] = true;
 $wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
-
-define("NS_INVENTORY", 114);
-define("NS_INVENTORY_TALK", 115);
-$wgExtraNamespaces[NS_INVENTORY] = "Inventory";
-$wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
-$wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
-$wgContentNamespaces[] = 114;
 
 #for {{colourbox}}
 require_once("$IP/extensions/ImageMap/ImageMap.php");

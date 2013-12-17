@@ -106,7 +106,7 @@ $wgUserStatsPointValues['user_image'] = 5; // Points awarded for adding your fir
 $wgUserStatsPointValues['poll_vote'] = 0; // Points awarded for taking a poll
 $wgUserStatsPointValues['quiz_points'] = 0; // Points awarded for answering a quiz question
 $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a quiz question
-$wgNamespacesForEditPoints = array( 0, 4, 1004, 1006 ); // Array of namespaces that can earn you points.
+$wgNamespacesForEditPoints = array( 0, 4, 112, 114, 118 ); // Array of namespaces that can earn you points.
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
         'Newcomer' => 0,
@@ -127,7 +127,7 @@ $wgUserProfileDisplay['stats'] = true;
 
 #Magazine, Inventory and Review namespaces
 define("NS_MAGAZINE", 112);
-define("NS_MAGAZINE_TALK", 113)
+define("NS_MAGAZINE_TALK", 113);
 $wgExtraNamespaces[NS_MAGAZINE] = "Magazine";
 $wgExtraNamespaces[NS_MAGAZINE_TALK] = "Magazine_talk";
 $wgContentNamespaces[] = 112;

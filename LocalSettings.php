@@ -217,3 +217,5 @@ $wgDnsBlacklistUrls = array( 'xbl.spamhaus.org', 'opm.tornevall.org' );
 $wgLocaltimezone = "UTC";
 
 $wgEnableScaryTranscluding = true;
+
+$wgDBerrorLog = "$IP/DB.log";

@@ -65,3 +65,6 @@ $wgShowSQLErrors = true;
 $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['editinterface'] = true;
+
+// MultimediaViewer
+require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );

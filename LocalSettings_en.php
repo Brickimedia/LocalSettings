@@ -136,7 +136,7 @@ define("NS_INVENTORY", 114);
 define("NS_INVENTORY_TALK", 115);
 $wgExtraNamespaces[NS_INVENTORY] = "Inventory";
 $wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
-$wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
+$wgNamespacesWithSubpages[NS_INVENTORY] = true;            //subpages enabled for the review namespace
 $wgContentNamespaces[] = 114;
 
 define("NS_REVIEW", 118);

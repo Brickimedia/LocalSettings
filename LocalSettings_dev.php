@@ -68,3 +68,6 @@ $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
 // MultimediaViewer
 require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
+
+// CodeEditor
+require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );

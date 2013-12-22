@@ -62,10 +62,10 @@ $wgUserProfileDisplay['stats'] = true;
 #Custom namespaces
 define("NS_PORTAL", 300);
 define("NS_PORTAL_TALK", 301);
-define("NS_LEGO_UNIVERSE", 501);
-define("NS_LEGO_UNIVERSE_TALK", 502);
-define("NS_NINJAGO", 503);
-define("NS_NINJAGO_TALK", 504);
+define("NS_LEGO_UNIVERSE", 401);
+define("NS_LEGO_UNIVERSE_TALK", 402);
+define("NS_NINJAGO", 403);
+define("NS_NINJAGO_TALK", 404);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
 $wgExtraNamespaces[NS_LEGO_UNIVERSE] = "LEGO_Universe";

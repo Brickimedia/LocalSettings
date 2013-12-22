@@ -62,9 +62,19 @@ $wgUserProfileDisplay['stats'] = true;
 #Custom namespaces
 define("NS_PORTAL", 300);
 define("NS_PORTAL_TALK", 301);
+define("NS_LEGO_UNIVERSE", 501);
+define("NS_LEGO_UNIVERSE_TALK", 502);
+define("NS_NINJAGO", 503);
+define("NS_NINJAGO_TALK", 504);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
+$wgExtraNamespaces[NS_LEGO_UNIVERSE] = "LEGO_Universe";
+$wgExtraNamespaces[NS_LEGO_UNIVERSE_TALK] = "LEGO_Universe_talk";
+$wgExtraNamespaces[NS_NINJAGO] = "Ninjago";
+$wgExtraNamespaces[NS_NINJAGO_TALK] = "Ninjago_talk";
 $wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
+$wgNamespacesWithSubpages[NS_LEGO_UNIVERSE] = true;
+$wgNamespacesWithSubpages[NS_NINJAGO] = true;
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

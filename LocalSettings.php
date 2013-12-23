@@ -206,6 +206,17 @@ $wgRepositoryBaseUrl = "http://meta.brickimedia.org/wiki/File:";
 // Special:Upload links to meta
 $wgUploadNavigationUrl = "http://meta.brickimedia.org/wiki/Special:Upload";
 $wgUploadMissingFileUrl = "http://meta.brickimedia.org/wiki/Special:Upload";
+// And redirects to meta from other projects
+function redirectSpecialsToMeta( &$title, &$article, &$output, &$user, $request, $mediaWiki ) {
+	global $bmProject;
+	if ( $title->getBaseTitle() == 'Special:Upload' && $bmProject != 'meta' ) {
+		// not pretty, but redirects special:upload on projects to meta
+		header( 'Location: http://meta.brickimedia.org/wiki/Special:Upload' );
+		exit();
+	}
+}
+$wgHooks['BeforeInitialize'][] = 'redirectSpecialsToMeta';
+
 
 // Other image setup
 $wgUseInstantCommons = false;

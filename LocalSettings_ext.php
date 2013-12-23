@@ -238,3 +238,6 @@ $wgDefaultUserOptions['enotifusertalkpages'] = 1;
 // WikiLove
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 $wgDefaultUserOptions['wikilove-enabled'] = 1;
+
+// CodeEditor
+require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );

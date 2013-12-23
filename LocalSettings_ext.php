@@ -241,3 +241,6 @@ $wgDefaultUserOptions['wikilove-enabled'] = 1;
 
 // CodeEditor
 require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );
+
+// Quantcast
+require_once( "$IP/extensions/Quantcast/Quantcast.php" );

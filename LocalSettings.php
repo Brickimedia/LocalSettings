@@ -171,6 +171,11 @@ $wgSharedTables = array(
 // SKINS
 require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
+function showRefreshedAdvert( &$showAdvert ) {
+	$showAdvert = true;
+	return true;
+}
+$wgHooks['RefreshedAdvert'][] = 'showRefreshedAdvert';
 
 // GLOBAL USER RIGHTS
 $wgGroupPermissions['*']['edit'] = true;

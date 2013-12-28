@@ -177,6 +177,8 @@ function showRefreshedAdvert( &$showAdvert ) {
 }
 $wgHooks['RefreshedAdvert'][] = 'showRefreshedAdvert';
 
+require_once( "$IP/skins/Custard/Custard.php" );
+
 // GLOBAL USER RIGHTS
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

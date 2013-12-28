@@ -3,20 +3,43 @@
 # Enabled Extensions. Most extensions are enabled by including the base extension file here
 # but check specific extension documentation for more details
 # The following extensions were automatically enabled.
-require_once( "$IP/extensions/Gadgets/Gadgets.php" );
-require_once( "$IP/extensions/Nuke/Nuke.php" );
-$wgAllowSlowParserFunctions = true;
-$wgPFStringLengthLimit = 10000;
-require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
-$wgPFEnableStringFunctions = true;
-require_once( "$IP/extensions/Renameuser/Renameuser.php" );
-require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
-require_once( "$IP/extensions/Interwiki/Interwiki.php" );
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
-require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
-require_once( "$IP/extensions/EditUser/EditUser.php" );
-require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
+require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
+require_once( "$IP/extensions/BlogPage/Blog.php" );
+require_once( "$IP/extensions/Cite/Cite.php" );
+require_once( "$IP/extensions/Cite/SpecialCite.php" );
+	$wgCiteEnablePopups = true; // Pop-up citations
+require_once ( "$IP/extensions/CheckUser/CheckUser.php" );
+require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );
+require_once( "$IP/extensions/Comments/Comment.php" );
+	unset( $wgGroupPermissions['commentadmin'] );
+	$wgGroupPermissions['sysop']['commentadmin'] = true;
+	$wgCommentsInRecentChanges = true;
 require_once( "$IP/extensions/CSS/CSS.php" );
+require_once( "$IP/extensions/DPLForum/DPLforum.php" );
+require_once( "$IP/extensions/Editcount/Editcount.php" );
+require_once( "$IP/extensions/EditUser/EditUser.php" );
+require_once( "$IP/extensions/Gadgets/Gadgets.php" );
+require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
+require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
+require_once( "$IP/extensions/InputBox/InputBox.php" );
+require_once( "$IP/extensions/Interwiki/Interwiki.php" );
+require_once( "$IP/extensions/VoteNY/Vote.php" );
+require_once( "$IP/extensions/MediawikiPlayer/MediawikiPlayer.php" );
+require_once( "$IP/extensions/Nuke/Nuke.php" );
+	$wgAllowSlowParserFunctions = true;
+	$wgPFStringLengthLimit = 10000;
+require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
+	$wgPFEnableStringFunctions = true;
+require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
+require_once( "$IP/extensions/Quantcast/Quantcast.php" );
+require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
+require_once( "$IP/extensions/Renameuser/Renameuser.php" );
+require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
+require_once( "$IP/extensions/UserMerge/UserMerge.php" );
+require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
+require_once( "$IP/extensions/WikiLove/WikiLove.php" );
+	$wgDefaultUserOptions['wikilove-enabled'] = 1;
 
 // User rights
 require_once( "$IP/UserRights.php" );
@@ -64,11 +87,6 @@ $wgDefaultUserOptions['uselivepreview'] = 1;
 // DISPLAYTITLE
 $wgRestrictDisplayTitle = false;
 
-// Cite
-require_once( "$IP/extensions/Cite/Cite.php" );
-require_once( "$IP/extensions/Cite/SpecialCite.php" );
-$wgCiteEnablePopups = true;                             // Pop-up citations
-
 // Brickimedia Footer Icon
 $wgFooterIcons['brickimedia']['brickimedia'] = array(
 	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
@@ -95,24 +113,6 @@ $wgExtensionMessagesFiles['UserGroups'] = dirname( __FILE__ ) . '/extensions/i18
 $wgAutoConfirmAge = 86400*3;
 $wgAutoConfirmCount = 5;
 
-// More extensions
-require_once( "$IP/extensions/BlogPage/Blog.php" );
-require_once( "$IP/extensions/VoteNY/Vote.php" );
-require_once( "$IP/extensions/Comments/Comment.php" );
-	unset( $wgGroupPermissions['commentadmin'] );
-	$wgGroupPermissions['sysop']['commentadmin'] = true;
-require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
-require_once( "$IP/extensions/DPLForum/DPLforum.php" );
-require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
-require_once ( "$IP/extensions/CheckUser/CheckUser.php" );
-require_once( "$IP/extensions/Editcount/Editcount.php" );
-require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
-require_once( "$IP/extensions/UserMerge/UserMerge.php" );
-#require_once( "$IP/extensions/LookupUser/LookupUser.php" );
-require_once( "$IP/extensions/MediawikiPlayer/MediawikiPlayer.php" );
-require_once( "$IP/extensions/InputBox/InputBox.php" );
-require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
-
 // Skins
 //LS_global MUST be before deepsea is included!
 require_once( "$IP/skins/DeepSea/DeepSea.php" );
@@ -137,11 +137,6 @@ require_once( "$IP/extensions/WikiForum/WikiForum.php" );
 	unset( $wgGroupPermissions['forumadmin']['wikiforum-admin'] );
 	unset( $wgGroupPermissions['forumadmin']['wikiforum-moderator'] );
 
-// OggHandler
-//require( "$IP/extensions/OggHandler/OggHandler.php" );
-//$wgFFmpegLocation = '/usr/bin/ffmpeg';
-//$wgOggThumbLocation = '/usr/local/bin/oggThumb';
-
 // Upload by url/external images
 $wgAllowCopyUploads = true;
 $wgCopyUploadsFromSpecialUpload = true;
@@ -154,30 +149,7 @@ include_once("$IP/extensions/HTMLTags/HTMLTags.php");
 	$wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
 	$wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );
 
-// Special:RandomWiki
-//require_once("$IP/extensions/RandomWiki/RandomWiki.php");
-//require_once ('extensions/FooterManager/FooterManager.php');
-
-// WhosOnline
-//require_once("$IP/extensions/WhosOnline/WhosOnline.php");
-//$wgWhosOnlineShowAnons = true;
-//$wgSpecialPageGroups['WhosOnline'] = 'users';
-
 $wgExtraNamespaces[500] = "User_blog";
-//$wgExtraNamespaces[501] = "User_block_comment";
-//$wgExtraNamespaces[700] = "Top_10_list";
-//$wgExtraNamespaces[701] = "Top_10_list_talk";
-//$wgExtraNamespaces[2000] = "Board";
-//$wgExtraNamespaces[2001] = "Board_Thread";
-//$wgExtraNamespaces[2002] = "Topic";
-
-//AjaxLogin
-/*require_once("$IP/extensions/AjaxLogin/AjaxLogin.php");
-$wgEnableAjaxLogin = array(
-        'monobook' => true,
-        'vector' => true,
-		'deepsea' => true,
-);*/
 
 // Render pdfs
 require_once( "$IP/extensions/PdfHandler/PdfHandler.php" );
@@ -201,31 +173,31 @@ require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
 $newTalkGlobalDatabases = array(
 		"meta" => array(
 				"db" => "meta",
-				"url" => "http://meta.$bmServerBase/wiki/"
+				"url" => "http://meta.brickimedia.org/wiki/"
 		),
 		"en" => array(
 				"db" => "en",
-				"url" => "http://en.$bmServerBase/wiki/"
+				"url" => "http://en.brickimedia.org/wiki/"
 		),
 		"customs" => array(
 				"db" => "customs",
-				"url" => "http://customs.$bmServerBase/wiki/"
+				"url" => "http://customs.brickimedia.org/wiki/"
 		),
 		"cuusoo" => array(
 				"db" => "cuusoo",
-				"url" => "http://cuusoo.$bmServerBase/wiki/"
+				"url" => "http://cuusoo.brickimedia.org/wiki/"
 		),
 		"stories" => array(
 				"db" => "stories",
-				"url" => "http://stories.$bmServerBase/wiki/"
+				"url" => "http://stories.brickimedia.org/wiki/"
 		),
 		"admin" => array(
 				"db" => "admin",
-				"url" => "http://admin.$bmServerBase/wiki/"
+				"url" => "http://admin.brickimedia.org/wiki/"
 		),
 		"dev" => array(
 				"db" => "dev",
-				"url" => "http://dev.$bmServerBase/wiki/"
+				"url" => "http://dev.brickimedia.org/wiki/"
 		)
 );
 
@@ -234,13 +206,3 @@ $wgEnotifWatchlist = true;
 $wgEnotifUserTalk = true;
 $wgDefaultUserOptions['enotifwatchlistpages'] = 0;
 $wgDefaultUserOptions['enotifusertalkpages'] = 1;
-
-// WikiLove
-require_once( "$IP/extensions/WikiLove/WikiLove.php" );
-$wgDefaultUserOptions['wikilove-enabled'] = 1;
-
-// CodeEditor
-require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );
-
-// Quantcast
-require_once( "$IP/extensions/Quantcast/Quantcast.php" );

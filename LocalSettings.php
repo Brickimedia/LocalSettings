@@ -189,6 +189,8 @@ function showRefreshedAdvert( &$footerExtra ) {
 }
 $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
+require_once( "$IP/skins/Custard/Custard.php" );
+
 // GLOBAL USER RIGHTS
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

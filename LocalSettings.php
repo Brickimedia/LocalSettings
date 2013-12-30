@@ -171,11 +171,23 @@ $wgSharedTables = array(
 // SKINS
 require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
-function showRefreshedAdvert( &$showAdvert ) {
-	$showAdvert = true;
+function showRefreshedAdvert( &$footerExtra ) {
+	$footerExtra = '
+		<div id="advert">
+			<p>' + wfMessage( 'refreshed-advert' )->plain() + '</p>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Refreshed ad -->
+			<ins class="adsbygoogle"
+				style="display:inline-block;width:728px;height:90px"
+				data-ad-client="ca-pub-9543775174763951"
+				data-ad-slot="7733872730"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>';
 	return true;
 }
-$wgHooks['RefreshedAdvert'][] = 'showRefreshedAdvert';
+$wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
 // GLOBAL USER RIGHTS
 $wgGroupPermissions['*']['edit'] = true;

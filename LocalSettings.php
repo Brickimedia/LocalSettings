@@ -174,7 +174,7 @@ $wgDefaultSkin = 'refreshed';
 function showRefreshedAdvert( &$footerExtra ) {
 	$footerExtra = '
 		<div id="advert">
-			<p>' + wfMessage( 'refreshed-advert' )->plain() + '</p>
+			<p>' . wfMessage( 'refreshed-advert' )->plain() . '</p>
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- Refreshed ad -->
 			<ins class="adsbygoogle"

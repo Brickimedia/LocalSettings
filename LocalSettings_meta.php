@@ -34,9 +34,9 @@ $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 $wgLocalDatabases = array( 'en', 'customs', 'dev', 'stories', 'cuusoo', 'admin' );
 
 $wgExtraNamespaces[104] = "Board";
-$wgNamespaceProtection[104] = array( 'boardedit' ); //permission "editfoo" required to edit the foo namespace
-$wgNamespacesWithSubpages[104] = true;            //subpages enabled for the foo namespace
-$wgExtraNamespaces[105] = 'Board talk';
+$wgNamespaceProtection[104] = array( 'boardedit' );
+$wgNamespacesWithSubpages[104] = true;
+$wgExtraNamespaces[105] = 'Board_talk';
 $wgNamespaceProtection[105] = array( 'boardedit');
 $wgNamespacesWithSubpages[105] = true;
 

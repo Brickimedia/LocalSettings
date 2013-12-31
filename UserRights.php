@@ -149,10 +149,13 @@ $wgGroupPermissions['sysadmin']['autopatrol'] = true;
 $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
+$wgAddGroups['sysadmin'] = array( 'sysadmin' );
+$wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
 
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
-$wgAddGroups['sysadmin'] = array( 'sysadmin' );
-$wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
+#board9
+$wgAddGroups['board'] = array( 'checkuser', 'oversight' );
+$wgRemoveGroups['board'] = array( 'checkuser', 'oversight' );

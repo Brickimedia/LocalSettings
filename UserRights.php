@@ -17,7 +17,7 @@ $wgGroupPermissions['*']['comment'] = true;
 $wgGroupPermissions['user']['move']             = true;
 $wgGroupPermissions['user']['move-subpages']    = true;
 $wgGroupPermissions['user']['move-rootuserpages'] = true; // can move root userpages
-//$wgGroupPermissions['user']['movefile']         = true;       // Disabled for now due to possible bugs and security concerns
+//$wgGroupPermissions['user']['movefile']         = true; // Disabled for now due to possible bugs and security concerns
 $wgGroupPermissions['user']['read']             = true;
 $wgGroupPermissions['user']['edit']             = true;
 $wgGroupPermissions['user']['createpage']       = true;
@@ -56,8 +56,7 @@ $wgGroupPermissions['patroller']['rollback'] = true; #HAH! It's part of patrolle
 $wgGroupPermissions['reviewer']['edit'] = true;
 $wgGroupPermissions['reviewer']['changeRating'] = true;
 
-
-#BOT
+#bot
 $wgGroupPermissions['bot']['bot']              = true;
 $wgGroupPermissions['bot']['autoconfirmed']    = true;
 $wgGroupPermissions['bot']['nominornewtalk']   = true;
@@ -156,6 +155,9 @@ $wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
-#board9
+#board
 $wgAddGroups['board'] = array( 'checkuser', 'oversight' );
 $wgRemoveGroups['board'] = array( 'checkuser', 'oversight' );
+
+#remove steward - some 1.22 thing
+unset( $wgGroupPermissions['steward'] );

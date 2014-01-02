@@ -139,8 +139,10 @@ require_once( "$IP/extensions/WikiForum/WikiForum.php" );
 	$wgWikiForumAllowAnonymous = false; //disabled because of spam
 	unset( $wgAvailableRights['wikiforum-admin'] );
 	unset( $wgAvailableRights['wikiforum-moderator'] );
-	unset( $wgGroupPermissions['forumadmin']['wikiforum-admin'] );
-	unset( $wgGroupPermissions['forumadmin']['wikiforum-moderator'] );
+	unset( $wgGroupPermissions['forumadmin'] );
+	unset( $wgGroupPermissions['forumadmin'] );
+	$wgGroupPermissions['sysop']['wikiforum-admin'];
+	$wgGroupPermissions['sysop']['wikiforum-moderator'];
 
 // Upload by url/external images
 $wgAllowCopyUploads = true;

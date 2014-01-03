@@ -35,7 +35,9 @@ $wgRemoveGroups['sysop'][] = 'newsreporter'; //Allow QCG and RQM users to remove
 
 #News namespace
 define("NS_NEWS", 2000);
+define("NS_NEWS_TALK", 2001);
 $wgExtraNamespaces[NS_NEWS] = "Brickipedia_News";
+$wgExtraNamespaces[NS_NEWS_TALK] = "Brickipedia_News_talk";
 $wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
 $wgGroupPermissions['*']['editnews'] = false;
 $wgGroupPermissions['user']['editnews'] = false;

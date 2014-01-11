@@ -166,6 +166,7 @@ $wgPdfInfo = 'pdfinfo';
 
 // More extensions
 require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
+	$wgGlobalUsageDatabase = 'meta';
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 	$gcwikis = array( 'meta', 'en', 'customs', 'cuusoo', 'stories', 'dev' );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );

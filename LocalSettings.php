@@ -250,4 +250,7 @@ $wgLocaltimezone = "UTC";
 
 $wgEnableScaryTranscluding = true;
 
+// Localisation Cache
+$wgCacheDirectory = "$IP/cache/$bmProject";
+
 $wgDBerrorLog = "$IP/DB.log";

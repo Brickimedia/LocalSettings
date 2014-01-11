@@ -54,6 +54,7 @@ include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 enableSemantics('en.brickimedia.org');
 
 $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
+$smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
 
 $smwgNamespacesWithSemanticLinks = array(
 	              NS_MAIN => true,

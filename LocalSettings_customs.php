@@ -23,9 +23,10 @@ require_once("$IP/extensions/are/ArticleRatings.php");
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer' );
 $wgAddGroups['reviewer'][] = 'reviewer'; //Allow CQM users to add other members to that group
-$wgRemoveGroups['sysop'][] = 'newsreporter'; //Allow CQM users to remove other members to that group
+$wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow CQM users to remove other members to that group
+$wgAddGroups['sysop'][] = 'reviewer';
+$wgRemoveGroups['sysop'][] ='reviewer';
 $wgGroupPermissions['sysop']['changeRating'] = true;
-$wgRemoveGroups['sysop'][] = 'reviewer';
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );

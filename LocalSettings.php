@@ -203,6 +203,7 @@ $wgGroupPermissions['*']['createaccount'] = true;
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgShellLocale = "en_US.utf8";
+$wgTmpDirectory = '/var/www/images/temp';
 
 // Uploading to meta
 $wgUseSharedUploads = true;

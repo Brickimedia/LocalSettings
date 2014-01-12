@@ -218,3 +218,8 @@ $wgDefaultUserOptions['enotifusertalkpages'] = 1;
 
 // Phalanx
 require_once("$IP/extensions/Phalanx/Phalanx.php");
+$wgGroupPermissions['sysop']['phalanx'] = true;
+$wgGroupPermissions['sysadmin']['phalanx'] = true;
+$wgGroupPermissions['board']['phalanx'] = true;
+$wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
+$wgGroupPermissions['board']['phalanxexempt'] = true;

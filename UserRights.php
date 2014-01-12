@@ -155,9 +155,6 @@ $wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
-#board
-$wgAddGroups['board'] = array( 'checkuser', 'oversight' );
-$wgRemoveGroups['board'] = array( 'checkuser', 'oversight' );
 
 #remove steward - some 1.22 thing
 unset( $wgGroupPermissions['steward'] );

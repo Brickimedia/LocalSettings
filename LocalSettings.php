@@ -166,7 +166,9 @@ $wgSharedTables = array(
 	'abuse_filter_action',
 	'abuse_filter_history',
 	'abuse_filter_log',
-	'spoofuser'
+	'spoofuser',
+	'phalanx',
+	'phalanx_stats'
 );
 // SKINS
 require_once( "$IP/skins/Refreshed/Refreshed.php" );

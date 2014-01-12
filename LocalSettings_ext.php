@@ -215,3 +215,6 @@ $wgEnotifWatchlist = true;
 $wgEnotifUserTalk = true;
 $wgDefaultUserOptions['enotifwatchlistpages'] = 0;
 $wgDefaultUserOptions['enotifusertalkpages'] = 1;
+
+// Phalanx
+require_once("$IP/extensions/Phalanx/Phalanx.php");

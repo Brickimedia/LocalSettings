@@ -40,7 +40,6 @@ $wgExtraNamespaces[104] = "Board";
 $wgNamespaceProtection[104] = array( 'boardedit' );
 $wgNamespacesWithSubpages[104] = true;
 $wgExtraNamespaces[105] = 'Board_talk';
-$wgNamespaceProtection[105] = array( 'boardedit');
 $wgNamespacesWithSubpages[105] = true;
 
 //uploading

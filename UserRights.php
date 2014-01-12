@@ -113,6 +113,7 @@ $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 $wgGroupPermissions['sysop']['skipcaptcha'] = true;
 $wgGroupPermissions['sysop']['globalblock-exempt'] = true;
+$wgGroupPermissions['sysop']['phalanxexempt'] = true;
 $wgAddGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
 $wgRemoveGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
 
@@ -148,8 +149,10 @@ $wgGroupPermissions['sysadmin']['autopatrol'] = true;
 $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
+$wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
 $wgAddGroups['sysadmin'] = array( 'sysadmin' );
 $wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
+
 
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;

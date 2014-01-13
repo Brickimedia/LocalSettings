@@ -150,8 +150,7 @@ $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
-$wgAddGroups['sysadmin'] = array( 'sysadmin' );
-$wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
+
 
 
 #emailconfirmed

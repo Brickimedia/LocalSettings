@@ -20,6 +20,8 @@ $wgGroupPermissions['board']['phalanx'] = true;
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-interwiki'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
+$wgAddGroups['sysadmin'] = array( 'sysadmin' );
+$wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
 
 $wgGroupPermissions['boardedit']['boardedit'] = true;
 

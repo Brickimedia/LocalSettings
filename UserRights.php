@@ -160,4 +160,8 @@ $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
 
 #remove steward - some 1.22 thing
+$wgGroupPermissions['staff']['phalanx'] = false;
+$wgGroupPermissions['staff']['phalanxemailblock'] = false;
+$wgGroupPermissions['staff']['phalanxexempt'] = false;
 unset( $wgGroupPermissions['steward'] );
+unset( $wgGroupPermissions['staff'] );

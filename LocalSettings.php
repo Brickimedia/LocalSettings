@@ -194,8 +194,6 @@ $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 require_once( "$IP/skins/Custard/Custard.php" );
 $wgSkipSkin = "custard"; //hiding it from user prefs until it's working
 
-require_once( "$IP/skins/Lia.php" );
-
 // GLOBAL USER RIGHTS
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

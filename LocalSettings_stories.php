@@ -89,4 +89,6 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #AVRU user group
 $wgGroupPermissions['AVRU'] = $wgGroupPermissions['patroller'];
-$wgGroupPermissions['AVRU'] = $wgGroupPermissions['chatmod'];
+$wgGroupPermissions['AVRU']['modchat'] = true;
+$wgAddGroups['AVRU'][] = 'blockedfromchat';
+$wgRemoveGroups['AVRU'][] = 'blockedfromchat';

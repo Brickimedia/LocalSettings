@@ -83,6 +83,7 @@ $wgGroupPermissions['*']['createpage'] = false;
 $wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = true;
 $wgGroupPermissions['sysadmin']['createaccount'] = true;
+$wgAddGroups['sysop'][] = 'betatest';
 
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
@@ -90,5 +91,6 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 #AVRU user group
 $wgGroupPermissions['AVRU'] = $wgGroupPermissions['patroller'];
 $wgGroupPermissions['AVRU']['modchat'] = true;
+$wgAddGroups['sysop'][] = 'AVRU';
 $wgAddGroups['AVRU'][] = 'blockedfromchat';
 $wgRemoveGroups['AVRU'][] = 'blockedfromchat';

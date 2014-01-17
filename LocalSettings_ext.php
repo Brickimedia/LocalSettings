@@ -30,6 +30,7 @@ require_once( "$IP/extensions/Nuke/Nuke.php" );
 require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 	$wgAllowSlowParserFunctions = true;
 	$wgPFStringLengthLimit = 10000;
+	$wgPFEnableStringFunctions = true;
 require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
 require_once( "$IP/extensions/Quantcast/Quantcast.php" );
 require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );

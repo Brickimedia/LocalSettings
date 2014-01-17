@@ -192,6 +192,7 @@ function showRefreshedAdvert( &$footerExtra ) {
 $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
 require_once( "$IP/skins/Custard/Custard.php" );
+require_once( "$IP/skins/Lia/Lia.php");
 $wgSkipSkin = "custard"; //hiding it from user prefs until it's working
 
 // GLOBAL USER RIGHTS

@@ -182,31 +182,38 @@ require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
 $newTalkGlobalDatabases = array(
 		"meta" => array(
 				"db" => "meta",
-				"url" => "http://meta.brickimedia.org/wiki/"
+				"url" => "http://meta.brickimedia.org/wiki/",
+				"name" => "Meta"
 		),
 		"en" => array(
 				"db" => "en",
-				"url" => "http://en.brickimedia.org/wiki/"
+				"url" => "http://en.brickimedia.org/wiki/",
+				"name" => "Brickipedia"
 		),
 		"customs" => array(
 				"db" => "customs",
-				"url" => "http://customs.brickimedia.org/wiki/"
+				"url" => "http://customs.brickimedia.org/wiki/",
+				"name" => "Customs"
 		),
 		"cuusoo" => array(
 				"db" => "cuusoo",
-				"url" => "http://cuusoo.brickimedia.org/wiki/"
+				"url" => "http://cuusoo.brickimedia.org/wiki/",
+				"name" => "Cuusoo"
 		),
 		"stories" => array(
 				"db" => "stories",
-				"url" => "http://stories.brickimedia.org/wiki/"
+				"url" => "http://stories.brickimedia.org/wiki/",
+				"name" => "Stories"
 		),
 		"admin" => array(
 				"db" => "admin",
-				"url" => "http://admin.brickimedia.org/wiki/"
+				"url" => "http://admin.brickimedia.org/wiki/",
+				"name" => "Admin"
 		),
 		"dev" => array(
 				"db" => "dev",
-				"url" => "http://dev.brickimedia.org/wiki/"
+				"url" => "http://dev.brickimedia.org/wiki/",
+				"name" => "Development"
 		)
 );
 

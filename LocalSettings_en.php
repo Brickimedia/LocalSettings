@@ -1,15 +1,15 @@
 <?php
 
 //$wgReadOnly = "Sorry, content is currently being imported. Any actions that will modify the database have been disabled";
-$wgSitename      = "Brickipedia";
+$wgSitename = "Brickipedia";
 $wgMetaNamespace = "Brickipedia";
 $wgNamespaceAliases['BP'] = NS_PROJECT;
 $wgPasswordSender = "brickipedia";
 $wgPasswordSenderName = "Brickipedia";
 
-$wgDBprefix         = "";
-$wgLogo             = "http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png";
-$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgDBprefix = "";
+$wgLogo = "http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png";
+$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'refreshed';
@@ -47,6 +47,30 @@ $wgGroupPermissions['sysop']['editnews'] = true;
 $wgAddGroups['sysop'][] = 'newsreporter';
 $wgRemoveGroups['sysop'][] = 'newsreporter';
 
+#Magazine, Inventory and Review namespaces
+define("NS_MAGAZINE", 112);
+define("NS_MAGAZINE_TALK", 113);
+$wgExtraNamespaces[NS_MAGAZINE] = "Magazine";
+$wgExtraNamespaces[NS_MAGAZINE_TALK] = "Magazine_talk";
+$wgContentNamespaces[] = 112;
+
+define("NS_INVENTORY", 114);
+define("NS_INVENTORY_TALK", 115);
+$wgExtraNamespaces[NS_INVENTORY] = "Inventory";
+$wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
+$wgNamespacesWithSubpages[NS_INVENTORY] = true;            //subpages enabled for the review namespace
+$wgContentNamespaces[] = 114;
+
+define("NS_REVIEW", 118);
+define("NS_REVIEW_TALK", 119);
+$wgExtraNamespaces[NS_REVIEW] = "Review";
+$wgExtraNamespaces[NS_REVIEW_TALK] = "Review_talk";
+$wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
+$wgGroupPermissions['*']['editreview'] = false;
+$wgGroupPermissions['autoconfirmed']['editreview'] = true;
+$wgGroupPermissions['sysop']['editreview'] = true;
+$wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
+
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;
 
@@ -73,7 +97,8 @@ $smwgNamespacesWithSemanticLinks = array(
 	         NS_HELP_TALK => false,
 	          NS_CATEGORY => true,
 	     NS_CATEGORY_TALK => false,
-                    NS_REVIEW => true,
+                NS_REVIEW => true,
+	       	 NS_INVENTORY => true,
 	    'SMW_NS_PROPERTY' => true,
    'SMW_NS_PROPERTY_TALK' => false,
 	        'SMW_NS_TYPE' => true,
@@ -128,30 +153,6 @@ $wgUserLevels = array(
         'Legendary Brickimedian' => 25000,
 );
 $wgUserProfileDisplay['stats'] = true;
-
-#Magazine, Inventory and Review namespaces
-define("NS_MAGAZINE", 112);
-define("NS_MAGAZINE_TALK", 113);
-$wgExtraNamespaces[NS_MAGAZINE] = "Magazine";
-$wgExtraNamespaces[NS_MAGAZINE_TALK] = "Magazine_talk";
-$wgContentNamespaces[] = 112;
-
-define("NS_INVENTORY", 114);
-define("NS_INVENTORY_TALK", 115);
-$wgExtraNamespaces[NS_INVENTORY] = "Inventory";
-$wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
-$wgNamespacesWithSubpages[NS_INVENTORY] = true;            //subpages enabled for the review namespace
-$wgContentNamespaces[] = 114;
-
-define("NS_REVIEW", 118);
-define("NS_REVIEW_TALK", 119);
-$wgExtraNamespaces[NS_REVIEW] = "Review";
-$wgExtraNamespaces[NS_REVIEW_TALK] = "Review_talk";
-$wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
-$wgGroupPermissions['*']['editreview'] = false;
-$wgGroupPermissions['autoconfirmed']['editreview'] = true;
-$wgGroupPermissions['sysop']['editreview'] = true;
-$wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
 
 #for {{colourbox}}
 require_once("$IP/extensions/ImageMap/ImageMap.php");

@@ -73,6 +73,7 @@ $smwgNamespacesWithSemanticLinks = array(
 	         NS_HELP_TALK => false,
 	          NS_CATEGORY => true,
 	     NS_CATEGORY_TALK => false,
+                    NS_REVIEW => true,
 	    'SMW_NS_PROPERTY' => true,
    'SMW_NS_PROPERTY_TALK' => false,
 	        'SMW_NS_TYPE' => true,

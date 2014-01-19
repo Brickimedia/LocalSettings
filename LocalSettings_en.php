@@ -81,9 +81,33 @@ $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 $smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
 $smwgPDefaultType = '_txt';
 
-$smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
-$smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
-$smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
+$smwgNamespacesWithSemanticLinks = array(
+	              NS_MAIN => true,
+	              NS_TALK => false,
+	              NS_USER => true,
+	         NS_USER_TALK => false,
+	           NS_PROJECT => true,
+	      NS_PROJECT_TALK => false,
+	             NS_IMAGE => true,
+	        NS_IMAGE_TALK => false,
+	         NS_MEDIAWIKI => false,
+	    NS_MEDIAWIKI_TALK => false,
+	          NS_TEMPLATE => false,
+	     NS_TEMPLATE_TALK => false,
+	              NS_HELP => true,
+	         NS_HELP_TALK => false,
+	          NS_CATEGORY => true,
+	     NS_CATEGORY_TALK => false,
+                NS_REVIEW => true,
+	       	 NS_INVENTORY => true,
+	    'SMW_NS_PROPERTY' => true,
+   'SMW_NS_PROPERTY_TALK' => false,
+	        'SMW_NS_TYPE' => true,
+       'SMW_NS_TYPE_TALK' => false,
+         'SMW_NS_CONCEPT' => true,
+    'SMW_NS_CONCEPT_TALK' => false,
+			      NS_NEWS => true,
+);
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;

@@ -88,9 +88,6 @@ $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 
-define("NS_CUSTOM", 116);
-$wgExtraNamespaces[NS_CUSTOM] = "Custom";
-
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter

@@ -70,9 +70,10 @@ foreach ( $arr as $key => $value ) {
 //$wgCaptchaDirectory = "/var/www/images/captcha";
 //$wgCaptchaDirectoryLevels = 0; // Set this to a value greater than zero to break the images into subdirectories
 //$wgCaptchaSecret = "brickimediacaptcha7";
-//$wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
-//$wgGroupPermissions['bot']['skipcaptcha'] = true;
-//$wgGroupPermissions['sysadmin']['skipcatcha'] = true;
+$wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
+$wgGroupPermissions['bot']['skipcaptcha'] = true;
+$wgGroupPermissions['sysadmin']['skipcaptcha'] = true;
+$wgGroupPermissions['sysop']['skipcaptcha'] = true;
 //$wgCaptchaTriggers['edit'] = true;
 
 // Short URLs

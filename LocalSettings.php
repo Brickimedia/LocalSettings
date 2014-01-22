@@ -259,4 +259,4 @@ $wgCacheDirectory = "$IP/cache/$bmProject";
 $wgDBerrorLog = "$IP/DB.log";
 
 // Splash page ajax access
-$wgCrossSiteAJAXdomains = array( 'brickimedia.org' );
+$wgCrossSiteAJAXdomains = array( '*' );

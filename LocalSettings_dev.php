@@ -68,3 +68,7 @@ $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
 // MultimediaViewer
 require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
+
+// VisualEditor
+require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
+$wgVisualEditorSupportedSkins = array( 'vector', 'deepsea' );

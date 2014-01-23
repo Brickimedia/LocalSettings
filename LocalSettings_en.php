@@ -21,11 +21,11 @@ $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
 // ArticleRatings
+require_once("$IP/extensions/are/ArticleRatings.php");
 $defaultRatingsJSONPath = "ratings_en_0.json";
 $ratingsJSONPaths = array(
 	0 => 'ratings_en_0.json'
 );
-require_once("$IP/extensions/are/ArticleRatings.php");
 
 // User groups
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
@@ -87,6 +87,9 @@ $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
+
+define("NS_CUSTOM", 116);
+$wgExtraNamespaces[NS_CUSTOM] = "Custom";
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
@@ -163,4 +166,3 @@ if( !$bmMobile ){
 
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
 require_once( "$IP/extensions/CSS/CSS.php" );
-require_once ( "$IP/extensions/Tabber/Tabber.php" );

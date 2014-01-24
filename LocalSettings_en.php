@@ -21,7 +21,7 @@ $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
 // ArticleRatings
-require_once("$IP/extensions/are/ArticleRatings.php");
+require_once("$IP/extensions/ARE/ArticleRatings.php");
 $defaultRatingsJSONPath = "ratings_en_0.json";
 $ratingsJSONPaths = array(
 	0 => 'ratings_en_0.json'

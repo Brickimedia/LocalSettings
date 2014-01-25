@@ -17,7 +17,6 @@ $wgDefaultSkin = 'monobook';
 
 //ArticleRatings
 require_once( "$IP/extensions/ARE/ArticleRatings.php" );
-$defaultRatingsJSONPath = "customs_ratings.json";
 
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer' );

@@ -170,7 +170,7 @@ require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
 	$wgGlobalUsageDatabase = 'meta';
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
-	$gcwikis = array(
+	$wgGlobalContribsWikis = array(
 		'meta' => 'http://meta.brickimedia.org/wiki/',
 		'en' => 'http://en.brickimedia.org/wiki/',
 		'customs' => 'http://customs.brickimedia.org/wiki/',

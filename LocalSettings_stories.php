@@ -3,6 +3,7 @@
 $wgSitename      = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
 $wgNamespaceAliases['LSW'] = NS_PROJECT;
+$wgNamespaceAliases['LSW_T'] = NS_PROJECT_TALK;
 $wgPasswordSender = "stories";
 $wgPasswordSenderName = "LEGO Stories Wiki";
 
@@ -75,6 +76,11 @@ $wgExtraNamespaces[NS_NINJAGO_TALK] = "Ninjago_talk";
 $wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
 $wgNamespacesWithSubpages[NS_LEGO_UNIVERSE] = true;
 $wgNamespacesWithSubpages[NS_NINJAGO] = true;
+
+$wgNamespaceAliases['LU'] = NS_LEGO_UNIVERSE;
+$wgNamespaceAliases['N'] = NS_NINJAGO;
+$wgNamespaceAliases['LU_T'] = NS_LEGO_UNIVERSE_TALK;
+$wgNamespaceAliases['N_T'] = NS_NINJAGO_TALK;
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

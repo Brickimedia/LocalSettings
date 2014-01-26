@@ -6,6 +6,8 @@
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
 require_once( "$IP/extensions/BlogPage/Blog.php" );
+$wgBlogPageDisplay['leftcolumn'] = false;
+$wgBlogPageDisplay['rightcolumn'] = false;
 require_once( "$IP/extensions/Cite/Cite.php" );
 require_once( "$IP/extensions/Cite/SpecialCite.php" );
 	$wgCiteEnablePopups = true; // Pop-up citations

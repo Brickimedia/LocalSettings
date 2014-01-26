@@ -101,7 +101,3 @@ $wgAddGroups['sysop'][] = 'AVRU';
 $wgRemoveGroups['sysop'][] = 'AVRU';
 $wgAddGroups['AVRU'][] = 'blockedfromchat';
 $wgRemoveGroups['AVRU'][] = 'blockedfromchat';
-
-$wgGroupPermissions['betatest']['read'] = true;
-$wgRemoveGroups['*'][] = 'betatest';
-$wgRemoveGroups['*'][] = 'sysadmin';

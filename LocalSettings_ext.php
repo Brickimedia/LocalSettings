@@ -169,8 +169,15 @@ $wgPdfInfo = 'pdfinfo';
 require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
 	$wgGlobalUsageDatabase = 'meta';
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
-	$gcwikis = array( 'meta', 'en', 'customs', 'cuusoo', 'stories', 'dev' );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
+	$gcwikis = array(
+		'meta' => 'http://meta.brickimedia.org/wiki/',
+		'en' => 'http://en.brickimedia.org/wiki/',
+		'customs' => 'http://customs.brickimedia.org/wiki/',
+		'cuusoo' => 'http://cuusoo.brickimedia.org/wiki/',
+		'stories' => 'http://stories.brickimedia.org/wiki/',
+		'dev' => 'http://dev.brickimedia.org/wiki/',
+	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
 	$gaAccount = "UA-38958899-1";

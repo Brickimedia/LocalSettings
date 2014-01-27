@@ -84,6 +84,7 @@ require_once("$IP/extensions/MultiUpload/MultiUpload.php");
 # Donate
 require_once("$IP/extensions/Donate/Donate.php");
 
+/**
 # UploadWizard
 require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
 $wgUploadWizardConfig = array(
@@ -94,3 +95,4 @@ $wgUploadWizardConfig = array(
 	'enableMultipleFiles' => true,
 	'enableMultiFileSelect' => true,
 );
+**/

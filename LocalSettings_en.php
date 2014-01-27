@@ -121,9 +121,9 @@ $wgUserLevels = array(
         'Brick Master' => 7500,
         'Master Builder' => 10000,
         'LEGO Wizard' => 12500,
-        'Outstanding Brickimedian' => 15000,
-        'Honorable Brickimedian' => 20000,
-        'Legendary Brickimedian' => 25000,
+        'Outstanding Brickipedian' => 15000,
+        'Honorable Brickipedian' => 20000,
+        'Legendary Brickipedian' => 25000,
 );
 $wgUserProfileDisplay['stats'] = true;
 

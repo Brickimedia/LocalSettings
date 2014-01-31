@@ -208,7 +208,7 @@ $newTalkGlobalDatabases = array(
 		"cuusoo" => array(
 				"db" => "cuusoo",
 				"url" => "http://cuusoo.brickimedia.org/wiki/",
-				"name" => "Cuusoo"
+				"name" => "CUUSOO"
 		),
 		"stories" => array(
 				"db" => "stories",

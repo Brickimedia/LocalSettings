@@ -75,6 +75,7 @@ enableSemantics('en.brickimedia.org');
 
 $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 $smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
+$smwgCacheType = CACHE_MEMCACHED;
 $smwgPDefaultType = '_txt';
 
 $smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;

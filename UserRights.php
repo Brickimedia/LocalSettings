@@ -100,6 +100,7 @@ $wgGroupPermissions['sysop']['markbotedits']     = true;
 $wgGroupPermissions['sysop']['apihighlimits']    = true;
 $wgGroupPermissions['sysop']['browsearchive']    = true;
 $wgGroupPermissions['sysop']['noratelimit']      = true;
+$wgGroupPermissions['sysop']['smw-admin']      = true;
 $wgGroupPermissions['sysop']['movefile']         = true;
 $wgGroupPermissions['sysop']['unblockself']      = true;
 $wgGroupPermissions['sysop']['suppressredirect'] = true;
@@ -162,5 +163,7 @@ $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 $wgGroupPermissions['staff']['phalanx'] = false;
 $wgGroupPermissions['staff']['phalanxemailblock'] = false;
 $wgGroupPermissions['staff']['phalanxexempt'] = false;
+$wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
+unset( $wgGroupPermissions['smwadministrator'] );
 unset( $wgGroupPermissions['staff'] );

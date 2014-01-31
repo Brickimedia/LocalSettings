@@ -260,3 +260,5 @@ $wgDBerrorLog = "$IP/DB.log";
 
 // Splash page ajax access
 $wgCrossSiteAJAXdomains = array( '*' );
+
+$wgDisableCounters = true; // Pages (therefore hit counters) are cached, we have analytics anyway and helps performance.

@@ -24,7 +24,7 @@ require_once( "$IP/extensions/EditUser/EditUser.php" );
 require_once( "$IP/extensions/Gadgets/Gadgets.php" );
 require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
 require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
-// require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
+require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 require_once( "$IP/extensions/InputBox/InputBox.php" );
 require_once( "$IP/extensions/Interwiki/Interwiki.php" );
 require_once( "$IP/extensions/VoteNY/Vote.php" );

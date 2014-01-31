@@ -164,3 +164,7 @@ if( !$bmMobile ){
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
 require_once( "$IP/extensions/CSS/CSS.php" );
 require_once( "$IP/extensions/Tabber/Tabber.php" );
+
+// Profiling
+$wgEnableProfileInfo = true;
+$wgProfileToDatabase = true;

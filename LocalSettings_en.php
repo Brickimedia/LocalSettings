@@ -168,3 +168,7 @@ require_once( "$IP/extensions/Tabber/Tabber.php" );
 // Profiling
 $wgEnableProfileInfo = true;
 $wgProfileToDatabase = true;
+
+#Import group
+$wgGroupPermissions['import']['importupload'] = true;
+$wgGroupPermissions['import']['import'] = true;

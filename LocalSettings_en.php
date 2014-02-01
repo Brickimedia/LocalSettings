@@ -172,3 +172,5 @@ $wgProfileToDatabase = true;
 #Import group
 $wgGroupPermissions['import']['importupload'] = true;
 $wgGroupPermissions['import']['import'] = true;
+$wgAddGroups['sysop'][] = 'import';
+$wgRemoveGroups['sysop'][] = 'import';

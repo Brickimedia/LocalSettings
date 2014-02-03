@@ -6,8 +6,8 @@
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/AJAXPoll/AJAXPoll.php" );
 require_once( "$IP/extensions/BlogPage/Blog.php" );
-$wgBlogPageDisplay['leftcolumn'] = false;
-$wgBlogPageDisplay['rightcolumn'] = false;
+	$wgBlogPageDisplay['leftcolumn'] = false;
+	$wgBlogPageDisplay['rightcolumn'] = false;
 require_once( "$IP/extensions/Cite/Cite.php" );
 require_once( "$IP/extensions/Cite/SpecialCite.php" );
 	$wgCiteEnablePopups = true; // Pop-up citations
@@ -40,6 +40,7 @@ require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
 require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
 require_once( "$IP/extensions/UserMerge/UserMerge.php" );
+require_once( "$IP/extensions/USERNAME/USERNAME.php" );
 require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 	$wgDefaultUserOptions['wikilove-enabled'] = 1;

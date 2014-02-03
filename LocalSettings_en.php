@@ -164,3 +164,13 @@ if( !$bmMobile ){
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
 require_once( "$IP/extensions/CSS/CSS.php" );
 require_once( "$IP/extensions/Tabber/Tabber.php" );
+
+// Profiling
+$wgEnableProfileInfo = true;
+$wgProfileToDatabase = true;
+
+#Import group
+$wgGroupPermissions['import']['importupload'] = true;
+$wgGroupPermissions['import']['import'] = true;
+$wgAddGroups['sysop'][] = 'import';
+$wgRemoveGroups['sysop'][] = 'import';

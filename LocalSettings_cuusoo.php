@@ -14,7 +14,7 @@ $wgFavicon = "http://images.brickimedia.org/favicons/cuusoo.ico";
 
 $wgLanguageCode = "en";
 
-$wgDefaultSkin = 'deepsea';
+$wgDefaultSkin = 'refreshed';
 
 #SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");

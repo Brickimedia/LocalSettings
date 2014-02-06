@@ -153,6 +153,7 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
 
 #bot approval group
+$wgGroupPermisions['bag']['read'] = true; //establish the group
 $wgAddGroups['bag'] = array( 'bot', 'bag' );
 $wgRemoveGroups['bag'] = array( 'bot', 'bag' );
 $wgAddGroups['sysop'][] = 'bag'; //temporary

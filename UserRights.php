@@ -153,6 +153,7 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
 
 #bot approval group
+$wgGroupPermissions['bag'] = $wgGroupPermissions['user']; // test to see if copying from a thing from LSW's AVRU works.
 $wgGroupPermisions['bag']['read'] = true; //establish the group
 $wgAddGroups['bag'] = array( 'bot', 'bag' );
 $wgRemoveGroups['bag'] = array( 'bot', 'bag' );

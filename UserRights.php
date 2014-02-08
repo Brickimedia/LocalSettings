@@ -152,7 +152,12 @@ $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
 
-
+#bot approval group
+$wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
+$wgGroupPermisions['bag']['read'] = true; //establish the group
+$wgAddGroups['bag'] = array( 'bot', 'bag' );
+$wgRemoveGroups['bag'] = array( 'bot', 'bag' );
+$wgAddGroups['sysop'][] = 'bag'; //temporary
 
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;

@@ -67,20 +67,27 @@ define("NS_LEGO_UNIVERSE", 404);
 define("NS_LEGO_UNIVERSE_TALK", 405);
 define("NS_NINJAGO", 402);
 define("NS_NINJAGO_TALK", 403);
+define("NS_CASTLE", 404);
+define("NS_CASTLE_TALK", 405);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
 $wgExtraNamespaces[NS_LEGO_UNIVERSE] = "LEGO_Universe";
 $wgExtraNamespaces[NS_LEGO_UNIVERSE_TALK] = "LEGO_Universe_talk";
 $wgExtraNamespaces[NS_NINJAGO] = "Ninjago";
 $wgExtraNamespaces[NS_NINJAGO_TALK] = "Ninjago_talk";
+$wgExtraNamespaces[NS_CASTLE] = "Castle";
+$wgExtraNamespaces[NS_CASTLE_TALK] = "Castle_talk";
 $wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
 $wgNamespacesWithSubpages[NS_LEGO_UNIVERSE] = true;
 $wgNamespacesWithSubpages[NS_NINJAGO] = true;
+$wgNamespacesWithSubpages[NS_CASTLE] = true;
 
 $wgNamespaceAliases['LU'] = NS_LEGO_UNIVERSE;
 $wgNamespaceAliases['N'] = NS_NINJAGO;
 $wgNamespaceAliases['LU_T'] = NS_LEGO_UNIVERSE_TALK;
 $wgNamespaceAliases['N_T'] = NS_NINJAGO_TALK;
+$wgNamespaceAliases['C'] = NS_CASTLE;
+$wgNamespaceAliases['C_T'] = NS_CASTLE_TALK;
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

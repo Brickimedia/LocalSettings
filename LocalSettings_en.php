@@ -175,4 +175,4 @@ $wgGroupPermissions['import']['import'] = true;
 $wgAddGroups['sysop'][] = 'import';
 $wgRemoveGroups['sysop'][] = 'import';
 
-require_once( "$IP/extensions/BricksetSnippet/BricksetSnippet.php" );
+require_once( "$IP/extensions/Snippet/Snippet.php" );

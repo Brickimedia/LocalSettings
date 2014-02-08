@@ -174,3 +174,5 @@ $wgGroupPermissions['import']['importupload'] = true;
 $wgGroupPermissions['import']['import'] = true;
 $wgAddGroups['sysop'][] = 'import';
 $wgRemoveGroups['sysop'][] = 'import';
+
+require_once( "$IP/extensions/BricksetSnippet/BricksetSnippet.php" );

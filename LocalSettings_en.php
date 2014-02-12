@@ -81,6 +81,8 @@ $smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
 $smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
 $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 
+$wgMemoryLimit = "64M"; //trying to solve white pages
+
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 

@@ -66,6 +66,9 @@ $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
+// BetaFeatures
+require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
+
 // MultimediaViewer
 require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
 

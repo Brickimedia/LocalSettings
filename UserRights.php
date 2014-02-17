@@ -42,6 +42,7 @@ $wgGroupPermissions['autoconfirmed']['abusefilter-log-detail'] = true;
 $wgGroupPermissions['autoconfirmed']['abusefilter-view'] = true;
 $wgGroupPermissions['autoconfirmed']['abusefilter-log'] = true;
 $wgGroupPermissions['autoconfirmed']['skipcaptcha'] = true;
+$wgGroupPermissions['autoconfirmed']['sendemail'] = true;
 
 #patroller
 $wgGroupPermissions['patroller']['noratelimit'] = true;
@@ -153,6 +154,7 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
 
 #bot approval group
+$wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
 $wgGroupPermisions['bag']['read'] = true; //establish the group
 $wgAddGroups['bag'] = array( 'bot', 'bag' );
 $wgRemoveGroups['bag'] = array( 'bot', 'bag' );

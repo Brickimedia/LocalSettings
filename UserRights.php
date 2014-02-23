@@ -125,7 +125,7 @@ $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 
-#oversight
+#oversight - contained as a part of checkuser
 $wgGroupPermissions['oversight']['suppressrevision'] = true;
 $wgGroupPermissions['oversight']['hideuser'] = true;
 $wgGroupPermissions['oversight']['suppressionlog'] = true;
@@ -136,6 +136,11 @@ $wgGroupPermissions['oversight']['abusefilter-hide-log'] = true;
 $wgGroupPermissions['checkuser']['lookupuser'] = true;
 $wgGroupPermissions['checkuser']['checkuser'] = true;
 $wgGroupPermissions['checkuser']['checkuser-log'] = true;
+$wgGroupPermissions['checkuser']['suppressrevision'] = true;
+$wgGroupPermissions['checkuser']['hideuser'] = true;
+$wgGroupPermissions['checkuser']['suppressionlog'] = true;
+$wgGroupPermissions['checkuser']['abusefilter-hidden-log'] = true;
+$wgGroupPermissions['checkuser']['abusefilter-hide-log'] = true;
 
 #global sysadmin
 $wgGroupPermissions['sysadmin']['edit'] = true;

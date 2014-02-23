@@ -150,6 +150,7 @@ $wgGroupPermissions['sysadmin']['editusercss'] = true;
 $wgGroupPermissions['sysadmin']['edituserjs'] = true;
 $wgGroupPermissions['sysadmin']['editinterface'] = true;
 $wgGroupPermissions['sysadmin']['editprotected'] = true;
+$wgGroupPermissions['sysadmin']['interwiki'] = true;
 $wgGroupPermissions['sysadmin']['usermerge'] = true;
 $wgGroupPermissions['sysadmin']['protectsite'] = true;
 $wgGroupPermissions['sysadmin']['autopatrol'] = true;

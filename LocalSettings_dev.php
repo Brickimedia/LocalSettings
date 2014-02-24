@@ -75,3 +75,9 @@ require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
 // VisualEditor
 require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
 $wgVisualEditorSupportedSkins = array( 'vector', 'deepsea', 'lia', 'refreshed' );
+
+// Translate
+include_once("$IP/extensions/Translate/Translate.php");
+$wgGroupPermissions['translator']['translate'] = true;
+$wgTranslateDocumentationLanguageCode = 'qqq';
+$wgGroupPermissions['sysop']['pagetranslation'] = true;

@@ -262,3 +262,6 @@ $wgDBerrorLog = "$IP/DB.log";
 $wgCrossSiteAJAXdomains = array( '*' );
 
 $wgDisableCounters = true; // Pages (therefore hit counters) are cached, we have analytics anyway and helps performance.
+
+// Trying to solve white pages
+$wgMemoryLimit = "128M";

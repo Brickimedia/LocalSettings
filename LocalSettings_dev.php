@@ -82,3 +82,6 @@ include_once("$IP/extensions/Translate/Translate.php");
 $wgGroupPermissions['translator']['translate'] = true;
 $wgTranslateDocumentationLanguageCode = 'qqq';
 $wgGroupPermissions['sysop']['pagetranslation'] = true;
+
+// Echo
+require_once( "$IP/extensions/Echo/Echo.php" );

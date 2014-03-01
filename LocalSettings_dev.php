@@ -84,4 +84,4 @@ $wgTranslateDocumentationLanguageCode = 'qqq';
 $wgGroupPermissions['sysop']['pagetranslation'] = true;
 
 // Echo
-require_once( "$IP/extensions/Echo/Echo.php" );
+#require_once( "$IP/extensions/Echo/Echo.php" );

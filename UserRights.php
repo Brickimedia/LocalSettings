@@ -56,6 +56,8 @@ $wgGroupPermissions['patroller']['rollback'] = true; #HAH! It's part of patrolle
 #reviewer
 $wgGroupPermissions['reviewer']['edit'] = true;
 $wgGroupPermissions['reviewer']['changeRating'] = true;
+$wgAddGroups['reviewer'][] = array('reviewer');
+$wgRemoveGroups['reviewer'][] = array('reviewer');
 
 #bot
 $wgGroupPermissions['bot']['bot']              = true;

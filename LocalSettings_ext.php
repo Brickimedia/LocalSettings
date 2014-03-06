@@ -238,3 +238,9 @@ $wgDefaultUserOptions['enotifusertalkpages'] = 1;
 
 // Phalanx
 require_once("$IP/extensions/Phalanx/Phalanx.php");
+
+// IRC bot for #cvn-brickimedia (feeds to #brickimedia-cvn, private channel)
+// IRC # port: 51666
+$wgRC2UDPAddress = '127.0.0.1';
+$wgRC2UDPPort = '51666';
+$wgRC2UDPPrefix = "";

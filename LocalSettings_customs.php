@@ -1,16 +1,14 @@
 <?php
 
-//$wgReadOnly = "Sorry, setup is currently being done. Any actions that will modify the database have been disabled";
-$wgSitename      = "Brickimedia Customs";
+$wgSitename = "Brickimedia Customs";
 $wgMetaNamespace = "Customs";
 $wgNamespaceAliases['BC'] = NS_PROJECT;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 $wgPasswordSender = "customs";
 $wgPasswordSenderName = "Brickimedia Customs";
 
-$wgDBprefix         = "";
-$wgLogo             = "http://images.brickimedia.org/4/4e/Customs-Logo.png";
-$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgLogo = "http://images.brickimedia.org/4/4e/Customs-Logo.png";
+$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'monobook';

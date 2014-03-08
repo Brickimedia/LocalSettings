@@ -1,14 +1,14 @@
 <?php
 
-$wgSitename      = "LEGO Stories Wiki";
+$wgSitename = "LEGO Stories Wiki";
 $wgMetaNamespace = "LEGO_Stories_Wiki";
 $wgNamespaceAliases['LSW'] = NS_PROJECT;
 $wgNamespaceAliases['LSW_T'] = NS_PROJECT_TALK;
 $wgPasswordSender = "stories";
 $wgPasswordSenderName = "LEGO Stories Wiki";
 
-$wgLogo             = "http://images.brickimedia.org/thumb/9/96/LEGO_Stories_Wiki_Logo.png/160px-LEGO_Stories_Wiki_Logo.png";
-$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgLogo = "http://images.brickimedia.org/thumb/9/96/LEGO_Stories_Wiki_Logo.png/160px-LEGO_Stories_Wiki_Logo.png";
+$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 

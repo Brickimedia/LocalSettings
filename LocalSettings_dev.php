@@ -1,14 +1,12 @@
 <?php
 
-//$wgReadOnly = "Sorry, setup is currently being done. Any actions that will modify the database have been disabled";
-$wgSitename           = "Brickimedia Development";
-$wgMetaNamespace      = "Development";
-$wgPasswordSender     = "dev";
+$wgSitename = "Brickimedia Development";
+$wgMetaNamespace = "Development";
+$wgPasswordSender = "dev";
 $wgPasswordSenderName = "Brickimedia Development";
 
-$wgDBprefix         = "";
-$wgLogo             = "http://images.brickimedia.org/thumb/b/bd/Brickimedia_Technical.png/160px-Brickimedia_Technical.png";
-$wgFavicon          = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgLogo = "http://images.brickimedia.org/thumb/b/bd/Brickimedia_Technical.png/160px-Brickimedia_Technical.png";
+$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 

@@ -1,6 +1,9 @@
 <?php
 
-$wgSitename = "Brickimedia Data Wiki (currently testing)";
-$wgMetaNamespace = "Data";
+$wgSitename = "Brickidata";
+$wgMetaNamespace = "Brickidata";
 $wgPasswordSender = "data";
-$wgPasswordSenderName = "Brickimedia Data Wiki";
+$wgPasswordSenderName = "Brickidata";
+
+# Wikibase
+require_once( "$IP/extensions/Wikibase/repo/Wikibase.php" );

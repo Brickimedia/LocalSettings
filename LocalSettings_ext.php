@@ -181,6 +181,7 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'cuusoo' => 'http://cuusoo.brickimedia.org/wiki/',
 		'stories' => 'http://stories.brickimedia.org/wiki/',
 		'dev' => 'http://dev.brickimedia.org/wiki/',
+		'data' => 'http://data.brickimedia.org/wiki/'
 	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
@@ -206,27 +207,32 @@ $newTalkGlobalDatabases = array(
 		"customs" => array(
 				"db" => "customs",
 				"url" => "http://customs.brickimedia.org/wiki/",
-				"name" => "Customs"
+				"name" => "Brickimedia Customs"
 		),
 		"cuusoo" => array(
 				"db" => "cuusoo",
 				"url" => "http://cuusoo.brickimedia.org/wiki/",
-				"name" => "CUUSOO"
+				"name" => "LEGO CUUSOO Wiki"
 		),
 		"stories" => array(
 				"db" => "stories",
 				"url" => "http://stories.brickimedia.org/wiki/",
-				"name" => "Stories"
+				"name" => "LEGO Stories Wiki"
 		),
 		"admin" => array(
 				"db" => "admin",
 				"url" => "http://admin.brickimedia.org/wiki/",
-				"name" => "Admin"
+				"name" => "Brickimedia Admin Wiki"
 		),
 		"dev" => array(
 				"db" => "dev",
 				"url" => "http://dev.brickimedia.org/wiki/",
-				"name" => "Development"
+				"name" => "Brickimedia Development"
+		),
+		"data" => array(
+				"db" => "data",
+				"url" => "http://data.brickimedia.org/wiki/",
+				"name" => "Brickidata"
 		)
 );
 

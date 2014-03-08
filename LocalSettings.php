@@ -143,6 +143,7 @@ switch ( $host[0] ) {
 		$bmProject = 'data';
 		$wgServer = 'http://data.brickimedia.org';
 		$wgDBname = 'data';
+		break;
 	default:
 		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
 		exit(0);

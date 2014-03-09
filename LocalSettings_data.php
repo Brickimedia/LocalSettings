@@ -8,7 +8,7 @@ $wgLogo = "";
 $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 $wgLanguageCode = "en";
 $wgNamespaceAliases = array(
-        'BP' => NS_PROJECT,
+        'BD' => NS_PROJECT,
 );
 
 # Wikibase

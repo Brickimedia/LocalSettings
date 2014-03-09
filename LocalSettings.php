@@ -92,7 +92,7 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo', 'data' );
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {

@@ -252,3 +252,36 @@ if ( $bmProject != "admin" ) {
 	$wgRC2UDPPort = '51666';
 	$wgRC2UDPPrefix = "";
 }
+
+//SiteMatrix stuff
+require_once( "$IP/extensions/SiteMatrix/SiteMatrix.php" );
+$wgSiteMatrixFile = "$IP/langlist";
+$wgSiteMatrixSites = array(
+   'bricki' => array(
+       'name' => 'Brickipedia',
+       'host' => 'en.brickimedia.org',
+       'prefix' => 'b',
+   ),
+   'customs' => array(
+   	'name' => 'Brickimedia Customs',
+   	'host' => 'customs.brickimedia.org',
+   	'prefix' => 'c',
+   ),
+   'stories' => array(
+   	'name' => 'LEGO Stories Wiki',
+   	'host' => 'stories.brickimedia.org',
+   	'prefix' => 's',
+   ),
+   'cuusoo' => array(
+   	'name' => 'LEGO CUUSOO Wiki',
+   	'host' => 'cuusoo.brickimedia.org',
+   	'prefix' => 'cw',
+   ),
+   'meta' => array(
+   	'name' => 'Meta',
+   	'host' => 'meta.brickimedia.org',
+   	'prefix' => 'm',
+   ),
+);
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin' );
+$wgConf->wikis = $wgLocalDatabases;

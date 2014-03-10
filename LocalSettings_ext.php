@@ -285,3 +285,6 @@ $wgSiteMatrixSites = array(
 );
 $wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin' );
 $wgConf->wikis = $wgLocalDatabases;
+
+// Echo
+require_once( "$IP/extensions/Echo/Echo.php" );

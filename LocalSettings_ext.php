@@ -288,3 +288,7 @@ $wgConf->wikis = $wgLocalDatabases;
 
 // Echo
 require_once( "$IP/extensions/Echo/Echo.php" );
+require_once( "$IP/extensions/Thanks/Thanks.php" );
+$wgThanksSendToBots = false;
+$wgThanksLogging = true;
+$wgThanksConfirmationRequired = true;

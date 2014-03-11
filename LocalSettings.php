@@ -150,14 +150,6 @@ switch ( $host[0] ) {
 		break;
 }
 
-// MUST BE BEFORE PROJECT LS_.php FILE:
-require_once( "$IP/skins/Refreshed/Refreshed.php" );
-
-if( !getenv("noext") ){
-	require_once( __DIR__ . '/LocalSettings_ext.php' );
-}
-require_once( $ls_path );
-
 //GLOBAL TABLES
 $wgSharedDB     = 'shared';
 $wgSharedTables = array(
@@ -179,7 +171,9 @@ $wgSharedTables = array(
 	'phalanx',
 	'phalanx_stats'
 );
+
 // SKINS
+require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
 function showRefreshedAdvert( &$footerExtra ) {
 	$footerExtra = '
@@ -282,3 +276,9 @@ $wgDisableCounters = true; // Pages (therefore hit counters) are cached, we have
 
 // Trying to solve white pages
 $wgMemoryLimit = "128M";
+
+// MUST BE AT BOTTOM OF THIS FILE!!!!
+if( !getenv("noext") ){
+	require_once( __DIR__ . '/LocalSettings_ext.php' );
+}
+require_once( $ls_path );

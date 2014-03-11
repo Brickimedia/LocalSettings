@@ -197,6 +197,15 @@ function showRefreshedAdvert( &$footerExtra ) {
 }
 $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
+$refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
+$refreshedMeta = "<img width='144' src='$refreshedImagePath/brickimedia.svg' alt='' />";
+$refreshedEn = "<img width='138' src='$refreshedImagePath/brickipedia.svg' alt='' />";
+$refreshedCustoms = "<img width='100' src='$refreshedImagePath/customs.svg' alt='' />";
+$refreshedStories = "<img width='144' src='$refreshedImagePath/stories.svg' alt='' />";
+$refreshedCuusoo = "<img width='144' src='$refreshedImagePath/cuusoo.svg' alt='' />";
+$refreshedAdmin = "<img width='81' src='$refreshedImagePath/admin.svg' alt='' />";
+$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
+
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");
 $wgSkipSkin = "custard"; //hiding it from user prefs until it's working

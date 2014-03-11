@@ -88,3 +88,16 @@ $wgAddGroups['sysop'][] = 'AVRU';
 $wgRemoveGroups['sysop'][] = 'AVRU';
 $wgAddGroups['AVRU'][] = 'blockedfromchat';
 $wgRemoveGroups['AVRU'][] = 'blockedfromchat';
+
+
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://stories.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedStories,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);

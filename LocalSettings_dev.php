@@ -83,3 +83,17 @@ $wgGroupPermissions['sysop']['pagetranslation'] = true;
 
 // Echo
 require_once( "$IP/extensions/Echo/Echo.php" );
+
+
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://dev.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedDev,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);

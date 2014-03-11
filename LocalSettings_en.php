@@ -170,3 +170,16 @@ $wgAddGroups['sysop'][] = 'import';
 $wgRemoveGroups['sysop'][] = 'import';
 
 require_once( "$IP/extensions/Snippet/Snippet.php" );
+
+
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://en.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedEn,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);

@@ -126,3 +126,16 @@ $wgGroupPermissions['global']['editlmbw'] = true;
 
 # Track edits in Special:Statistics just for records
 $wgContentNamespaces = array( NS_MAIN, NS_HELP, NS_PROJECT, NS_EN, NS_CUSTOMS, NS_STORIES, NS_CUUSOO, NS_LMBW );
+
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://admin.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedAdmin,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);

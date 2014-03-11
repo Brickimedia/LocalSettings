@@ -71,3 +71,15 @@ $wgUserProfileDisplay['stats'] = true;
 
 #global file descriptors
 require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
+
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://customs.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedCustoms,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);

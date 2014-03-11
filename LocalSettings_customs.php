@@ -11,7 +11,7 @@ $wgLogo = "http://images.brickimedia.org/4/4e/Customs-Logo.png";
 $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
-$wgDefaultSkin = 'monobook';
+$wgDefaultSkin = 'refreshed';
 
 //ArticleRatings
 require_once( "$IP/extensions/ARE/ArticleRatings.php" );

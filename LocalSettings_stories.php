@@ -14,7 +14,7 @@ $wgLanguageCode = "en";
 
 #Skin stuff
 require_once( "$IP/skins/Quartz/quartz/resources.php" );
-$wgDefaultSkin = 'quartz';
+$wgDefaultSkin = 'refreshed';
 $wgSkipSkins = array("lia", "liamobile", "standard");
 
 #SocialProfile

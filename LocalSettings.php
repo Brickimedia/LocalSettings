@@ -150,6 +150,9 @@ switch ( $host[0] ) {
 		break;
 }
 
+// MUST BE BEFORE PROJECT LS_.php FILE:
+require_once( "$IP/skins/Refreshed/Refreshed.php" );
+
 if( !getenv("noext") ){
 	require_once( __DIR__ . '/LocalSettings_ext.php' );
 }
@@ -177,7 +180,6 @@ $wgSharedTables = array(
 	'phalanx_stats'
 );
 // SKINS
-require_once( "$IP/skins/Refreshed/Refreshed.php" );
 $wgDefaultSkin = 'refreshed';
 function showRefreshedAdvert( &$footerExtra ) {
 	$footerExtra = '

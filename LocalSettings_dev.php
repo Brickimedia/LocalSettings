@@ -84,8 +84,8 @@ $wgGroupPermissions['sysop']['pagetranslation'] = true;
 // Echo
 require_once( "$IP/extensions/Echo/Echo.php" );
 
-// ArticleRatings - SirComputer testing to see if it could be used on LSW
-require_once( "$IP/extensions/ARE/ArticleRatings.php" );
+// ArticleRatings - SirComputer testing to see if it could be used on LSW, but content on Dev not loading.
+// require_once( "$IP/extensions/ARE/ArticleRatings.php" );
 
 # Refreshed
 $wgRefreshedHeader = array(

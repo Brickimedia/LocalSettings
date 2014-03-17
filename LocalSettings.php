@@ -98,54 +98,60 @@ $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
 	case "meta":
 		$ls_path = "LocalSettings_meta.php";
-		$bmProject = 'meta';
+		$bmProject = "meta";
 		$wgServer = "http://meta.brickimedia.org";
 		$wgDBname = "meta";
 		break;
 	case "en":
 		$ls_path = "LocalSettings_en.php";
-		$bmProject = 'en';
+		$bmProject = "en";
 		$wgServer = "http://en.brickimedia.org";
 		$wgDBname = "en";
 		break;
 	case "customs":
 		$ls_path = "LocalSettings_customs.php";
-		$bmProject = 'customs';
+		$bmProject = "customs";
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
 		break;
 	case "dev":
 		$ls_path = "LocalSettings_dev.php";
-		$bmProject = 'dev';
+		$bmProject = "dev";
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		break;
 	case "admin":
 		$ls_path = "LocalSettings_admin.php";
-		$bmProject = 'admin';
+		$bmProject = "admin";
 		$wgServer = "http://admin.brickimedia.org";
 		$wgDBname = "admin";
 		break;
 	case "stories":
 		$ls_path = "LocalSettings_stories.php";
-		$bmProject = 'stories';
+		$bmProject = "stories";
 		$wgServer = "http://stories.brickimedia.org";
 		$wgDBname = "stories";
 		break;
 	case "cuusoo":
 		$ls_path = "LocalSettings_cuusoo.php";
-		$bmProject = 'cuusoo';
+		$bmProject = "cuusoo";
 		$wgServer = "http://cuusoo.brickimedia.org";
 		$wgDBname = "cuusoo";
 		break;
-	case 'data':
-		$ls_path = 'LocalSettings_data.php';
-		$bmProject = 'data';
-		$wgServer = 'http://data.brickimedia.org';
-		$wgDBname = 'data';
+	case "data":
+		$ls_path = "LocalSettings_data.php";
+		$bmProject = "data";
+		$wgServer = "http://data.brickimedia.org";
+		$wgDBname = "data";
+		break;
+	case "nl":
+		$ls_path = "LocalSettings_nl.php";
+		$bmProject = "nl";
+		$wgServer = "http://nl.brickimedia.org";
+		$wgDBname = "nl";
 		break;
 	default:
-		header( 'Location: http://www.brickimedia.org/notfound.html' ) ;
+		header( "Location: http://www.brickimedia.org/notfound.html" ) ;
 		exit(0);
 		break;
 }

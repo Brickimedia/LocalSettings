@@ -292,3 +292,6 @@ require_once( "$IP/extensions/Thanks/Thanks.php" );
 $wgThanksSendToBots = false;
 $wgThanksLogging = true;
 $wgThanksConfirmationRequired = true;
+
+// BetaFeatures
+require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );

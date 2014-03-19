@@ -106,3 +106,10 @@ $wgRefreshedHeader = array(
 		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
 	)
 );
+
+# Translate
+require_once ( "$IP/extensions/UniversalLanguageSelector/UniversalLanguageSelector.php" );
+include_once("$IP/extensions/Translate/Translate.php");
+$wgGroupPermissions['translator']['translate'] = true;
+$wgTranslateDocumentationLanguageCode = 'qqq';
+$wgGroupPermissions['sysop']['pagetranslation'] = true;

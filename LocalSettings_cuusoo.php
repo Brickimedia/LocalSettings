@@ -72,3 +72,8 @@ $wgRefreshedHeader = array(
 		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
 	)
 );
+
+# #brickimedia-rc-cuusoo IRC
+$wgRC2UDPAddress = '127.0.0.1';
+$wgRC2UDPPort = '51661';
+$wgRC2UDPPrefix = "";

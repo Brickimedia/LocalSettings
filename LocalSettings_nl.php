@@ -40,3 +40,8 @@ $wgUserLevels = array(
         'Honorable Brickipedian' => 20000,
         'Legendary Brickipedian' => 25000,
 );
+
+# #brickimedia-rc-nl IRC
+$wgRC2UDPAddress = '127.0.0.1';
+$wgRC2UDPPort = '51666';
+$wgRC2UDPPrefix = "";

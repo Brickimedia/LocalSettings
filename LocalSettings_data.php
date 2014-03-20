@@ -62,3 +62,8 @@ function lfChangeMainPageURL( $sk, &$tpl ) {
         $tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText('Brickidata:Home')->getLocalURL();
         return true;
 }
+
+# #brickimedia-rc-data IRC
+$wgRC2UDPAddress = '127.0.0.1';
+$wgRC2UDPPort = '51662';
+$wgRC2UDPPrefix = "";

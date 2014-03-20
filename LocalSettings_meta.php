@@ -113,3 +113,8 @@ include_once("$IP/extensions/Translate/Translate.php");
 $wgGroupPermissions['translator']['translate'] = true;
 $wgTranslateDocumentationLanguageCode = 'qqq';
 $wgGroupPermissions['sysop']['pagetranslation'] = true;
+
+# #brickimedia-rc-meta IRC
+$wgRC2UDPAddress = '127.0.0.1';
+$wgRC2UDPPort = '51665';
+$wgRC2UDPPrefix = "";

@@ -172,6 +172,8 @@ $wgAddGroups['sysop'][] = 'bag'; //temporary
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
+#autopatrolled
+$wgGroupPermissions['autopatrolled']['autopatrol'] = true;
 
 #remove steward - some 1.22 thing
 $wgGroupPermissions['staff']['phalanx'] = false;

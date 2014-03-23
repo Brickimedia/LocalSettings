@@ -242,9 +242,6 @@ $wgEnotifUserTalk = true;
 $wgDefaultUserOptions['enotifwatchlistpages'] = 0;
 $wgDefaultUserOptions['enotifusertalkpages'] = 1;
 
-// Phalanx
-require_once("$IP/extensions/Phalanx/Phalanx.php");
-
 //SiteMatrix stuff
 require_once( "$IP/extensions/SiteMatrix/SiteMatrix.php" );
 $wgSiteMatrixFile = "$IP/langlist";

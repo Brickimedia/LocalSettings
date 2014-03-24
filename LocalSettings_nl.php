@@ -41,6 +41,18 @@ $wgUserLevels = array(
         'Legendary Brickipedian' => 25000,
 );
 
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://nl.brickimedia.org/wiki/Hoofdpagina',
+	'img' => $refreshedEn,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+	)
+);
+
 # #brickimedia-rc-nl IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51666';

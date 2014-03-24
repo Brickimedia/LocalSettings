@@ -181,7 +181,9 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'cuusoo' => 'http://cuusoo.brickimedia.org/wiki/',
 		'stories' => 'http://stories.brickimedia.org/wiki/',
 		'dev' => 'http://dev.brickimedia.org/wiki/',
-		'data' => 'http://data.brickimedia.org/wiki/'
+		'data' => 'http://data.brickimedia.org/wiki/',
+		'nl' => 'http://nl.brickimedia.org/wiki/',
+		'answers' => 'http://answers.brickimedia.org/wiki/'
 	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
@@ -202,7 +204,7 @@ $newTalkGlobalDatabases = array(
 		"en" => array(
 				"db" => "en",
 				"url" => "http://en.brickimedia.org/wiki/",
-				"name" => "Brickipedia"
+				"name" => "Brickipedia (en)"
 		),
 		"customs" => array(
 				"db" => "customs",
@@ -233,7 +235,17 @@ $newTalkGlobalDatabases = array(
 				"db" => "data",
 				"url" => "http://data.brickimedia.org/wiki/",
 				"name" => "Brickidata"
-		)
+		),
+		"nl" => array(
+				"db" => "nl",
+				"url" => "http://nl.brickimedia.org/wiki/",
+				"name" => "Brickipedia (nl)"
+		),
+		"answers" => array(
+				"db" => "answers",
+				"url" => "http://answers.brickimedia.org/wiki/",
+				"name" => "Brickimedia Answers"
+		),
 );
 
 // Email settings
@@ -272,7 +284,7 @@ $wgSiteMatrixSites = array(
    	'prefix' => 'm',
    ),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin', 'nl', 'answers' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

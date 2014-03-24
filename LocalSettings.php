@@ -92,7 +92,7 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo', 'data' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo', 'data', 'nl', 'answers' );
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
@@ -149,6 +149,12 @@ switch ( $host[0] ) {
 		$bmProject = "nl";
 		$wgServer = "http://nl.brickimedia.org";
 		$wgDBname = "nl";
+		break;
+	case "answers":
+		$ls_path = "LocalSettings_answers.php";
+		$bmProject = "answers";
+		$wgServer = "http://answers.brickimedia.org";
+		$wgDBname = "answers";
 		break;
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" ) ;

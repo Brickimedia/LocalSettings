@@ -118,3 +118,9 @@ $wgGroupPermissions['sysop']['pagetranslation'] = true;
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51665';
 $wgRC2UDPPrefix = "";
+
+#remove steward - some 1.22 thing
+$wgGroupPermissions['smwadministrator']['smw-admin'] = false;
+unset( $wgGroupPermissions['steward'] );
+unset( $wgGroupPermissions['smwadministrator'] );
+unset( $wgGroupPermissions['staff'] );

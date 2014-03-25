@@ -117,9 +117,8 @@ $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 $wgGroupPermissions['sysop']['skipcaptcha'] = true;
 $wgGroupPermissions['sysop']['globalblock-exempt'] = true;
-$wgGroupPermissions['sysop']['phalanxexempt'] = true;
-$wgAddGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat', 'autopatrolled' );
-$wgRemoveGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat', 'autopatrolled' );
+$wgAddGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
+$wgRemoveGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
 
 #bureaucrat
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
@@ -127,22 +126,20 @@ $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 
-#oversight - contained as a part of checkuser
-$wgGroupPermissions['oversight']['suppressrevision'] = true;
-$wgGroupPermissions['oversight']['hideuser'] = true;
-$wgGroupPermissions['oversight']['suppressionlog'] = true;
-$wgGroupPermissions['oversight']['abusefilter-hidden-log'] = true;
-$wgGroupPermissions['oversight']['abusefilter-hide-log'] = true;
-
-#checkuser
-$wgGroupPermissions['checkuser']['lookupuser'] = true;
+#redundant functionary groups
+$wgGroupPermissions['oversight']['edit'] = true;
 $wgGroupPermissions['checkuser']['checkuser'] = true;
 $wgGroupPermissions['checkuser']['checkuser-log'] = true;
-$wgGroupPermissions['checkuser']['suppressrevision'] = true;
-$wgGroupPermissions['checkuser']['hideuser'] = true;
-$wgGroupPermissions['checkuser']['suppressionlog'] = true;
-$wgGroupPermissions['checkuser']['abusefilter-hidden-log'] = true;
-$wgGroupPermissions['checkuser']['abusefilter-hide-log'] = true;
+
+#functionaries - pending a better name, but checkuser doesn't describe them
+$wgGroupPermissions['functionary']['lookupuser'] = true;
+$wgGroupPermissions['functionary']['checkuser'] = true;
+$wgGroupPermissions['functionary']['checkuser-log'] = true;
+$wgGroupPermissions['functionary']['suppressrevision'] = true;
+$wgGroupPermissions['functionary']['hideuser'] = true;
+$wgGroupPermissions['functionary']['suppressionlog'] = true;
+$wgGroupPermissions['functionary']['abusefilter-hidden-log'] = true;
+$wgGroupPermissions['functionary']['abusefilter-hide-log'] = true;
 
 #global sysadmin
 $wgGroupPermissions['sysadmin']['edit'] = true;
@@ -159,7 +156,8 @@ $wgGroupPermissions['sysadmin']['autopatrol'] = true;
 $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
-$wgGroupPermissions['sysadmin']['phalanxexempt'] = true;
+$wgGroupPermissions['sysadmin']['userrights'] = true;
+
 
 #bot approval group
 $wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
@@ -172,13 +170,7 @@ $wgAddGroups['sysop'][] = 'bag'; //temporary
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;
 $wgImplicitGroups[] = 'emailconfirmed'; //hides from user list
 
-#autopatrolled
-$wgGroupPermissions['autopatrolled']['autopatrol'] = true;
-
 #remove steward - some 1.22 thing
-$wgGroupPermissions['staff']['phalanx'] = false;
-$wgGroupPermissions['staff']['phalanxemailblock'] = false;
-$wgGroupPermissions['staff']['phalanxexempt'] = false;
 $wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
 unset( $wgGroupPermissions['smwadministrator'] );

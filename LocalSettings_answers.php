@@ -8,6 +8,9 @@ $wgPasswordSenderName = "Brickimedia Answers";
 $wgLanguageCode = "en";
 $wgDefaultSkin = "refreshed";
 
+# Monaco skin (this might be a dependency, I'm not sure --George)
+require_once( "$IP/extensions/Monaco/monaco.php" );
+
 # Answers extension
 require_once( "$IP/extensions/Answers/Answers.php" );
 

@@ -16,7 +16,6 @@ $wgGroupPermissions['board']['userrights-interwiki'] = true;
 $wgGroupPermissions['board']['userrights'] = true;
 $wgGroupPermissions['board']['boardedit'] = true;
 $wgGroupPermissions['board']['userrights-global'] = true;
-$wgGroupPermissions['board']['phalanx'] = true;
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-interwiki'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
@@ -27,8 +26,6 @@ $wgGroupPermissions['boardedit']['boardedit'] = true;
 
 $wgGroupPermissions['sysop']['globalblock'] = true;
 $wgGroupPermissions['sysop']['globalunblock'] = true;
-$wgGroupPermissions['sysop']['phalanx'] = true;
-$wgGroupPermissions['sysop']['phalanxemailblock'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify'] = true;
 $wgGroupPermissions['sysop']['abusefilter-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-modify-restricted'] = true;

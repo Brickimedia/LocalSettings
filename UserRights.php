@@ -127,7 +127,6 @@ $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bu
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
 
 #redundant functionary groups
-$wgGroupPermissions['oversight']['edit'] = true;
 $wgGroupPermissions['checkuser']['checkuser'] = true;
 $wgGroupPermissions['checkuser']['checkuser-log'] = true;
 

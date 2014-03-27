@@ -4,7 +4,6 @@ $wgSitename = "Brickimedia Development";
 $wgMetaNamespace = "Development";
 $wgPasswordSender = "dev";
 $wgPasswordSenderName = "Brickimedia Development";
-$bmSmallWiki = true;
 
 $wgLogo = "http://images.brickimedia.org/thumb/b/bd/Brickimedia_Technical.png/160px-Brickimedia_Technical.png";
 $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";

@@ -119,6 +119,7 @@ switch ( $host[0] ) {
 		$bmProject = "dev";
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
+		$bmSmallWiki = true;
 		break;
 	case "admin":
 		$ls_path = "LocalSettings_admin.php";
@@ -149,12 +150,14 @@ switch ( $host[0] ) {
 		$bmProject = "nl";
 		$wgServer = "http://nl.brickimedia.org";
 		$wgDBname = "nl";
+		$bmSmallWiki = true;
 		break;
 	case "answers":
 		$ls_path = "LocalSettings_answers.php";
 		$bmProject = "answers";
 		$wgServer = "http://answers.brickimedia.org";
 		$wgDBname = "answers";
+		$bmSmallWiki = true;
 		break;
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" ) ;

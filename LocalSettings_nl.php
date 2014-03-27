@@ -7,6 +7,7 @@ $wgPasswordSender = "brickipedia";
 $wgPasswordSenderName = "Brickipedia";
 $wgLanguageCode = "nl";
 $wgDefaultSkin = "refreshed";
+$bmSmallWiki = true;
 
 # SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");

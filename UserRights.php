@@ -174,3 +174,8 @@ $wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
 unset( $wgGroupPermissions['smwadministrator'] );
 unset( $wgGroupPermissions['staff'] );
+
+#small-wiki administrators
+if ( $bmSmallWiki ) {
+	$wgGroupPermissions['swsysop'] = $wgGroupPermissions['sysop'];
+}

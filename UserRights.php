@@ -139,6 +139,7 @@ $wgGroupPermissions['functionary']['hideuser'] = true;
 $wgGroupPermissions['functionary']['suppressionlog'] = true;
 $wgGroupPermissions['functionary']['abusefilter-hidden-log'] = true;
 $wgGroupPermissions['functionary']['abusefilter-hide-log'] = true;
+$wgGroupPermissions['functionary']['viewpmlog'] = true;
 
 #global sysadmin
 $wgGroupPermissions['sysadmin']['edit'] = true;

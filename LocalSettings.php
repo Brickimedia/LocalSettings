@@ -93,6 +93,7 @@ if( $wgCommandLineMode ) {
 }
 
 $bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo', 'data', 'nl', 'answers' );
+$bmSmallWiki = false; // overridden when needed
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {

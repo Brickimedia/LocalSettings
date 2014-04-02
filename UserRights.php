@@ -123,8 +123,8 @@ $wgRemoveGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromcha
 #bureaucrat
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
-$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod' );
+$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod', 'bag' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'chatmod', 'bag' );
 
 #redundant functionary groups
 $wgGroupPermissions['checkuser']['checkuser'] = true;
@@ -164,7 +164,6 @@ $wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
 $wgGroupPermisions['bag']['read'] = true; //establish the group
 $wgAddGroups['bag'] = array( 'bot', 'bag' );
 $wgRemoveGroups['bag'] = array( 'bot', 'bag' );
-$wgAddGroups['sysop'][] = 'bag'; //temporary
 
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;

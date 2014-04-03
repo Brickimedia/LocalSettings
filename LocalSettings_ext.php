@@ -293,6 +293,8 @@ $wgThanksConfirmationRequired = true;
 // BetaFeatures
 require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
 
+// RenameUser
+require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 
 // User rights
 require_once( "$IP/UserRights.php" );

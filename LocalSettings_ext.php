@@ -44,9 +44,6 @@ require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 	$wgDefaultUserOptions['wikilove-enabled'] = 1;
 
-// User rights
-require_once( "$IP/UserRights.php" );
-
 // Uploads
 $wgEnableUploads = true;
 
@@ -295,3 +292,7 @@ $wgThanksConfirmationRequired = true;
 
 // BetaFeatures
 require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
+
+
+// User rights
+require_once( "$IP/UserRights.php" );

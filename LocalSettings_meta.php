@@ -121,3 +121,6 @@ $wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
 unset( $wgGroupPermissions['smwadministrator'] );
 unset( $wgGroupPermissions['staff'] );
+
+# renameuser
+require_once( "$IP/extensions/Renameuser/Renameuser.php" );

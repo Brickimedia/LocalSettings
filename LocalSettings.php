@@ -210,12 +210,12 @@ function showRefreshedAdvert( &$footerExtra ) {
 $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
 $refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
-$refreshedMeta = "<img width='144' src='$refreshedImagePath/brickimedia.svg' alt='' />";
-$refreshedEn = "<img width='138' src='$refreshedImagePath/brickipedia.svg' alt='' />";
-$refreshedCustoms = "<img width='100' src='$refreshedImagePath/customs.svg' alt='' />";
-$refreshedStories = "<img width='144' src='$refreshedImagePath/stories.svg' alt='' />";
-$refreshedCuusoo = "<img width='144' src='$refreshedImagePath/cuusoo.svg' alt='' />";
-$refreshedAdmin = "<img width='81' src='$refreshedImagePath/admin.svg' alt='' />";
+$refreshedMeta = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickimedia.svg\" src=\"$refreshedImagePath/brickimedia.png\" width='144' height='30'/></svg>";
+$refreshedEn = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickipedia.svg\" src=\"$refreshedImagePath/brickipedia.png\" width='144' height='30'/></svg>";
+$refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/customs.svg\" src=\"$refreshedImagePath/customs.png\" width='144' height='30'/></svg>";
+$refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
+$refreshedCuusoo = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/cuusoo.svg\" src=\"$refreshedImagePath/cuusoo.png\" width='144' height='30'/></svg>";
+$refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 
 require_once( "$IP/skins/Custard/Custard.php" );

@@ -97,7 +97,3 @@ $wgRefreshedHeader = array(
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51663';
 $wgRC2UDPPrefix = "";
-
-require_once ( "$IP/extensions/UniversalLanguageSelector/UniversalLanguageSelector.php" );
-include_once("$IP/extensions/Translate/Translate.php");
-$wgGroupPermissions['translator']['translate'] = true;

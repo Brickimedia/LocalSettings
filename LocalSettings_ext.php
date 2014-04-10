@@ -293,6 +293,9 @@ $wgThanksConfirmationRequired = true;
 // BetaFeatures
 require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
 
+// MultimediaViewer
+require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
+
 // RenameUser
 require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 

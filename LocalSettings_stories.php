@@ -18,8 +18,6 @@ $wgDefaultSkin = 'refreshed';
 $wgSkipSkins = array("lia", "liamobile", "standard");
 
 #SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 2; // Points awarded for leaving a comment
@@ -41,22 +39,22 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-        'Learner' => 0,
-        'Bookkeeper' => 1000,
-        'Wordsmith' => 1100,
-        'Reader' => 1250,
-        'Skimmer' => 1500,
-        'Scribbler' => 2000,
-        'Scribe' => 3500,
-        'Poet' => 6000,
-        'Dramatist' => 8500,
-        'Editor' => 11000,
-        'Essayist' => 13500,
-        'Journalist' => 16000,
-        'Author' => 18500,
-        'Novelist' => 21000,
-        'Critic' => 26000,
-        'Master Writer' => 31000,
+	'Learner' => 0,
+	'Bookkeeper' => 1000,
+	'Wordsmith' => 1100,
+	'Reader' => 1250,
+	'Skimmer' => 1500,
+	'Scribbler' => 2000,
+	'Scribe' => 3500,
+	'Poet' => 6000,
+	'Dramatist' => 8500,
+	'Editor' => 11000,
+	'Essayist' => 13500,
+	'Journalist' => 16000,
+	'Author' => 18500,
+	'Novelist' => 21000,
+	'Critic' => 26000,
+	'Master Writer' => 31000,
 );
 $wgUserProfileDisplay['stats'] = true;
 
@@ -67,7 +65,7 @@ define("NS_PORTAL_TALK", 301);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
 $wgExtraNamespaces[NS_PORTAL_TALK] = "Portal_talk";
 
-$wgNamespacesWithSubpages[NS_PORTAL] = true;            //subpages enabled for the review namespace
+$wgNamespacesWithSubpages[NS_PORTAL] = true; //subpages enabled for the review namespace
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['edit'] = true;

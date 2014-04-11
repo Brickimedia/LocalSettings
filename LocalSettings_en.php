@@ -83,8 +83,6 @@ $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
 
 #SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 1; // Points awarded for leaving a comment

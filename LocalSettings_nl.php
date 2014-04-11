@@ -9,8 +9,6 @@ $wgLanguageCode = "nl";
 $wgDefaultSkin = "refreshed";
 
 # SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 1; // Points awarded for leaving a comment
@@ -26,19 +24,19 @@ $wgNamespacesForEditPoints = array( 0, ); // Array of namespaces that can earn y
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 // TODO: Make these Dutch
 $wgUserLevels = array(
-        'Newcomer' => 0,
-        'Beginner' => 500,
-        'Novice' => 1000,
-        'Amateur' => 1500,
-        'Thinking With Bricks' => 2000,
-        'Bricktastic' => 2500,
-        'Building Bigger' => 5000,
-        'Brick Master' => 7500,
-        'Master Builder' => 10000,
-        'LEGO Wizard' => 12500,
-        'Outstanding Brickipedian' => 15000,
-        'Honorable Brickipedian' => 20000,
-        'Legendary Brickipedian' => 25000,
+	'Newcomer' => 0,
+	'Beginner' => 500,
+	'Novice' => 1000,
+	'Amateur' => 1500,
+	'Thinking With Bricks' => 2000,
+	'Bricktastic' => 2500,
+	'Building Bigger' => 5000,
+	'Brick Master' => 7500,
+	'Master Builder' => 10000,
+	'LEGO Wizard' => 12500,
+	'Outstanding Brickipedian' => 15000,
+	'Honorable Brickipedian' => 20000,
+	'Legendary Brickipedian' => 25000,
 );
 
 # Refreshed

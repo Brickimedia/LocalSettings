@@ -1,22 +1,18 @@
 <?php
 
-$wgSitename      = "LEGO CUUSOO Wiki";
-$wgMetaNamespace = "LEGO_CUUSOO_Wiki";
-$wgNamespaceAliases['Cuusoo_Wiki'] = NS_PROJECT;
-$wgNamespaceAliases['CW'] = NS_PROJECT;
-$wgPasswordSender = "cuusoo";
-$wgPasswordSenderName = "LEGO CUUSOO Wiki";
+$wgSitename = "Brickibooks";
+$wgMetaNamespace = "Brickibooks";
+$wgNamespaceAliases['BB'] = NS_PROJECT;
+$wgPasswordSender = "brickibooks";
+$wgPasswordSenderName = "Brickibooks";
 
-$wgLogo = "http://images.brickimedia.org/3/37/CUUSOO_Wiki_Logo.png";
-$wgFavicon = "http://images.brickimedia.org/favicons/cuusoo.ico";
+$wgLogo = "";
+$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
-
-$wgDefaultSkin = 'refreshed';
+$wgDefaultSkin = "refreshed";
 
 #SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 1; // Points awarded for leaving a comment
@@ -35,7 +31,7 @@ $wgUserStatsPointValues['user_image'] = 5; // Points awarded for adding your fir
 $wgUserStatsPointValues['poll_vote'] = 0; // Points awarded for taking a poll
 $wgUserStatsPointValues['quiz_points'] = 0; // Points awarded for answering a quiz question
 $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a quiz question
-$wgNamespacesForEditPoints = array( 0, ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
+$wgNamespacesForEditPoints = array( 0, 112, 114, 118 ); // Array of namespaces that can earn you points.
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
         'Newcomer' => 0,
@@ -48,33 +44,44 @@ $wgUserLevels = array(
         'Brick Master' => 7500,
         'Master Builder' => 10000,
         'LEGO Wizard' => 12500,
-        'Outstanding Brickimedian' => 15000,
-        'Honorable Brickimedian' => 20000,
-        'Legendary Brickimedian' => 25000,
+        'Outstanding Brickipedian' => 15000,
+        'Honorable Brickipedian' => 20000,
+        'Legendary Brickipedian' => 25000,
 );
 $wgUserProfileDisplay['stats'] = true;
 
-#global file descriptors
-require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
+global $bmMobile;
+if( !$bmMobile ){
+	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
+	require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
 
-#Verbatim tag
-require_once("$IP/extensions/Verbatim/verbatim.php");
-
+	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
+	$wgArticleFeedbackDashboard = true;
+}
 
 # Refreshed
 $wgRefreshedHeader = array(
-	'url' => 'http://cuusoo.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedCuusoo,
+	'url' => 'http://books.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedBooks,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
-		'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
+		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
 	)
 );
 
-# #brickimedia-rc-cuusoo IRC
+# #brickimedia-rc-books IRC
 $wgRC2UDPAddress = '127.0.0.1';
-$wgRC2UDPPort = '51661';
+$wgRC2UDPPort = '51669';
 $wgRC2UDPPrefix = "";
+
+# Parents link in footer
+$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfParentsLink';
+function lfParentsLink( $sk, &$tpl ) {
+	$tpl->set( 'parents', $sk->footerLink( 'parents', 'parentspage' ) );
+	$tpl->data['footerlinks']['places'][] = 'parents';
+	return true;
+}
+$wgExtensionMessagesFiles['Parents'] = dirname( __FILE__ ) . '/extensions/i18n/Parents.i18n.php';

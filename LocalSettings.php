@@ -160,6 +160,13 @@ switch ( $host[0] ) {
 		$wgDBname = "answers";
 		$bmSmallWiki = true;
 		break;
+	case "books":
+		$ls_path = "LocalSettings_books.php";
+		$bmProject = "books";
+		$wgServer = "http://books.brickimedia.org";
+		$wgDBname = "books";
+		$bmSmallWiki = true;
+		break;
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" ) ;
 		exit(0);
@@ -217,6 +224,7 @@ $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshed
 $refreshedCuusoo = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/cuusoo.svg\" src=\"$refreshedImagePath/cuusoo.png\" width='144' height='30'/></svg>";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
+$refreshedBooks = "<img width='165' src='$refreshedImagePath/books.svg' alt='' />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

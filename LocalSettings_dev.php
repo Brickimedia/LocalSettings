@@ -90,6 +90,7 @@ $wgRefreshedHeader = array(
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
 		'http://cuusoo.brickimedia.org/wiki/Main_Page' => $refreshedCuusoo,
+		'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
 	)
 );
 

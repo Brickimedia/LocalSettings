@@ -179,7 +179,8 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'dev' => 'http://dev.brickimedia.org/wiki/',
 		'data' => 'http://data.brickimedia.org/wiki/',
 		'nl' => 'http://nl.brickimedia.org/wiki/',
-		'answers' => 'http://answers.brickimedia.org/wiki/'
+		'answers' => 'http://answers.brickimedia.org/wiki/',
+		'books' => 'http://books.brickimedia.org/wiki/'
 	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
@@ -242,6 +243,11 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://answers.brickimedia.org/wiki/",
 				"name" => "Brickimedia Answers"
 		),
+		"books" => array(
+				"db" => "books",
+				"url" => "http://books.brickimedia.org/wiki/",
+				"name" => "Brickibooks"
+		),
 );
 
 // Email settings
@@ -280,7 +286,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin', 'nl', 'answers' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin', 'nl', 'answers', 'books' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

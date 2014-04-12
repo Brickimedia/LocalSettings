@@ -19,8 +19,6 @@ require_once("$IP/extensions/WikiForum/WikiForum.php");
 #$wgAuth = new MediaWikiAuthPlugin();
 
 # SocialProfile
-require_once("$IP/extensions/SocialProfile/SocialProfile.php");
-require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 1; // Points awarded for leaving a comment
@@ -42,7 +40,7 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-        'Sysop' => 0,
+	'Sysop' => 0,
 );
 $wgUserProfileDisplay['stats'] = true;
 

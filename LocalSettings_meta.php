@@ -47,9 +47,6 @@ $wgUploadSizeWarning = 8388608;
 $wgMaxUploadSize = 8388608;
 
 #SocialProfile
-require_once( "$IP/extensions/SocialProfile/SocialProfile.php" );
-//$wgGroupPermissions['giftadmin']['managegifts'] = true;
-require_once( "$IP/extensions/SocialProfile/UserStats/EditCount.php" ); // Necessary edit counter
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
 $wgUserStatsPointValues['comment'] = 1; // Points awarded for leaving a comment
@@ -71,7 +68,7 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, 4, 12, 110, 1198 ); // Array of namespaces that can earn you points. Use numerical keys. 0 is mainspace, 4 is project
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-        'Brickimedian' => 0,
+	'Brickimedian' => 0,
 );
 $wgUserProfileDisplay['stats'] = true;
 

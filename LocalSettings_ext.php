@@ -44,6 +44,12 @@ require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 	$wgDefaultUserOptions['wikilove-enabled'] = 1;
 
+// SocialProfile. More details in individual LSs
+require_once("$IP/extensions/SocialProfile/SocialProfile.php");
+require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
+unset( $wgSpecialPages['GiveGift'] ); // remove Special:GiveGift
+unset( $wgSpecialPages['ViewGifts'] ); // remove Special:ViewGifts
+
 // Uploads
 $wgEnableUploads = true;
 

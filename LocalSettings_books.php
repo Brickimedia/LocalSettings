@@ -76,12 +76,3 @@ $wgRefreshedHeader = array(
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51669';
 $wgRC2UDPPrefix = "";
-
-# Parents link in footer
-$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfParentsLink';
-function lfParentsLink( $sk, &$tpl ) {
-	$tpl->set( 'parents', $sk->footerLink( 'parents', 'parentspage' ) );
-	$tpl->data['footerlinks']['places'][] = 'parents';
-	return true;
-}
-$wgExtensionMessagesFiles['Parents'] = dirname( __FILE__ ) . '/extensions/i18n/Parents.i18n.php';

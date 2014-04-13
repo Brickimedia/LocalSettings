@@ -12,6 +12,8 @@ $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 $wgLanguageCode = "en";
 $wgDefaultSkin = "refreshed";
 
+$wgNamespacesWithSubpages[NS_MAIN] = true;
+
 #SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article

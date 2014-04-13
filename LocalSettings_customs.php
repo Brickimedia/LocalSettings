@@ -22,7 +22,7 @@ $wgAddGroups['reviewer'][] = 'reviewer'; //Allow CQM users to add other members 
 $wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow CQM users to remove other members to that group
 $wgAddGroups['sysop'][] = 'reviewer';
 $wgRemoveGroups['sysop'][] ='reviewer';
-$wgGroupPermissions['sysop']['changeRating'] = true;
+$wgGroupPermissions['sysop']['change-rating'] = true;
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );

@@ -135,6 +135,7 @@ switch ( $host[0] ) {
 		$wgDBname = "stories";
 		break;
 	case "cuusoo":
+	case "ideas":
 		$ls_path = "LocalSettings_cuusoo.php";
 		$bmProject = "cuusoo";
 		$wgServer = "http://cuusoo.brickimedia.org";

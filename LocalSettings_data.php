@@ -12,7 +12,7 @@ $wgNamespaceAliases = array(
 );
 
 # Wikibase
-//require_once( "$IP/extensions/Wikibase/repo/Wikibase.php" );
+require_once( "$IP/extensions/Wikibase/repo/Wikibase.php" );
 $baseNs = 100;
 // Define the namespace indexes
 define( 'WB_NS_PROPERTY', $baseNs + 2 );
@@ -21,8 +21,8 @@ define( 'WB_NS_PROPERTY_TALK', $baseNs + 3 );
 $wgExtraNamespaces[WB_NS_PROPERTY] = 'Property';
 $wgExtraNamespaces[WB_NS_PROPERTY_TALK] = 'Property_talk';
 // Assigning the correct content models to the namespaces
-//$wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_ITEM] = NS_MAIN;
-//$wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_PROPERTY] = WB_NS_PROPERTY;
+$wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_ITEM] = NS_MAIN;
+$wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_PROPERTY] = WB_NS_PROPERTY;
 
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit

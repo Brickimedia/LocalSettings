@@ -13,6 +13,7 @@ $wgNamespaceAliases = array(
 
 # Wikibase
 require_once( "$IP/extensions/Wikibase/repo/Wikibase.php" );
+require_once( "$IP/extensions/WikibaseDataModel/WikibaseDataModel.php" );
 $baseNs = 100;
 // Define the namespace indexes
 define( 'WB_NS_PROPERTY', $baseNs + 2 );

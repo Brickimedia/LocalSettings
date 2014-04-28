@@ -87,16 +87,16 @@ $wgNamespacePermissionLockdown[NS_STORIES]['move'] = array( 'stories', 'global' 
 $wgNamespacePermissionLockdown[NS_STORIES]['delete'] = array( 'stories', 'global' );
 
 $wgNamespaceProtection[NS_IDEAS] = array( 'editideas' );
-$wgNamespacePermissionLockdown[NS_IDEAS]['read'] = array( 'cuusoo', 'ideas', 'global' );
-$wgNamespacePermissionLockdown[NS_IDEAS]['move'] = array( 'cuusoo', 'ideas', 'global' );
-$wgNamespacePermissionLockdown[NS_IDEAS]['delete'] = array( 'cuusoo', 'ideas', 'global' );
+$wgNamespacePermissionLockdown[NS_IDEAS]['read'] = array( 'ideas', 'global' );
+$wgNamespacePermissionLockdown[NS_IDEAS]['move'] = array( 'ideas', 'global' );
+$wgNamespacePermissionLockdown[NS_IDEAS]['delete'] = array( 'ideas', 'global' );
 
 $wgNamespaceProtection[NS_LMBW] = array( 'editlmbw' );
 $wgNamespacePermissionLockdown[NS_LMBW]['read'] = array( 'lmbw', 'global' );
 $wgNamespacePermissionLockdown[NS_LMBW]['move'] = array( 'lmbw', 'global' );
 $wgNamespacePermissionLockdown[NS_LMBW]['delete'] = array( 'lmbw', 'global' );
 
-$all = array( 'sysop', 'en', 'customs', 'stories', 'cuusoo', 'ideas', 'lmbw', 'global');
+$all = array( 'sysop', 'en', 'customs', 'stories', 'ideas', 'lmbw', 'global');
 $wgNamespacePermissionLockdown[NS_MAIN]['edit'] = $all;
 $wgNamespacePermissionLockdown[NS_MAIN]['read'] = $all;
 $wgNamespacePermissionLockdown[NS_MAIN]['move'] = $all;
@@ -114,13 +114,11 @@ $wgNamespacePermissionLockdown[NS_PROJECT]['delete'] = $all;
 $wgGroupPermissions['brickipedia']['editen'] = true;
 $wgGroupPermissions['customs']['editcustoms'] = true;
 $wgGroupPermissions['stories']['editstories'] = true;
-$wgGroupPermissions['cuusoo']['editideas'] = true;
 $wgGroupPermissions['ideas']['editideas'] = true;
 $wgGroupPermissions['lmbw']['editlmbw'] = true;
 $wgGroupPermissions['global']['editen'] = true;
 $wgGroupPermissions['global']['editcustoms'] = true;
 $wgGroupPermissions['global']['editstories'] = true;
-$wgGroupPermissions['global']['editcuusoo'] = true;
 $wgGroupPermissions['global']['editideas'] = true;
 $wgGroupPermissions['global']['editlmbw'] = true;
 

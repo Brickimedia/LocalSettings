@@ -141,7 +141,7 @@ switch ( $host[0] ) {
 		$wgDBname = "cuusoo";
 		break;
 	case "ideas":
-		header( "Location: http://cuusoo.brickimedia.org/{$_SERVER['SCRIPT_URL']}" ) ;
+		header( "Location: http://cuusoo.brickimedia.org/{$_SERVER['REQUEST_URI']}" ) ;
 		break;
 	case "data":
 		$ls_path = "LocalSettings_data.php";

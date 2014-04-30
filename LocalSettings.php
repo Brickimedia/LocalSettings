@@ -138,7 +138,7 @@ switch ( $host[0] ) {
 		$ls_path = "LocalSettings_ideas.php";
 		$bmProject = "ideas";
 		$wgServer = "http://ideas.brickimedia.org";
-		$wgDBname = "cuusoo";
+		$wgDBname = "ideas";
 		break;
 	case "cuusoo":
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" ) ;

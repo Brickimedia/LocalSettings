@@ -215,7 +215,7 @@ $newTalkGlobalDatabases = array(
 				"name" => "Brickimedia Customs"
 		),
 		"ideas" => array(
-				"db" => "cuusoo",
+				"db" => "ideas",
 				"url" => "http://ideas.brickimedia.org/wiki/",
 				"name" => "LEGO Ideas Wiki"
 		),

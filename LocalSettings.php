@@ -92,7 +92,7 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'cuusoo', 'data', 'nl', 'answers' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'nl', 'answers' );
 $bmSmallWiki = false; // overridden when needed
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
@@ -134,14 +134,14 @@ switch ( $host[0] ) {
 		$wgServer = "http://stories.brickimedia.org";
 		$wgDBname = "stories";
 		break;
-	case "cuusoo":
-		$ls_path = "LocalSettings_cuusoo.php";
-		$bmProject = "cuusoo";
-		$wgServer = "http://cuusoo.brickimedia.org";
+	case "ideas":
+		$ls_path = "LocalSettings_ideas.php";
+		$bmProject = "ideas";
+		$wgServer = "http://ideas.brickimedia.org";
 		$wgDBname = "cuusoo";
 		break;
-	case "ideas":
-		header( "Location: http://cuusoo.brickimedia.org{$_SERVER['REQUEST_URI']}" ) ;
+	case "cuusoo":
+		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" ) ;
 		break;
 	case "data":
 		$ls_path = "LocalSettings_data.php";
@@ -224,7 +224,7 @@ $refreshedMeta = "<svg width='144' height='30'><image xlink:href=\"$refreshedIma
 $refreshedEn = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickipedia.svg\" src=\"$refreshedImagePath/brickipedia.png\" width='144' height='30'/></svg>";
 $refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/customs.svg\" src=\"$refreshedImagePath/customs.png\" width='144' height='30'/></svg>";
 $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
-$refreshedCuusoo = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/cuusoo.svg\" src=\"$refreshedImagePath/cuusoo.png\" width='144' height='30'/></svg>";
+$refreshedIdeas = "<img width='150' src='$refreshedImagePath/ideas.svg' alt='' />";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 $refreshedBooks = "<img width='165' src='$refreshedImagePath/books.svg' alt='' />";

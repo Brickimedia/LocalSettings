@@ -1,14 +1,13 @@
 <?php
 
-$wgSitename      = "LEGO CUUSOO Wiki";
-$wgMetaNamespace = "LEGO_CUUSOO_Wiki";
-$wgNamespaceAliases['Cuusoo_Wiki'] = NS_PROJECT;
-$wgNamespaceAliases['CW'] = NS_PROJECT;
-$wgPasswordSender = "cuusoo";
-$wgPasswordSenderName = "LEGO CUUSOO Wiki";
+$wgSitename      = "LEGO Ideas Wiki";
+$wgMetaNamespace = "LEGO_Ideas_Wiki";
+$wgNamespaceAliases['IW'] = NS_PROJECT;
+$wgPasswordSender = "ideas";
+$wgPasswordSenderName = "LEGO Ideas Wiki";
 
-$wgLogo = "http://images.brickimedia.org/3/37/CUUSOO_Wiki_Logo.png";
-$wgFavicon = "http://images.brickimedia.org/favicons/cuusoo.ico";
+$wgLogo = "http://images.brickimedia.org/5/5a/LEGO_Ideas_Wiki_logo.svg";
+$wgFavicon = "http://images.brickimedia.org/favicons/ideas.ico";
 
 $wgLanguageCode = "en";
 
@@ -61,8 +60,8 @@ require_once("$IP/extensions/Verbatim/verbatim.php");
 
 # Refreshed
 $wgRefreshedHeader = array(
-	'url' => 'http://cuusoo.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedCuusoo,
+	'url' => 'http://ideas.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedIdeas,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,

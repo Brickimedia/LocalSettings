@@ -180,7 +180,7 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'meta' => 'http://meta.brickimedia.org/wiki/',
 		'en' => 'http://en.brickimedia.org/wiki/',
 		'customs' => 'http://customs.brickimedia.org/wiki/',
-		'cuusoo' => 'http://cuusoo.brickimedia.org/wiki/',
+		'ideas' => 'http://ideas.brickimedia.org/wiki/',
 		'stories' => 'http://stories.brickimedia.org/wiki/',
 		'dev' => 'http://dev.brickimedia.org/wiki/',
 		'data' => 'http://data.brickimedia.org/wiki/',
@@ -214,10 +214,10 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://customs.brickimedia.org/wiki/",
 				"name" => "Brickimedia Customs"
 		),
-		"cuusoo" => array(
+		"ideas" => array(
 				"db" => "cuusoo",
-				"url" => "http://cuusoo.brickimedia.org/wiki/",
-				"name" => "LEGO CUUSOO Wiki"
+				"url" => "http://ideas.brickimedia.org/wiki/",
+				"name" => "LEGO Ideas Wiki"
 		),
 		"stories" => array(
 				"db" => "stories",
@@ -281,10 +281,10 @@ $wgSiteMatrixSites = array(
 		'host' => 'stories.brickimedia.org',
 		'prefix' => 's',
 	),
-	'cuusoo' => array(
-		'name' => 'LEGO CUUSOO Wiki',
-		'host' => 'cuusoo.brickimedia.org',
-		'prefix' => 'cw',
+	'ideas' => array(
+		'name' => 'LEGO Ideas Wiki',
+		'host' => 'ideas.brickimedia.org',
+		'prefix' => 'i',
 	),
 	'meta' => array(
 		'name' => 'Meta',

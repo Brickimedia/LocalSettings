@@ -292,7 +292,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'cuusoo', 'meta', 'dev', 'data', 'admin', 'nl', 'answers', 'books' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'nl', 'answers', 'books' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

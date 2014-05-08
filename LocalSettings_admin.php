@@ -10,9 +10,6 @@ $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 
-//forums
-require_once("$IP/extensions/WikiForum/WikiForum.php");
-
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5;
 $wgUserStatsPointValues['vote'] = 1;

@@ -184,7 +184,6 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'stories' => 'http://stories.brickimedia.org/wiki/',
 		'dev' => 'http://dev.brickimedia.org/wiki/',
 		'data' => 'http://data.brickimedia.org/wiki/',
-		'nl' => 'http://nl.brickimedia.org/wiki/',
 		'answers' => 'http://answers.brickimedia.org/wiki/',
 		'books' => 'http://books.brickimedia.org/wiki/'
 	);
@@ -239,11 +238,6 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://data.brickimedia.org/wiki/",
 				"name" => "Brickidata"
 		),
-		"nl" => array(
-				"db" => "nl",
-				"url" => "http://nl.brickimedia.org/wiki/",
-				"name" => "Brickipedia (nl)"
-		),
 		"answers" => array(
 				"db" => "answers",
 				"url" => "http://answers.brickimedia.org/wiki/",
@@ -292,7 +286,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'nl', 'answers', 'books' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'answers', 'books' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

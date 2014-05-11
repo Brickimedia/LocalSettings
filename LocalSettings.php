@@ -92,7 +92,7 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'nl', 'answers' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers' );
 $bmSmallWiki = false; // overridden when needed
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
@@ -148,13 +148,6 @@ switch ( $host[0] ) {
 		$bmProject = "data";
 		$wgServer = "http://data.brickimedia.org";
 		$wgDBname = "data";
-		break;
-	case "nl":
-		$ls_path = "LocalSettings_nl.php";
-		$bmProject = "nl";
-		$wgServer = "http://nl.brickimedia.org";
-		$wgDBname = "nl";
-		$bmSmallWiki = true;
 		break;
 	case "answers":
 		$ls_path = "LocalSettings_answers.php";

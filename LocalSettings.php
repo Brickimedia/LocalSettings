@@ -217,10 +217,10 @@ $refreshedMeta = "<svg width='144' height='30'><image xlink:href=\"$refreshedIma
 $refreshedEn = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickipedia.svg\" src=\"$refreshedImagePath/brickipedia.png\" width='144' height='30'/></svg>";
 $refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/customs.svg\" src=\"$refreshedImagePath/customs.png\" width='144' height='30'/></svg>";
 $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
-$refreshedIdeas = "<img width='150' src='$refreshedImagePath/ideas.svg' alt='' />";
+$refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedImagePath/ideas.svg\" src=\"$refreshedImagePath/ideas.png\" width='150' height='20' /></svg>";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
-$refreshedBooks = "<img width='165' src='$refreshedImagePath/books.svg' alt='' />";
+$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

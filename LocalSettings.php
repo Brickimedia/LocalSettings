@@ -230,6 +230,7 @@ $refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedIm
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 $refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
+$refreshedLmo = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

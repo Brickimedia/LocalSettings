@@ -169,7 +169,7 @@ switch ( $host[0] ) {
 		$ls_path = "LocalSettings_lmo.php";
 		$bmProject = "lmo";
 		$wgServer = "http://lmo.brickimedia.org";
-		$wgDBname = "lmo";
+		$wgDBname = "minifigures";
 		$bmSmallWiki = true;
 		break;
 	default:

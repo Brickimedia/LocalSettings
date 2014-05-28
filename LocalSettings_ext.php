@@ -185,7 +185,8 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'dev' => 'http://dev.brickimedia.org/wiki/',
 		'data' => 'http://data.brickimedia.org/wiki/',
 		'answers' => 'http://answers.brickimedia.org/wiki/',
-		'books' => 'http://books.brickimedia.org/wiki/'
+		'books' => 'http://books.brickimedia.org/wiki/',
+		'minifigures' => 'http://lmo.brickimedia.org/wiki/'
 	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
@@ -249,7 +250,7 @@ $newTalkGlobalDatabases = array(
 				"name" => "Brickibooks"
 		),
 		"lmo" => array(
-				"db" => "lmo",
+				"db" => "minifigures",
 				"url" => "http://lmo.brickimedia.org/wiki/"
 				"name" => "LEGO Minifigures Online Wiki"
 		),

@@ -164,13 +164,17 @@ switch ( $host[0] ) {
 		$wgDBname = "books";
 		$bmSmallWiki = true;
 		break;
-	case "legominifiguresonline":
 	case "lmo":
 		$ls_path = "LocalSettings_lmo.php";
 		$bmProject = "lmo";
 		$wgServer = "http://lmo.brickimedia.org";
 		$wgDBname = "minifigures";
 		$bmSmallWiki = true;
+		break;
+	case "legominifiguresonline":
+	case "minifiguresonline":
+		header( "Location: http://lmo.brickimedia.org{$_SERVER['REQUEST_URI']}" );
+		exit( 0 );
 		break;
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" );

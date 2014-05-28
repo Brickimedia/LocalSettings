@@ -251,7 +251,7 @@ $newTalkGlobalDatabases = array(
 		),
 		"lmo" => array(
 				"db" => "minifigures",
-				"url" => "http://lmo.brickimedia.org/wiki/"
+				"url" => "http://lmo.brickimedia.org/wiki/",
 				"name" => "LEGO Minifigures Online Wiki"
 		),
 );

@@ -141,7 +141,8 @@ switch ( $host[0] ) {
 		$wgDBname = "ideas";
 		break;
 	case "cuusoo":
-		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" ) ;
+		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );
+		exit( 0 ); // just to make sure nothing else happens
 		break;
 	case "data":
 		$ls_path = "LocalSettings_data.php";
@@ -164,13 +165,13 @@ switch ( $host[0] ) {
 		$bmSmallWiki = true;
 		break;
 	default:
-		header( "Location: http://www.brickimedia.org/notfound.html" ) ;
-		exit(0);
+		header( "Location: http://www.brickimedia.org/notfound.html" );
+		exit( 0 );
 		break;
 }
 
 //GLOBAL TABLES
-$wgSharedDB     = 'shared';
+$wgSharedDB = 'shared';
 $wgSharedTables = array(
 	'user',
 	'global_user_groups',

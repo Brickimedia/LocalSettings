@@ -165,7 +165,7 @@ switch ( $host[0] ) {
 		$bmSmallWiki = true;
 		break;
 	case "legominifiguresonline":
-	case: "lmo":
+	case "lmo":
 		$ls_path = "LocalSettings_lmo.php";
 		$bmProject = "lmo";
 		$wgServer = "http://lmo.brickimedia.org";

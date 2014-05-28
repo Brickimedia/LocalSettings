@@ -38,6 +38,19 @@ $wgUserLevels = array(
 	'Legendary Brickipedian' => 25000,
 );
 
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://lmo.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedLmo,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
+		'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
+	)
+);
+
 # #brickimedia-rc-lmo IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51666';

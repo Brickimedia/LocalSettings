@@ -92,7 +92,7 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers', 'lmo' );
 $bmSmallWiki = false; // overridden when needed
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
@@ -162,6 +162,14 @@ switch ( $host[0] ) {
 		$bmProject = "books";
 		$wgServer = "http://books.brickimedia.org";
 		$wgDBname = "books";
+		$bmSmallWiki = true;
+		break;
+	case "legominifiguresonline":
+	case: "lmo":
+		$ls_path = "LocalSettings_lmo.php";
+		$bmProject = "lmo";
+		$wgServer = "http://lmo.brickimedia.org";
+		$wgDBname = "lmo";
 		$bmSmallWiki = true;
 		break;
 	default:

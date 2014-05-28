@@ -248,6 +248,11 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://books.brickimedia.org/wiki/",
 				"name" => "Brickibooks"
 		),
+		"lmo" => array(
+				"db" => "lmo",
+				"url" => "http://lmo.brickimedia.org/wiki/"
+				"name" => "LEGO Minifigures Online Wiki"
+		),
 );
 
 // Email settings
@@ -286,7 +291,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'answers', 'books' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'answers', 'books', 'lmo' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

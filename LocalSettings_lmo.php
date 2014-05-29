@@ -44,6 +44,7 @@ $wgRefreshedHeader = array(
 	'img' => $refreshedLmo,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
 		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,

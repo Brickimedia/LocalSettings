@@ -7,6 +7,7 @@ $wgPasswordSender = "lmo";
 $wgPasswordSenderName = "LEGO Minifigures Online Wiki";
 $wgLanguageCode = "en";
 $wgDefaultSkin = "refreshed";
+$wgFavicon = "http://images.brickimedia.org/favicons/lmo.ico";
 
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit

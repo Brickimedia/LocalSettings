@@ -9,6 +9,8 @@ $wgLanguageCode = "en";
 $wgDefaultSkin = "refreshed";
 $wgFavicon = "http://images.brickimedia.org/favicons/lmo.ico";
 
+$wgLogo = "http://images.brickimedia.org/d/d3/LmoWiki-DS.png";
+
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article

@@ -57,5 +57,5 @@ $wgRefreshedHeader = array(
 
 # #brickimedia-rc-minifigures IRC
 $wgRC2UDPAddress = '127.0.0.1';
-$wgRC2UDPPort = '51666';
+$wgRC2UDPPort = '51670';
 $wgRC2UDPPrefix = "";

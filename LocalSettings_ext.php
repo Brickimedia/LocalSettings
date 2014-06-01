@@ -186,7 +186,7 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 		'data' => 'http://data.brickimedia.org/wiki/',
 		'answers' => 'http://answers.brickimedia.org/wiki/',
 		'books' => 'http://books.brickimedia.org/wiki/',
-		'minifigures' => 'http://lmo.brickimedia.org/wiki/'
+		'minifigures' => 'http://minifigures.brickimedia.org/wiki/'
 	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
@@ -249,9 +249,9 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://books.brickimedia.org/wiki/",
 				"name" => "Brickibooks"
 		),
-		"lmo" => array(
+		"minifigures" => array(
 				"db" => "minifigures",
-				"url" => "http://lmo.brickimedia.org/wiki/",
+				"url" => "http://minifigures.brickimedia.org/wiki/",
 				"name" => "LEGO Minifigures Online Wiki"
 		),
 );
@@ -292,7 +292,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'answers', 'books', 'lmo' );
+$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'dev', 'data', 'admin', 'answers', 'books', 'minifigures' );
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

@@ -3,7 +3,7 @@
 $wgSitename = "LEGO Minifigures Online Wiki";
 $wgMetaNamespace = "LEGO_Minifigures_Online_Wiki";
 $wgNamespaceAliases['LMOW'] = NS_PROJECT;
-$wgPasswordSender = "lmo";
+$wgPasswordSender = "minifigures";
 $wgPasswordSenderName = "LEGO Minifigures Online Wiki";
 $wgLanguageCode = "en";
 $wgDefaultSkin = "refreshed";
@@ -43,8 +43,8 @@ $wgUserLevels = array(
 
 # Refreshed
 $wgRefreshedHeader = array(
-	'url' => 'http://lmo.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedLmo,
+	'url' => 'http://minifigures.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedMinifigures,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
@@ -55,7 +55,7 @@ $wgRefreshedHeader = array(
 	)
 );
 
-# #brickimedia-rc-lmo IRC
+# #brickimedia-rc-minifigures IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51666';
 $wgRC2UDPPrefix = "";

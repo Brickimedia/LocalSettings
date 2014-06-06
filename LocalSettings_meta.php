@@ -44,7 +44,7 @@ $wgNamespacesWithSubpages[105] = true;
 //uploading
 $wgEnableUploads = true;
 $wgUploadSizeWarning = 8388608;
-$wgMaxUploadSize = 8388608;
+$wgMaxUploadSize = 1024*1024*10; // 10MB
 
 #SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit

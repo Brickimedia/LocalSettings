@@ -201,6 +201,7 @@ $wgSharedTables = array(
 	'abuse_filter_history',
 	'abuse_filter_log',
 	'spoofuser',
+	'sites',
 	'phalanx',
 	'phalanx_stats'
 );

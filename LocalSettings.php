@@ -237,6 +237,7 @@ $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedIm
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 $refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
 $refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
+$refreshedDev = "<img width='160' src='$refreshedImagePath/data.php' alt='' />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

@@ -57,6 +57,21 @@ function lfChangeMainPageURL( $sk, &$tpl ) {
         return true;
 }
 
+# Refreshed
+$wgRefreshedHeader = array(
+	'url' => 'http://data.brickimedia.org/wiki/Brickidata:Home',
+	'img' => $refreshedData,
+	'dropdown' => array(
+		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
+		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
+		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
+		'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
+		'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,
+	)
+);
+
 # #brickimedia-rc-data IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51662';

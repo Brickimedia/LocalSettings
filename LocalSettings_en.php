@@ -67,7 +67,7 @@ $wgContentNamespaces[] = 118;                           //track namespace in Spe
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;
 
-include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+require_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 enableSemantics('en.brickimedia.org');
 
 $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';

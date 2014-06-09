@@ -65,19 +65,21 @@ $wgGroupPermissions['sysop']['editreview'] = true;
 $wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
-$smwgNamespaceIndex = 100;
-
-require_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
-enableSemantics('en.brickimedia.org');
-
-$smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
-$smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
-$smwgCacheType = CACHE_MEMCACHED;
-$smwgPDefaultType = '_txt';
-
-$smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
-$smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
-$smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
+if( $bmProject != "en" ) {
+	$smwgNamespaceIndex = 100;
+	
+	require_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+	enableSemantics('en.brickimedia.org');
+	
+	$smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
+	$smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
+	$smwgCacheType = CACHE_MEMCACHED;
+	$smwgPDefaultType = '_txt';
+	
+	$smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
+	$smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
+	$smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
+}
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;

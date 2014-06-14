@@ -183,6 +183,9 @@ switch ( $host[0] ) {
 		break;
 }
 
+//SiteConfiguration - this is for GlobaUsage
+$wgConf->wikis = $bmAllProjects;
+
 //GLOBAL TABLES
 $wgSharedDB = 'shared';
 $wgSharedTables = array(

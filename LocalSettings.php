@@ -194,13 +194,27 @@ function wikiCallback( SiteConfiguration $conf, $wiki ){
 			'lang' => 'en', // all wikis en atm
 			'site' => $wiki,
 			'wiki' => $wiki,
-
-			'wgServer' => "http://$wiki.brickimedia.org",
-			'wgArticlePath' => '/wiki/$1',
 		),
 	);
 }
 $wgConf->siteParamsCallback = 'wikiCallback';
+$wgConf->settings = array(
+	'wgArticlePath' => array(
+		'default' => '/wiki/$1'
+	),
+	'wgServer' => array(
+		'meta' => 'http://meta.brickimedia.org',
+		'en' => 'http://en.brickimedia.org',
+		'dev' => 'http://dev.brickimedia.org',
+		'admin' => 'http://admin.brickimedia.org',
+		'stories' => 'http://stories.brickimedia.org',
+		'customs' => 'http://customs.brickimedia.org',
+		'ideas' => 'http://ideas.brickimedia.org',
+		'data' => 'http://data.brickimedia.org',
+		'answers' => 'http://answers.brickimedia.org',
+		'minifigures' => 'http://minifigures.brickimedia.org'
+	)
+);
 
 //GLOBAL TABLES
 $wgSharedDB = 'shared';

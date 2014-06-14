@@ -92,7 +92,6 @@ if( $wgCommandLineMode ) {
 	$_SERVER["SERVER_NAME"] = $_SERVER["HTTP_HOST"];
 }
 
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers', 'minifigures' );
 $bmSmallWiki = false; // overridden when needed
 
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
@@ -184,9 +183,22 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers', 'minifigures' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
-$wgConf->suffixes = $wgLocalDatabases;
+function wikiCallback( SiteConfiguration $conf, $wiki ){
+	return array(
+		'suffix' => $wiki,
+		'lang' => 'en', // all wikis en atm
+		'params' => array(
+			'lang' => 'en', // all wikis en atm
+			'site' => $wiki,
+			'wiki' => $wiki,
+			// can set configuration params (ArticlePath etc) here
+		),
+	);
+}
+$wgConf->siteParamsCallback = 'wikiCallback';
 
 //GLOBAL TABLES
 $wgSharedDB = 'shared';

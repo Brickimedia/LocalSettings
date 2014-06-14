@@ -194,7 +194,9 @@ function wikiCallback( SiteConfiguration $conf, $wiki ){
 			'lang' => 'en', // all wikis en atm
 			'site' => $wiki,
 			'wiki' => $wiki,
-			// can set configuration params (ArticlePath etc) here
+
+			'wgServer' => "http://$wiki.brickimedia.org",
+			'wgArticlePath' => '/wiki/$1',
 		),
 	);
 }

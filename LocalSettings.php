@@ -298,10 +298,12 @@ $wgUploadDirectory = '/var/www/images'; // these 2 must also be set for SocialPr
 $wgUploadPath = 'http://images.brickimedia.org';
 
 // Fetching images from meta
-$wgFetchCommonsDescriptions = true;
-$wgSharedUploadDBname = 'meta';
-$wgSharedUploadDBprefix = '';
-$wgRepositoryBaseUrl = "http://meta.brickimedia.org/wiki/File:";
+if ( $bmProject != 'meta' ) { // don't want this on meta, otherwise it thinks it has 2 versions of all files
+	$wgFetchCommonsDescriptions = true;
+	$wgSharedUploadDBname = 'meta';
+	$wgSharedUploadDBprefix = '';
+	$wgRepositoryBaseUrl = "http://meta.brickimedia.org/wiki/File:";
+}
 
 // Special:Upload links to meta
 $wgUploadNavigationUrl = "http://meta.brickimedia.org/wiki/Special:Upload";

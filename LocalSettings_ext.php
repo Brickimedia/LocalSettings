@@ -176,18 +176,6 @@ require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
 	$wgGlobalUsageDatabase = 'meta';
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
-	$wgGlobalContribsWikis = array(
-		'meta' => 'http://meta.brickimedia.org/wiki/',
-		'en' => 'http://en.brickimedia.org/wiki/',
-		'customs' => 'http://customs.brickimedia.org/wiki/',
-		'ideas' => 'http://ideas.brickimedia.org/wiki/',
-		'stories' => 'http://stories.brickimedia.org/wiki/',
-		'dev' => 'http://dev.brickimedia.org/wiki/',
-		'data' => 'http://data.brickimedia.org/wiki/',
-		'answers' => 'http://answers.brickimedia.org/wiki/',
-		'books' => 'http://books.brickimedia.org/wiki/',
-		'minifigures' => 'http://minifigures.brickimedia.org/wiki/'
-	);
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;

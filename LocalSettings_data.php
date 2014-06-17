@@ -11,6 +11,7 @@ $wgNamespaceAliases = array(
         'BD' => NS_PROJECT,
 );
 
+/*
 # Wikibase
 $wgEnableWikibaseRepo = true;
 $wgEnableWikibaseClient = false;
@@ -19,6 +20,7 @@ require_once( "$IP/extensions/Wikibase/repo/ExampleSettings.php" );
 // Assigning the correct content models to the namespaces
 $wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_ITEM] = NS_MAIN;
 $wgWBRepoSettings['entityNamespaces'][CONTENT_MODEL_WIKIBASE_PROPERTY] = WB_NS_PROPERTY;
+*/
 
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit

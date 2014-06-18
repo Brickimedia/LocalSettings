@@ -176,9 +176,12 @@ require_once( "$IP/extensions/GlobalUsage/GlobalUsage.php" );
 	$wgGlobalUsageDatabase = 'meta';
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
 require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
-require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
+if ( $bmProject != 'en' ) { // Not working on En anyway, plus we have bad CPU going on ATM
+	require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
+}
+
 	$gaAccount = "UA-38958899-1";
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
 	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';

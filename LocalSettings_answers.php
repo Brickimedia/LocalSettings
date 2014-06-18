@@ -12,7 +12,7 @@ $wgDefaultSkin = "refreshed";
 require_once( "$IP/extensions/Monaco/monaco.php" );
 
 # Answers extension
-require_once( "$IP/extensions/Answers/Answers.php" );
+// require_once( "$IP/extensions/Answers/Answers.php" );
 
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit

@@ -19,7 +19,8 @@ $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
 // ArticleRatings
-require_once("$IP/extensions/ARE/ArticleRatings.php");
+// Causing lots of errors in error log, may be reason for CPU stuff. Temp disable. -SirC
+// require_once("$IP/extensions/ARE/ArticleRatings.php");
 
 // User groups
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );

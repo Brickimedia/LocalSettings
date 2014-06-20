@@ -357,7 +357,7 @@ $wgMemoryLimit = "128M";
 
 // Stop running a job per page load
 $wgJobRunRate = 0;
-$wgMiserMode = false;
+$wgMiserMode = true;
 
 // MUST BE AT BOTTOM OF THIS FILE!!!!
 if( !getenv("noext") ){

@@ -336,8 +336,14 @@ $wgLocaltimezone = "UTC";
 
 $wgEnableScaryTranscluding = true;
 
-// Localisation Cache
+// Cache
 $wgCacheDirectory = "$IP/cache/$bmProject";
+$wgParserCacheExpireTime = 60 * 60 * 24 * 7; // cache parsed articles for 7 days
+$wgResourceLoaderMaxage['unversioned']['server'] = 60 * 60 * 24;
+$wgResourceLoaderMaxage['unversioned']['client'] = 60 * 60 * 24; // cache uncached resourceloader requests for 1 day
+$wgEnableSidebarCache = true; // cache the sidebar
+$wgUseFileCache = true;
+$wgFileCacheDirectory = "$IP/cache/$bmProject"; // show IPs fully cached html pages
 
 $wgDBerrorLog = "$IP/DB.log";
 

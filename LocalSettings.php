@@ -355,6 +355,10 @@ $wgDisableCounters = true; // Pages (therefore hit counters) are cached, we have
 // Trying to solve white pages
 $wgMemoryLimit = "128M";
 
+// Stop running a job per page load
+$wgJobRunRate = 0;
+$wgMiserMode = false;
+
 // MUST BE AT BOTTOM OF THIS FILE!!!!
 if( !getenv("noext") ){
 	require_once( __DIR__ . '/LocalSettings_ext.php' );

@@ -114,19 +114,19 @@ switch ( $host[0] ) {
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
 		break;
-	case "dev":
+/*	case "dev":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = "dev";
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		$bmSmallWiki = true;
-		break;
-	case "admin":
+		break;*/
+/*	case "admin":
 		$ls_path = "LocalSettings_admin.php";
 		$bmProject = "admin";
 		$wgServer = "http://admin.brickimedia.org";
 		$wgDBname = "admin";
-		break;
+		break;*/
 	case "stories":
 		$ls_path = "LocalSettings_stories.php";
 		$bmProject = "stories";
@@ -143,26 +143,26 @@ switch ( $host[0] ) {
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );
 		exit( 0 ); // just to make sure nothing else happens
 		break;
-	case "data":
+/*	case "data":
 		$ls_path = "LocalSettings_data.php";
 		$bmProject = "data";
 		$wgServer = "http://data.brickimedia.org";
 		$wgDBname = "data";
-		break;
-	case "answers":
+		break;*/
+/*	case "answers":
 		$ls_path = "LocalSettings_answers.php";
 		$bmProject = "answers";
 		$wgServer = "http://answers.brickimedia.org";
 		$wgDBname = "answers";
 		$bmSmallWiki = true;
-		break;
-	case "books":
+		break;*/
+/*	case "books":
 		$ls_path = "LocalSettings_books.php";
 		$bmProject = "books";
 		$wgServer = "http://books.brickimedia.org";
 		$wgDBname = "books";
 		$bmSmallWiki = true;
-		break;
+		break;*/
 	case "minifigures":
 		$ls_path = "LocalSettings_minifigures.php";
 		$bmProject = "minifigures";

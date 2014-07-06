@@ -268,7 +268,7 @@ $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshed
 $refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedImagePath/ideas.svg\" src=\"$refreshedImagePath/ideas.png\" width='150' height='20' /></svg>";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
-$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
+//$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
 $refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
 $refreshedData = "<img width='160' src='$refreshedImagePath/data.png' alt='' />";
 

@@ -62,8 +62,6 @@ $wgMemCachedServers = array( "127.0.0.1:11211" );
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "7a153e24c3f406320959859ee859bc5e679b2bd41d6fa77fc355914588f1014d";
-
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
 $wgUpgradeKey = "4d6c44c3c40f5030";

@@ -62,10 +62,6 @@ $wgMemCachedServers = array( "127.0.0.1:11211" );
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "en";
 
-# Site upgrade key. Must be set to a string (default provided) to turn on the
-# web installer while LocalSettings.php is in place
-$wgUpgradeKey = "4d6c44c3c40f5030";
-
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
 ## License and Creative Commons licenses are supported so far.

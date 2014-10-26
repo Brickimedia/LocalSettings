@@ -81,6 +81,7 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 #AVRU user group
 $wgGroupPermissions['AVRU'] = $wgGroupPermissions['patroller'];
+$wgGroupPermissions['AVRU']['delete'] = true;
 $wgGroupPermissions['AVRU']['modchat'] = true;
 $wgAddGroups['sysop'][] = 'AVRU';
 $wgRemoveGroups['sysop'][] = 'AVRU';

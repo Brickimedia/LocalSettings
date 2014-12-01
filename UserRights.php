@@ -160,10 +160,12 @@ $wgGroupPermissions['sysadmin']['userrights'] = true;
 
 
 #bot approval group
-$wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
-$wgGroupPermisions['bag']['read'] = true; //establish the group
-$wgAddGroups['bag'] = array( 'bot', 'bag' );
-$wgRemoveGroups['bag'] = array( 'bot', 'bag' );
+if( $bmProject != "en" ) { // remove the group on Brickipedia
+	$wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
+	$wgGroupPermisions['bag']['read'] = true; //establish the group
+	$wgAddGroups['bag'] = array( 'bot', 'bag' );
+	$wgRemoveGroups['bag'] = array( 'bot', 'bag' );
+}
 
 #emailconfirmed
 $wgAutopromote['emailconfirmed'] = APCOND_EMAILCONFIRMED;

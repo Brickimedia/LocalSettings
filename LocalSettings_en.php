@@ -161,12 +161,6 @@ require_once( "$IP/extensions/Tabber/Tabber.php" );
 $wgEnableProfileInfo = true;
 $wgProfileToDatabase = true;
 
-#Import group
-$wgGroupPermissions['import']['importupload'] = true;
-$wgGroupPermissions['import']['import'] = true;
-$wgAddGroups['sysop'][] = 'import';
-$wgRemoveGroups['sysop'][] = 'import';
-
 require_once( "$IP/extensions/Snippet/Snippet.php" );
 
 

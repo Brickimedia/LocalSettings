@@ -294,9 +294,6 @@ $wgThanksSendToBots = false;
 $wgThanksLogging = true;
 $wgThanksConfirmationRequired = true;
 
-// BetaFeatures
-require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
-
 // MultimediaViewer
 require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
 
@@ -305,13 +302,3 @@ require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 
 // User rights
 require_once( "$IP/UserRights.php" );
-
-// VisualEditor
-require_once("$IP/extensions/VisualEditor/VisualEditor.php");
-$wgVisualEditorEnableExperimentalCode = true;
-$wgVisualEditorParsoidURL = 'http://localhost:8000';
-$wgVisualEditorNamespaces = $wgContentNamespaces;
-$wgVisualEditorSupportedSkins = array( 'vector', 'deepsea', 'lia', 'monobook' );
-$wgVisualEditorUseChangeTagging = true;
-$wgVisualEditorDisableForAnons = false;
-$wgVisualEditorShowBetaWelcome = true;

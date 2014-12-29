@@ -19,6 +19,8 @@ $wgGroupPermissions['board']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-interwiki'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
+$wgGroupPermissions['sysadmin']['globalblock'] = true;
+$wgGroupPermissions['sysadmin']['globalunblock'] = true;
 $wgAddGroups['sysadmin'] = array( 'sysadmin' );
 $wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
 

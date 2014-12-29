@@ -142,6 +142,13 @@ $wgGroupPermissions['functionary']['abusefilter-hide-log'] = true;
 $wgGroupPermissions['functionary']['viewpmlog'] = true;
 
 #global sysadmin
+$wgGroupPermissions['sysadmin'] = array_merge(
+	$wgGroupPermissions['functionary'],
+	$wgGroupPermissions['sysop'],
+	// some social tools etc. assign permissions to the staff group
+	// (and the staff group is unset() later on in this very file, so this should be OK)
+	( is_array( $wgGroupPermissions['staff'] ) ? $wgGroupPermissions['staff'] : array() )
+);
 $wgGroupPermissions['sysadmin']['edit'] = true;
 $wgGroupPermissions['sysadmin']['renameuser'] = true;
 $wgGroupPermissions['sysadmin']['siteadmin'] = true;

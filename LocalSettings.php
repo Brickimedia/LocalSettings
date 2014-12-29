@@ -108,13 +108,13 @@ switch ( $host[0] ) {
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
 		break;
-/*	case "dev":
+	case "dev":
 		$ls_path = "LocalSettings_dev.php";
 		$bmProject = "dev";
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		$bmSmallWiki = true;
-		break;*/
+		break;
 	case "admin":
 		$ls_path = "LocalSettings_admin.php";
 		$bmProject = "admin";

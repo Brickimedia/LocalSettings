@@ -335,7 +335,7 @@ $wgCacheDirectory = "$IP/cache/$bmProject";
 $wgParserCacheExpireTime = 60 * 60 * 24 * 7; // cache parsed articles for 7 days
 $wgResourceLoaderMaxage['unversioned']['server'] = 60 * 60 * 24;
 $wgResourceLoaderMaxage['unversioned']['client'] = 60 * 60 * 24; // cache uncached resourceloader requests for 1 day
-$wgEnableSidebarCache = true; // cache the sidebar
+$wgEnableSidebarCache = false; // don't cache the sidebar (MediaWikiChat adds a module)
 $wgUseFileCache = true;
 $wgFileCacheDirectory = "$IP/cache/$bmProject"; // show IPs fully cached html pages
 
@@ -358,5 +358,3 @@ if( !getenv("noext") ){
 	require_once( __DIR__ . '/LocalSettings_ext.php' );
 }
 require_once( $ls_path );
-
-$wgEnableSidebarCache = false; // this should be default, but just checking

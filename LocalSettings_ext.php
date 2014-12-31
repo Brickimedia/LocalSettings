@@ -50,6 +50,7 @@ require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 unset( $wgSpecialPages['GiveGift'] ); // remove Special:GiveGift
 unset( $wgSpecialPages['ViewGifts'] ); // remove Special:ViewGifts
+$wgAvatarKey = 'global'; // global avatars
 
 // Uploads
 $wgEnableUploads = true;

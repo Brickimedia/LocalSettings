@@ -307,8 +307,8 @@ function redirectSpecialsToMeta( &$title, &$article, &$output, &$user, $request,
 	global $bmProject;
 	if (
 		(
-			$title->isSpecial( 'upload' ) ||
-			$title->isSpecial( 'uploadavatar' )
+			$title->isSpecial( 'Upload' ) ||
+			$title->isSpecial( 'UploadAvatar' )
 		) &&
 		$bmProject != 'meta'
 	) {

@@ -76,3 +76,6 @@ $wgRefreshedHeader = array(
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51661';
 $wgRC2UDPPrefix = "";
+
+# Prevent account creation excluding sysops
+$wgGroupPermissions['*']['createaccount'] = false;

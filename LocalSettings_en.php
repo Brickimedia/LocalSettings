@@ -64,6 +64,12 @@ $wgGroupPermissions['autoconfirmed']['editreview'] = true;
 $wgGroupPermissions['sysop']['editreview'] = true;
 $wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
 
+define("NS_PART", 120);
+define("NS_PART_TALK", 121);
+$wgExtraNamespaces[NS_PART] = "Part";
+$wgExtraNamespaces[NS_PART_TALK] = "Part_talk";
+$wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
+
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;
 
@@ -78,6 +84,7 @@ $smwgPDefaultType = '_txt';
 $smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
 $smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
 $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
+$smwgNamespacesWithSemanticLinks[NS_PART] = true;
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;

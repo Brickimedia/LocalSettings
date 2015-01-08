@@ -198,3 +198,28 @@ function lfParentsLink( $sk, &$tpl ) {
 	return true;
 }
 $wgExtensionMessagesFiles['Parents'] = dirname( __FILE__ ) . '/extensions/i18n/Parents.i18n.php';
+
+// Search fixes
+$wgNamespacesToBeSearchedDefault = array(
+	NS_MAIN =>           true,
+	NS_TALK =>           false,
+	NS_USER =>           false,
+	NS_USER_TALK =>      false,
+	NS_PROJECT =>        false,
+	NS_PROJECT_TALK =>   false,
+	NS_FILE =>           false,
+	NS_FILE_TALK =>      false,
+	NS_MEDIAWIKI =>      false,
+	NS_MEDIAWIKI_TALK => false,
+	NS_TEMPLATE =>       false,
+	NS_TEMPLATE_TALK =>  false,
+	NS_HELP =>           false,
+	NS_HELP_TALK =>      false,
+	NS_CATEGORY =>       false,
+	NS_CATEGORY_TALK =>  false,
+	NS_REVIEW =>         true,
+	NS_MAGAZINE =>       true,
+	NS_INVENTORY =>      true,
+	NS_PART =>           true,
+	NS_NEWS =>           true
+);

@@ -39,6 +39,7 @@ $wgGroupPermissions['autoconfirmed']['editnews'] = false;
 $wgGroupPermissions['newsreporter']['editnews'] = true;
 $wgAddGroups['sysop'][] = 'newsreporter';
 $wgRemoveGroups['sysop'][] = 'newsreporter';
+$wgContentNamespaces[] = 2000;
 
 #Magazine, Inventory and Review namespaces
 define("NS_MAGAZINE", 112);

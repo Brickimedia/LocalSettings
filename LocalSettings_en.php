@@ -69,6 +69,7 @@ define("NS_PART", 120);
 define("NS_PART_TALK", 121);
 $wgExtraNamespaces[NS_PART] = "Part";
 $wgExtraNamespaces[NS_PART_TALK] = "Part_talk";
+$wgNamespacesWithSubpages[NS_PART] = true;
 $wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.

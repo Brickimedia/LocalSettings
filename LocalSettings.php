@@ -157,7 +157,7 @@ switch ( $host[0] ) {
 		$wgDBname = "books";
 		$bmSmallWiki = true;
 		break;*/
-	case "minifigures":
+/*	case "minifigures":
 		$ls_path = "LocalSettings_minifigures.php";
 		$bmProject = "minifigures";
 		$wgServer = "http://minifigures.brickimedia.org";
@@ -166,10 +166,10 @@ switch ( $host[0] ) {
 		break;
 	case "legominifiguresonline":
 	case "minifiguresonline":
-	case "lmo": //temporary
+	case "lmo":
 		header( "Location: http://minifigures.brickimedia.org{$_SERVER['REQUEST_URI']}" );
 		exit( 0 );
-		break;
+		break;*/
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" );
 		exit( 0 );
@@ -261,10 +261,10 @@ $refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshed
 $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
 $refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedImagePath/ideas.svg\" src=\"$refreshedImagePath/ideas.png\" width='150' height='20' /></svg>";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
-$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
+//$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 //$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
-$refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
-$refreshedData = "<img width='160' src='$refreshedImagePath/data.png' alt='' />";
+//$refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
+//$refreshedData = "<img width='160' src='$refreshedImagePath/data.png' alt='' />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

@@ -18,9 +18,6 @@ $wgGroupPermissions['sysadmin']['upload'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
-// ArticleRatings
-require_once("$IP/extensions/ARE/ArticleRatings.php");
-
 // User groups
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
 $wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer' );
@@ -225,3 +222,6 @@ $wgNamespacesToBeSearchedDefault = array(
 	NS_PART =>           true,
 	NS_NEWS =>           true
 );
+
+// ArticleRatings - must be after wgContentNamespaces
+require_once("$IP/extensions/ARE/ArticleRatings.php");

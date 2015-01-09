@@ -44,6 +44,7 @@ require_once( "$IP/extensions/VideoFlash/VideoFlash.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 	$wgDefaultUserOptions['wikilove-enabled'] = 1;
 require_once( "$IP/extensions/PageInCat/PageInCat.php" );
+require_once( "$IP/extensions/NumerAlpha/NumerAlpha.php" );
 
 // SocialProfile. More details in individual LSs
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");

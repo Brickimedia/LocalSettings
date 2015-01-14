@@ -81,7 +81,7 @@ require_once( "$IP/extensions/Echo/Echo.php" );
 # Refreshed
 $wgRefreshedHeader = array(
 	'url' => 'http://dev.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedDev,
+	'img' => '',
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,

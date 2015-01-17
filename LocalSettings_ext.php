@@ -148,7 +148,7 @@ $wgShowExceptionDetails = true;
 
 // WikiForum
 require_once( "$IP/extensions/WikiForum/WikiForum.php" );
-	$wgWikiForumAllowAnonymous = false; //disabled because of spam
+	$wgWikiForumAllowAnonymous = true; // CAPTCHAs now shown
 	unset( $wgAvailableRights['wikiforum-admin'] );
 	unset( $wgAvailableRights['wikiforum-moderator'] );
 	unset( $wgGroupPermissions['forumadmin'] );

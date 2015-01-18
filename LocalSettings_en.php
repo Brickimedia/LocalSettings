@@ -226,3 +226,14 @@ $wgNamespacesToBeSearchedDefault = array(
 
 // ArticleRatings - must be after wgContentNamespaces
 require_once("$IP/extensions/ARE/ArticleRatings.php");
+
+// Remove 'crat
+$wgGroupPermissions['sysop'] = array_merge( $wgGroupPermissions['sysop'], $wgGroupPermissions['bureaucrat'] );
+$wgAddGroups['sysop'] = $wgAddGroups['bureaucrat'];
+$wgRemoveGroups['sysop'] = $wgRemoveGroups['bureaucrat'];
+unset( $wgGroupPermissions['bureaucrat'] );
+unset( $wgRevokePermissions['bureaucrat'] );
+unset( $wgAddGroups['bureaucrat'] );
+unset( $wgRemoveGroups['bureaucrat'] );
+unset( $wgGroupsAddToSelf['bureaucrat'] );
+unset( $wgGroupsRemoveFromSelf['bureaucrat'] );

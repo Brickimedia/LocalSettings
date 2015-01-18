@@ -34,6 +34,7 @@ $wgGroupPermissions['*']['editnews'] = false;
 $wgGroupPermissions['user']['editnews'] = false;
 $wgGroupPermissions['autoconfirmed']['editnews'] = false;
 $wgGroupPermissions['newsreporter']['editnews'] = true;
+$wgGroupPermissions['sysop']['editnews'] = true;
 $wgAddGroups['sysop'][] = 'newsreporter';
 $wgRemoveGroups['sysop'][] = 'newsreporter';
 $wgContentNamespaces[] = 2000;

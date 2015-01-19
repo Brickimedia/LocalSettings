@@ -17,6 +17,7 @@ require_once( "$IP/extensions/Comments/Comment.php" );
 	unset( $wgGroupPermissions['commentadmin'] );
 	$wgGroupPermissions['sysop']['commentadmin'] = true;
 	$wgCommentsInRecentChanges = true;
+	$wgCommentsSortDescending = true;
 require_once( "$IP/extensions/CSS/CSS.php" );
 require_once( "$IP/extensions/DPLForum/DPLforum.php" );
 require_once( "$IP/extensions/Editcount/Editcount.php" );

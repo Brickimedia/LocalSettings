@@ -133,6 +133,12 @@ switch ( $host[0] ) {
 		$wgServer = "http://ideas.brickimedia.org";
 		$wgDBname = "ideas";
 		break;
+	case "gbc":
+		$ls_path = "LocalSettings_gbc.php";
+		$bmProject = "gbc";
+		$wgServer = "http://gbc.brickimedia.org";
+		$wgDBname = "gbc";
+		break;
 	case "cuusoo":
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );
 		exit( 0 ); // just to make sure nothing else happens
@@ -177,7 +183,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'data', 'answers', 'minifigures' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -204,9 +210,7 @@ $wgConf->settings = array(
 		'stories' => 'http://stories.brickimedia.org',
 		'customs' => 'http://customs.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
-		'data' => 'http://data.brickimedia.org',
-		'answers' => 'http://answers.brickimedia.org',
-		'minifigures' => 'http://minifigures.brickimedia.org'
+		'gbc' => 'http://gbc.brickimedia.org',
 	)
 );
 

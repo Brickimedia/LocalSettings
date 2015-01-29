@@ -19,10 +19,18 @@ $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
 
 // User groups
-$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'newsreporter' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'patroller', 'bureaucrat', 'reviewer', 'newsreporter' );
+$wgAddGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );
+$wgRemoveGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );
 $wgAddGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to add other members to that group
 $wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to remove other members to that group
+// Remove sysop
+$wgGroupPermissions['sysop'] = array_merge( $wgGroupPermissions['sysop'], $wgGroupPermissions['bureaucrat'] );
+unset( $wgGroupPermissions['bureaucrat'] );
+unset( $wgRevokePermissions['bureaucrat'] );
+unset( $wgAddGroups['bureaucrat'] );
+unset( $wgRemoveGroups['bureaucrat'] );
+unset( $wgGroupsAddToSelf['bureaucrat'] );
+unset( $wgGroupsRemoveFromSelf['bureaucrat'] );
 
 #News namespace
 define("NS_NEWS", 2000);
@@ -226,14 +234,3 @@ $wgNamespacesToBeSearchedDefault = array(
 
 // ArticleRatings - must be after wgContentNamespaces
 require_once("$IP/extensions/ARE/ArticleRatings.php");
-
-// Remove 'crat
-$wgGroupPermissions['sysop'] = array_merge( $wgGroupPermissions['sysop'], $wgGroupPermissions['bureaucrat'] );
-$wgAddGroups['sysop'] = $wgAddGroups['bureaucrat'];
-$wgRemoveGroups['sysop'] = $wgRemoveGroups['bureaucrat'];
-unset( $wgGroupPermissions['bureaucrat'] );
-unset( $wgRevokePermissions['bureaucrat'] );
-unset( $wgAddGroups['bureaucrat'] );
-unset( $wgRemoveGroups['bureaucrat'] );
-unset( $wgGroupsAddToSelf['bureaucrat'] );
-unset( $wgGroupsRemoveFromSelf['bureaucrat'] );

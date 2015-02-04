@@ -141,7 +141,7 @@ $wgGroupPermissions['functionary']['suppressionlog'] = true;
 $wgGroupPermissions['functionary']['abusefilter-hidden-log'] = true;
 $wgGroupPermissions['functionary']['abusefilter-hide-log'] = true;
 $wgGroupPermissions['functionary']['viewpmlog'] = true;
-$wgGroupPermissions['sysop']['nuke'] = true;
+$wgGroupPermissions['functionary']['nuke'] = true;
 
 #global sysadmin
 $wgGroupPermissions['sysadmin'] = array_merge(

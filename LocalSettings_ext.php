@@ -53,6 +53,7 @@ require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessa
 unset( $wgSpecialPages['GiveGift'] ); // remove Special:GiveGift
 unset( $wgSpecialPages['ViewGifts'] ); // remove Special:ViewGifts
 $wgAvatarKey = 'global'; // global avatars
+$wgUserProfileThresholds = array( 'edits' => 5 ); // preventing spam
 
 // Uploads
 $wgEnableUploads = true;

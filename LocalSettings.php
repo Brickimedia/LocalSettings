@@ -133,6 +133,7 @@ switch ( $host[0] ) {
 		$wgServer = "http://ideas.brickimedia.org";
 		$wgDBname = "ideas";
 		break;
+	case "greatballcontraption":
 	case "gbc":
 		$ls_path = "LocalSettings_gbc.php";
 		$bmProject = "gbc";

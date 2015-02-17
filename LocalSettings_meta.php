@@ -122,5 +122,3 @@ $wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
 unset( $wgGroupPermissions['smwadministrator'] );
 unset( $wgGroupPermissions['staff'] );
-
-$wgDebugLogFile = '/var/log/mw.log';

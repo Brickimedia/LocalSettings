@@ -1,6 +1,6 @@
 <?php
 
-$wgSitename = "the Great Ball Contraption Wiki";
+$wgSitename = "The Great Ball Contraption Wiki";
 $wgMetaNamespace = "GBC";
 $wgPasswordSender = "gbc";
 $wgPasswordSenderName = "Great Ball Contraption Wiki";

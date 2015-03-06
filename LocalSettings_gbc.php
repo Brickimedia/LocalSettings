@@ -1,5 +1,7 @@
 <?php
 
+$wgCookieDomain = ".greatballcontraption.com";
+
 $wgSitename = "The Great Ball Contraption Wiki";
 $wgMetaNamespace = "GBC";
 $wgPasswordSender = "gbc";

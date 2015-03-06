@@ -137,7 +137,7 @@ switch ( $host[0] ) {
 	case "gbc":
 		$ls_path = "LocalSettings_gbc.php";
 		$bmProject = "gbc";
-		$wgServer = "http://gbc.brickimedia.org";
+		$wgServer = "http://greatballcontraption.com";
 		$wgDBname = "gbc";
 		break;
 	case "cuusoo":

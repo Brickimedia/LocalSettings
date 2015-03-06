@@ -11,12 +11,16 @@ $wgFavicon = 'http://images.brickimedia.org/favicons/favicon.ico';
 
 $wgLanguageCode = 'en';
 $wgDefaultSkin = 'refreshed';
+
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;
 $wgGroupPermissions['sysadmin']['upload'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;
+
+// Per https://github.com/Brickimedia/brickimedia/issues/335
+$wgGroupPermissions['sysop']['nuke'] = false;
 
 // User groups
 $wgAddGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );

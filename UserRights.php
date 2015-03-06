@@ -119,7 +119,6 @@ $wgGroupPermissions['sysop']['skipcaptcha'] = true;
 $wgGroupPermissions['sysop']['globalblock-exempt'] = true;
 $wgAddGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
 $wgRemoveGroups['sysop'] = array( 'bot', 'patroller', 'chatmod', 'blockedfromchat' );
-$wgGroupPermissions['sysop']['nuke'] = false;
 
 #bureaucrat
 $wgGroupPermissions['bureaucrat']['renameuser'] = false;

@@ -27,11 +27,10 @@ $wgGroupPermissions['*']['createaccount'] = false; //nobody needs to be creating
 require_once("$IP/extensions/Lockdown/Lockdown.php"); //extension to handle per-namespace restrictions of 'read' rights
 define("NS_EN", 2000);
 define("NS_CUSTOMS", 2001);
-define("NS_STORIES", 2002);
+//NS-2002 is available
 define("NS_IDEAS", 2003);
 $wgExtraNamespaces[NS_EN] = "Bricki";
 $wgExtraNamespaces[NS_CUSTOMS] = "Customs";
-$wgExtraNamespaces[NS_STORIES] = "Stories";
 $wgExtraNamespaces[NS_IDEAS] = "Ideas";
 
 # Protection for the namespaces
@@ -53,17 +52,12 @@ $wgNamespacePermissionLockdown[NS_CUSTOMS]['read'] = array( 'customs', 'global' 
 $wgNamespacePermissionLockdown[NS_CUSTOMS]['move'] = array( 'customs', 'global' );
 $wgNamespacePermissionLockdown[NS_CUSTOMS]['delete'] = array( 'customs', 'global' );
 
-$wgNamespaceProtection[NS_STORIES] = array( 'editstories' );
-$wgNamespacePermissionLockdown[NS_STORIES]['read'] = array( 'stories', 'global' );
-$wgNamespacePermissionLockdown[NS_STORIES]['move'] = array( 'stories', 'global' );
-$wgNamespacePermissionLockdown[NS_STORIES]['delete'] = array( 'stories', 'global' );
-
 $wgNamespaceProtection[NS_IDEAS] = array( 'editideas' );
 $wgNamespacePermissionLockdown[NS_IDEAS]['read'] = array( 'ideas', 'global' );
 $wgNamespacePermissionLockdown[NS_IDEAS]['move'] = array( 'ideas', 'global' );
 $wgNamespacePermissionLockdown[NS_IDEAS]['delete'] = array( 'ideas', 'global' );
 
-$all = array( 'sysop', 'en', 'customs', 'stories', 'ideas', 'global');
+$all = array( 'sysop', 'en', 'customs', 'ideas', 'global');
 $wgNamespacePermissionLockdown[NS_MAIN]['edit'] = $all;
 $wgNamespacePermissionLockdown[NS_MAIN]['read'] = $all;
 $wgNamespacePermissionLockdown[NS_MAIN]['move'] = $all;
@@ -80,15 +74,13 @@ $wgNamespacePermissionLockdown[NS_PROJECT]['delete'] = $all;
 # Permissions
 $wgGroupPermissions['brickipedia']['editen'] = true;
 $wgGroupPermissions['customs']['editcustoms'] = true;
-$wgGroupPermissions['stories']['editstories'] = true;
 $wgGroupPermissions['ideas']['editideas'] = true;
 $wgGroupPermissions['global']['editen'] = true;
 $wgGroupPermissions['global']['editcustoms'] = true;
-$wgGroupPermissions['global']['editstories'] = true;
 $wgGroupPermissions['global']['editideas'] = true;
 
 # Track edits in Special:Statistics just for records
-$wgContentNamespaces = array( NS_MAIN, NS_HELP, NS_PROJECT, NS_EN, NS_CUSTOMS, NS_STORIES, NS_IDEAS);
+$wgContentNamespaces = array( NS_MAIN, NS_HELP, NS_PROJECT, NS_EN, NS_CUSTOMS, NS_IDEAS);
 
 # Refreshed
 $wgRefreshedHeader = array(
@@ -98,7 +90,6 @@ $wgRefreshedHeader = array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
-		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
 		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
 		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
 		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,

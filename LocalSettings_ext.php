@@ -214,10 +214,10 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://ideas.brickimedia.org/wiki/",
 				"name" => "LEGO Ideas Wiki"
 		),
-		"stories" => array(
-				"db" => "stories",
-				"url" => "http://stories.brickimedia.org/wiki/",
-				"name" => "LEGO Stories Wiki"
+		"gbc" => array(
+				"db" => "gbc",
+				"url" => "http://greatballcontraption/wiki/",
+				"name" => "Great Ball Contraption Wiki"
 		),
 		"admin" => array(
 				"db" => "admin",
@@ -246,10 +246,10 @@ $wgSiteMatrixSites = array(
 		'host' => 'customs.brickimedia.org',
 		'prefix' => 'c',
 	),
-	'stories' => array(
-		'name' => 'LEGO Stories Wiki',
-		'host' => 'stories.brickimedia.org',
-		'prefix' => 's',
+	'gbc' => array(
+		'name' => 'Great Ball Contraption Wiki',
+		'host' => 'greatballcontraption.com',
+		'prefix' => 'gbc',
 	),
 	'ideas' => array(
 		'name' => 'LEGO Ideas Wiki',
@@ -262,7 +262,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'stories', 'ideas', 'meta', 'admin');
+$wgLocalDatabases = array( 'en', 'customs', 'gbc', 'ideas', 'meta', 'admin');
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

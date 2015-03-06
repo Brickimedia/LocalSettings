@@ -187,7 +187,6 @@ require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 $wgChatKicks = true;
 $wgChatMeCommand = true;
 
-	$gaAccount = "UA-38958899-1";
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
 	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';
 require_once( "$IP/extensions/GlobalCssJs/GlobalCssJs.php" );

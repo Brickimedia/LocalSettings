@@ -95,18 +95,21 @@ switch ( $host[0] ) {
 		$bmProject = "meta";
 		$wgServer = "http://meta.brickimedia.org";
 		$wgDBname = "meta";
+		$gaAccount = "";
 		break;
 	case "en":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = "en";
 		$wgServer = "http://en.brickimedia.org";
 		$wgDBname = "en";
+		$gaAccount = "UA-38958899-2";
 		break;
 	case "customs":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = "customs";
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
+		$gaAccount = "UA-38958899-3";
 		break;
 	case "dev":
 		$ls_path = "LocalSettings_dev.php";
@@ -114,6 +117,7 @@ switch ( $host[0] ) {
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		$bmSmallWiki = true;
+		$gaAccount = "UA-38958899-5";
 		break;
 	case "admin":
 		$ls_path = "LocalSettings_admin.php";
@@ -132,6 +136,7 @@ switch ( $host[0] ) {
 		$bmProject = "ideas";
 		$wgServer = "http://ideas.brickimedia.org";
 		$wgDBname = "ideas";
+		$gaAccount = "UA-38958899-4";
 		break;
 	case "greatballcontraption":
 	case "gbc":
@@ -139,6 +144,7 @@ switch ( $host[0] ) {
 		$bmProject = "gbc";
 		$wgServer = "http://greatballcontraption.com";
 		$wgDBname = "gbc";
+		$gaAccount = "UA-38958899-6";
 		break;
 	case "cuusoo":
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );

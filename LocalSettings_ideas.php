@@ -67,6 +67,7 @@ $wgRefreshedHeader = array(
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://stories.brickimedia.org/wiki/Main_Page' => $refreshedStories,
+		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
 		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
 		//'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,
 	)

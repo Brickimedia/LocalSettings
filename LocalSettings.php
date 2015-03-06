@@ -266,7 +266,7 @@ $refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshed
 $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
 $refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedImagePath/ideas.svg\" src=\"$refreshedImagePath/ideas.png\" width='150' height='20' /></svg>";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
-$refreshedGBC = "<img src='$refreshedImagePath/gbc.svg' />";
+$refreshedGBC = "<img src='$refreshedImagePath/gbc.svg' width='140' />";
 //$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 //$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
 //$refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";

@@ -270,7 +270,7 @@ $refreshedMeta = "<svg width='144' height='30'><image xlink:href=\"$refreshedIma
 $refreshedEn = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickipedia.svg\" src=\"$refreshedImagePath/brickipedia.png\" width='144' height='30'/></svg>";
 $refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/customs.svg\" src=\"$refreshedImagePath/customs.png\" width='144' height='30'/></svg>";
 $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
-$refreshedIdeas = "<svg width='150' height='20'><image xlink:href=\"$refreshedImagePath/ideas.svg\" src=\"$refreshedImagePath/ideas.png\" width='150' height='20' /></svg>";
+$refreshedIdeas = "<img src='$refreshedImagePath/ideas.svg' width='150' height='20' />";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedGBC = "<img src='$refreshedImagePath/gbc.svg' width='140' />";
 //$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";

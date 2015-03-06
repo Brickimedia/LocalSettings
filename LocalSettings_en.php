@@ -1,15 +1,15 @@
 <?php
 
-$wgSitename = "Brickipedia";
-$wgMetaNamespace = "Brickipedia";
+$wgSitename = 'Brickipedia';
+$wgMetaNamespace = 'Brickipedia';
 $wgNamespaceAliases['BP'] = NS_PROJECT;
-$wgPasswordSender = "brickipedia";
-$wgPasswordSenderName = "Brickipedia";
+$wgPasswordSender = 'brickipedia';
+$wgPasswordSenderName = 'Brickipedia';
 
-$wgLogo = "http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png";
-$wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
+$wgLogo = 'http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png';
+$wgFavicon = 'http://images.brickimedia.org/favicons/favicon.ico';
 
-$wgLanguageCode = "en";
+$wgLanguageCode = 'en';
 $wgDefaultSkin = 'refreshed';
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
@@ -23,7 +23,7 @@ $wgAddGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsrep
 $wgRemoveGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );
 $wgAddGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to add other members to that group
 $wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to remove other members to that group
-// Remove sysop
+// Remove the bureaucrat group
 $wgGroupPermissions['sysop'] = array_merge( $wgGroupPermissions['sysop'], $wgGroupPermissions['bureaucrat'] );
 unset( $wgGroupPermissions['bureaucrat'] );
 unset( $wgRevokePermissions['bureaucrat'] );
@@ -33,10 +33,10 @@ unset( $wgGroupsAddToSelf['bureaucrat'] );
 unset( $wgGroupsRemoveFromSelf['bureaucrat'] );
 
 #News namespace
-define("NS_NEWS", 2000);
-define("NS_NEWS_TALK", 2001);
-$wgExtraNamespaces[NS_NEWS] = "Brickipedia_News";
-$wgExtraNamespaces[NS_NEWS_TALK] = "Brickipedia_News_talk";
+define('NS_NEWS', 2000);
+define('NS_NEWS_TALK', 2001);
+$wgExtraNamespaces[NS_NEWS] = 'Brickipedia_News';
+$wgExtraNamespaces[NS_NEWS_TALK] = 'Brickipedia_News_talk';
 $wgNamespaceProtection[NS_NEWS] = array( 'editnews' );
 $wgGroupPermissions['*']['editnews'] = false;
 $wgGroupPermissions['user']['editnews'] = false;
@@ -48,33 +48,33 @@ $wgRemoveGroups['sysop'][] = 'newsreporter';
 $wgContentNamespaces[] = 2000;
 
 #Magazine, Inventory and Review namespaces
-define("NS_MAGAZINE", 112);
-define("NS_MAGAZINE_TALK", 113);
-$wgExtraNamespaces[NS_MAGAZINE] = "Magazine";
-$wgExtraNamespaces[NS_MAGAZINE_TALK] = "Magazine_talk";
+define('NS_MAGAZINE', 112);
+define('NS_MAGAZINE_TALK', 113);
+$wgExtraNamespaces[NS_MAGAZINE] = 'Magazine';
+$wgExtraNamespaces[NS_MAGAZINE_TALK] = 'Magazine_talk';
 $wgContentNamespaces[] = 112;
 
-define("NS_INVENTORY", 114);
-define("NS_INVENTORY_TALK", 115);
-$wgExtraNamespaces[NS_INVENTORY] = "Inventory";
-$wgExtraNamespaces[NS_INVENTORY_TALK] = "Inventory_talk";
+define('NS_INVENTORY', 114);
+define('NS_INVENTORY_TALK', 115);
+$wgExtraNamespaces[NS_INVENTORY] = 'Inventory';
+$wgExtraNamespaces[NS_INVENTORY_TALK] = 'Inventory_talk';
 $wgNamespacesWithSubpages[NS_INVENTORY] = true;            //subpages enabled for the review namespace
 $wgContentNamespaces[] = 114;
 
-define("NS_REVIEW", 118);
-define("NS_REVIEW_TALK", 119);
-$wgExtraNamespaces[NS_REVIEW] = "Review";
-$wgExtraNamespaces[NS_REVIEW_TALK] = "Review_talk";
+define('NS_REVIEW', 118);
+define('NS_REVIEW_TALK', 119);
+$wgExtraNamespaces[NS_REVIEW] = 'Review';
+$wgExtraNamespaces[NS_REVIEW_TALK] = 'Review_talk';
 $wgNamespacesWithSubpages[NS_REVIEW] = true;            //subpages enabled for the review namespace
 $wgGroupPermissions['*']['editreview'] = false;
 $wgGroupPermissions['autoconfirmed']['editreview'] = true;
 $wgGroupPermissions['sysop']['editreview'] = true;
 $wgContentNamespaces[] = 118;                           //track namespace in Special:Statistics
 
-define("NS_PART", 120);
-define("NS_PART_TALK", 121);
-$wgExtraNamespaces[NS_PART] = "Part";
-$wgExtraNamespaces[NS_PART_TALK] = "Part_talk";
+define('NS_PART', 120);
+define('NS_PART_TALK', 121);
+$wgExtraNamespaces[NS_PART] = 'Part';
+$wgExtraNamespaces[NS_PART_TALK] = 'Part_talk';
 $wgNamespacesWithSubpages[NS_PART] = true;
 $wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
 
@@ -119,19 +119,19 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, 112, 114, 118, 120 ); // Array of namespaces that can earn you points.
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-        'Newcomer' => 0,
-        'Beginner' => 500,
-        'Novice' => 1000,
-        'Amateur' => 1500,
-        'Thinking With Bricks' => 2000,
-        'Bricktastic' => 2500,
-        'Building Bigger' => 5000,
-        'Brick Master' => 7500,
-        'Master Builder' => 10000,
-        'LEGO Wizard' => 12500,
-        'Outstanding Brickipedian' => 15000,
-        'Honorable Brickipedian' => 20000,
-        'Legendary Brickipedian' => 25000,
+	'Newcomer' => 0,
+	'Beginner' => 500,
+	'Novice' => 1000,
+	'Amateur' => 1500,
+	'Thinking With Bricks' => 2000,
+	'Bricktastic' => 2500,
+	'Building Bigger' => 5000,
+	'Brick Master' => 7500,
+	'Master Builder' => 10000,
+	'LEGO Wizard' => 12500,
+	'Outstanding Brickipedian' => 15000,
+	'Honorable Brickipedian' => 20000,
+	'Legendary Brickipedian' => 25000,
 );
 $wgUserProfileDisplay['stats'] = true;
 
@@ -141,8 +141,8 @@ require_once("$IP/extensions/ImageMap/ImageMap.php");
 /* Change the main page url used in things like the logo to a url of another page on the wiki */
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfChangeMainPageURL';
 function lfChangeMainPageURL( $sk, &$tpl ) {
-        $tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText('LEGO Wiki')->getLocalURL();
-        return true;
+	$tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText( 'LEGO Wiki' )->getLocalURL();
+	return true;
 }
 
 #trusted
@@ -152,15 +152,15 @@ $wgGroupPermissions['patroller']['trusted'] = true;
 
 #Namespace Aliases (LC)
 $wgNamespaceAliases = array(
-        'BP' => NS_PROJECT,
-    );
+	'BP' => NS_PROJECT,
+);
 
 #Verbatim
 require_once("$IP/extensions/Verbatim/verbatim.php");
 
 # Article Ratings
 global $bmMobile;
-if( !$bmMobile ){
+if ( !$bmMobile ) {
 	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
 	require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
 
@@ -177,7 +177,6 @@ $wgEnableProfileInfo = true;
 $wgProfileToDatabase = true;
 
 require_once( "$IP/extensions/Snippet/Snippet.php" );
-
 
 # Refreshed
 $wgRefreshedHeader = array(
@@ -197,7 +196,7 @@ $wgRefreshedHeader = array(
 # #brickimedia-rc-en IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51664';
-$wgRC2UDPPrefix = "";
+$wgRC2UDPPrefix = '';
 
 # Parents link in footer
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfParentsLink';
@@ -206,7 +205,7 @@ function lfParentsLink( $sk, &$tpl ) {
 	$tpl->data['footerlinks']['places'][] = 'parents';
 	return true;
 }
-$wgExtensionMessagesFiles['Parents'] = dirname( __FILE__ ) . '/extensions/i18n/Parents.i18n.php';
+$wgExtensionMessagesFiles['Parents'] = __DIR__ . '/extensions/i18n/Parents.i18n.php';
 
 // Search fixes
 $wgNamespacesToBeSearchedDefault = array(

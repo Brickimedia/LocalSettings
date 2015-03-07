@@ -145,7 +145,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://greatballcontraption.com";
 		$wgDBname = "gbc";
 		$gaAccount = "UA-38958899-6";
-		header( "Location: http://greatballcontraption.com{$_SERVER['REQUEST_URI']}" );
 		break;
 	case "cuusoo":
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );

@@ -144,6 +144,7 @@ switch ( $host[0] ) {
 		$bmProject = "gbc";
 		$wgServer = "http://greatballcontraption.com";
 		$wgDBname = "gbc";
+		$bmSmallWiki = true;
 		$gaAccount = "UA-38958899-6";
 		if ( $host[1] === "brickimedia" ) {
 			header( "Location: http://greatballcontraption.com{$_SERVER['REQUEST_URI']}" );

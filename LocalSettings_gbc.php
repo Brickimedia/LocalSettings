@@ -7,7 +7,7 @@ $wgMetaNamespace = "GBC";
 $wgPasswordSender = "gbc";
 $wgPasswordSenderName = "Great Ball Contraption Wiki";
 
-$wgLogo = "http://images.brickimedia.org/0/05/GBC_logo.png";
+$wgLogo = "http://images.brickimedia.org/7/75/Soccer_ball.png";
 $wgFavicon = "http://images.brickimedia.org/favicons/gbc.ico";
 
 $wgLanguageCode = "en";

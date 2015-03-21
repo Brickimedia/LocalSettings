@@ -10,14 +10,6 @@ $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 
-//forums
-require_once("$IP/extensions/WikiForum/WikiForum.php");
-
-#$wgMediaWikiAuthAPIURL = 'http://lego.wikia.com/api.php';
-#$wgMediaWikiAuthPrefsURL = 'http://lego.wikia.com/wiki/Special:Preferences';
-#require_once("$IP/extensions/MediaWikiAuth/MediaWikiAuth.php");
-#$wgAuth = new MediaWikiAuthPlugin();
-
 #SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
 $wgUserStatsPointValues['vote'] = 1; // Points awarded for voting for an article
@@ -62,21 +54,9 @@ $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
-// BetaFeatures
-require_once( "$IP/extensions/BetaFeatures/BetaFeatures.php" );
-
-// MultimediaViewer
-require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
-
 // VisualEditor
 require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
 $wgVisualEditorSupportedSkins = array( 'vector', 'deepsea', 'lia', 'refreshed' );
-
-// Echo
-require_once( "$IP/extensions/Echo/Echo.php" );
-
-// ArticleRatings - SirComputer testing to see if it could be used on LSW, but content on Dev not loading.
-// require_once( "$IP/extensions/ARE/ArticleRatings.php" );
 
 # Refreshed
 $wgRefreshedHeader = array(
@@ -87,9 +67,7 @@ $wgRefreshedHeader = array(
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
 		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
-		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
-		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
-		//'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,
+		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC
 	)
 );
 

@@ -54,10 +54,6 @@ $wgDebugLogFile = '/var/log/mw.log';
 $wgGroupPermissions['bureaucrat']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['editinterface'] = true;
 
-// VisualEditor
-require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
-$wgVisualEditorSupportedSkins = array( 'vector', 'deepsea', 'lia', 'refreshed' );
-
 # Refreshed
 $wgRefreshedHeader = array(
 	'url' => 'http://dev.brickimedia.org/wiki/Main_Page',

@@ -83,12 +83,13 @@ require_once("$IP/extensions/Donate/Donate.php");
 # UploadWizard
 require_once( "$IP/extensions/UploadWizard/UploadWizard.php" );
 $wgUploadWizardConfig = array(
-	'debug' => false,
-	'altUploadForm' => 'Special:Upload',
-	'fallbackToAltUploadForm' => false,
-	'enableFormData' => true,  # Should FileAPI uploads be used on supported browsers?
-	'enableMultipleFiles' => true,
-	'enableMultiFileSelect' => true,
+    'debug' => false,
+    'altUploadForm' => 'Special:Upload',
+    'fallbackToAltUploadForm' => false,
+    'enableFormData' => true,  # Should FileAPI uploads be used on supported browsers?
+    'enableMultipleFiles' => true,
+    'enableMultiFileSelect' => true,
+    'tutorial' => array( 'template' => 'File:UploadWizardTutorial.png' )
 );
 
 # Refreshed

@@ -138,12 +138,6 @@ switch ( $host[0] ) {
 		$wgDBname = "ideas";
 		$gaAccount = "UA-38958899-4";
 		break;
-	case "lmbw":
-		$ls_path = "LocalSettings_lmbw.php";
-		$bmProject = "lmbw";
-		$wgServer = "http://lmbw.brickimedia.org";
-		$wgDBname = "lmbw";
-		break;
 	case "greatballcontraption":
 	case "gbc":
 		$ls_path = "LocalSettings_gbc.php";
@@ -200,7 +194,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'gbc', 'lmbw' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -227,7 +221,6 @@ $wgConf->settings = array(
 		'stories' => 'http://stories.brickimedia.org',
 		'customs' => 'http://customs.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
-		'lmbw' => 'http://lmbw.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',
 	)
 );
@@ -284,7 +277,6 @@ $refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshed
 $refreshedIdeas = "<img src='$refreshedImagePath/ideas.svg' width='150' height='20' alt='' />";
 $refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
 $refreshedGBC = "<img src='$refreshedImagePath/gbc.svg' width='140' alt='' />";
-$refreshedLMBW = "<img src='http://img3.wikia.nocookie.net/__cb61/legomessageboards/images/8/89/Wiki-wordmark.png' width='140' alt='' />";
 //$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
 //$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
 //$refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";

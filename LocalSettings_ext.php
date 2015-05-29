@@ -272,11 +272,11 @@ $wgThanksSendToBots = false;
 $wgThanksLogging = true;
 $wgThanksConfirmationRequired = true;
 
-// MultimediaViewer
-require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
-
-// RenameUser
-require_once( "$IP/extensions/Renameuser/Renameuser.php" );
-
 // User rights
 require_once( "$IP/UserRights.php" );
+
+// More extensions
+require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
+require_once( "$IP/extensions/Renameuser/Renameuser.php" );
+require_once( "$IP/extensions/SpamBlacklist/SpamBlacklist.php" );
+    $wgBlacklistSettings['email']['files'] = array( 'http://meta.brickimedia.org/index.php?title=MediaWiki:Email-blacklist&action=raw&sb_ver=1' );

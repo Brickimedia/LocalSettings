@@ -71,3 +71,5 @@ $wgRefreshedHeader = array(
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51663';
 $wgRC2UDPPrefix = "";
+
+require_once("$IP/extensions/vote/Vote.php");

@@ -144,7 +144,6 @@ $wgGroupPermissions['functionary']['nuke'] = true;
 
 #global sysadmin
 $wgGroupPermissions['sysadmin'] = array_merge(
-	$wgGroupPermissions['functionary'],
 	$wgGroupPermissions['sysop'],
 	// some social tools etc. assign permissions to the staff group
 	// (and the staff group is unset() later on in this very file, so this should be OK)
@@ -165,6 +164,8 @@ $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
+$wgGroupPermissions['sysadmin']['checkuser'] = true;
+$wgGroupPermissions['sysadmin']['checkuserlog'] = true;
 
 
 #bot approval group

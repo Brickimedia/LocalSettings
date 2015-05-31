@@ -168,7 +168,6 @@ $wgGroupPermissions['sysadmin']['checkuser'] = true;
 $wgGroupPermissions['sysadmin']['checkuserlog'] = true;
 
 
-
 #bot approval group
 if( $bmProject != "en" ) { // remove the group on Brickipedia
 	$wgGroupPermissions['bag'] = $wgGroupPermissions['user'];
@@ -192,7 +191,3 @@ $wgGroupPermissions['swsysop']['read'] = true;
 if ( $bmSmallWiki ) {
 	$wgGroupPermissions['swsysop'] = $wgGroupPermissions['sysop'];
 }
-
-#temporary autopatrolled configuration
-$wgGroupPermissions['autopatrolled']['autopatrol'] = true;
-$wgRemoveGroups['sysadmin'] = array ( 'autopatrolled' );

@@ -73,3 +73,10 @@ $wgRC2UDPPort = '51663';
 $wgRC2UDPPrefix = "";
 
 require_once("$IP/extensions/vote/Vote.php");
+
+# VisualEditor
+require_once( "$IP/extensions/UniversalLanguageSelector/UniversalLanguageSelector.php" );
+require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgVisualEditorParsoidURL = 'http://localhost:8000';
+$wgVisualEditorParsoidPrefix = 'dev';

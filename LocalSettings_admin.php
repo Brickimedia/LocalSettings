@@ -10,6 +10,10 @@ $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
 
+$wgRightsUrl  = "http://creativecommons.org/publicdomain/zero/1.0/";
+$wgRightsText = "a Creative Commons 0 license";
+$wgRightsIcon = "//meta.brickimedia.org/resources/assets/licenses/cc-0.png";
+
 # SocialProfile
 $wgUserStatsPointValues['edit'] = 5;
 $wgUserStatsPointValues['vote'] = 1;

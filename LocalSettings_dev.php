@@ -80,3 +80,4 @@ require_once( "$IP/extensions/VisualEditor/VisualEditor.php" );
 $wgDefaultUserOptions['visualeditor-enable'] = 1;
 $wgVisualEditorParsoidURL = 'http://localhost:8000';
 $wgVisualEditorParsoidPrefix = 'dev';
+$wgVisualEditorSupportedSkins = array( 'vector', 'monobook', 'deepsea', 'refreshed' );

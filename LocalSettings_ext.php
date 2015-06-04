@@ -106,8 +106,8 @@ $wgRestrictDisplayTitle = false;
 
 // Brickimedia Footer Icon
 $wgFooterIcons['brickimedia']['brickimedia'] = array(
-	"src" => "//www.brickimedia.org/img/brickimedia-tag.png",
-	"url" => "//www.brickimedia.org",
+	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
+	"url" => "http://www.brickimedia.org",
 	"alt" => "Brickimedia",
 	"height" => "31",
 	"width" => "88"
@@ -188,7 +188,7 @@ $wgChatKicks = true;
 $wgChatMeCommand = true;
 
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
-	$wgGlobalCssJsUrl = '//meta.brickimedia.org/index.php';
+	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';
 require_once( "$IP/extensions/GlobalCssJs/GlobalCssJs.php" );
 
 //Global new talk page message alerts
@@ -196,32 +196,32 @@ require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
 $newTalkGlobalDatabases = array(
 		"meta" => array(
 				"db" => "meta",
-				"url" => "//meta.brickimedia.org/wiki/",
+				"url" => "http://meta.brickimedia.org/wiki/",
 				"name" => "Meta"
 		),
 		"en" => array(
 				"db" => "en",
-				"url" => "//en.brickimedia.org/wiki/",
+				"url" => "http://en.brickimedia.org/wiki/",
 				"name" => "Brickipedia (en)"
 		),
 		"customs" => array(
 				"db" => "customs",
-				"url" => "//customs.brickimedia.org/wiki/",
+				"url" => "http://customs.brickimedia.org/wiki/",
 				"name" => "Brickimedia Customs"
 		),
 		"ideas" => array(
 				"db" => "ideas",
-				"url" => "//ideas.brickimedia.org/wiki/",
+				"url" => "http://ideas.brickimedia.org/wiki/",
 				"name" => "LEGO Ideas Wiki"
 		),
 		"gbc" => array(
 				"db" => "gbc",
-				"url" => "//greatballcontraption/wiki/",
+				"url" => "http://greatballcontraption/wiki/",
 				"name" => "Great Ball Contraption Wiki"
 		),
 		"admin" => array(
 				"db" => "admin",
-				"url" => "//admin.brickimedia.org/wiki/",
+				"url" => "http://admin.brickimedia.org/wiki/",
 				"name" => "Brickimedia Admin Wiki"
 		)
 );
@@ -279,4 +279,4 @@ require_once( "$IP/UserRights.php" );
 require_once( "$IP/extensions/MultimediaViewer/MultimediaViewer.php" );
 require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 require_once( "$IP/extensions/SpamBlacklist/SpamBlacklist.php" );
-    $wgBlacklistSettings['email']['files'] = array( '//meta.brickimedia.org/index.php?title=MediaWiki:Email-blacklist&action=raw&sb_ver=1' );
+    $wgBlacklistSettings['email']['files'] = array( 'http://meta.brickimedia.org/index.php?title=MediaWiki:Email-blacklist&action=raw&sb_ver=1' );

@@ -166,6 +166,7 @@ $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
 $wgGroupPermissions['sysadmin']['checkuser'] = true;
 $wgGroupPermissions['sysadmin']['checkuserlog'] = true;
+$wgGroupPermissions['sysadmin']['edituser'] = true;
 
 
 #bot approval group

@@ -187,6 +187,7 @@ require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 $wgChatKicks = true;
 $wgChatMeCommand = true;
+$wgChatLinkUsernames = true;
 
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
 	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';

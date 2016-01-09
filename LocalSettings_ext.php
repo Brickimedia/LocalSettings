@@ -9,7 +9,6 @@ require_once( "$IP/extensions/BlogPage/Blog.php" );
 	$wgBlogPageDisplay['leftcolumn'] = false;
 	$wgBlogPageDisplay['rightcolumn'] = false;
 require_once( "$IP/extensions/Cite/Cite.php" );
-wfLoadExtension( 'CiteThisPage' );
 	$wgCiteEnablePopups = true; // Pop-up citations
 require_once ( "$IP/extensions/CheckUser/CheckUser.php" );
 require_once( "$IP/extensions/CodeEditor/CodeEditor.php" );

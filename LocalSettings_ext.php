@@ -38,7 +38,7 @@ require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 require_once( "$IP/extensions/ProtectSite/ProtectSite.php" );
 require_once( "$IP/extensions/Quantcast/Quantcast.php" );
 require_once( "$IP/extensions/RandomSelection/RandomSelection.php" );
-require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" );
+// require_once( "$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php" ); disabled while it breaks
 require_once( "$IP/extensions/UserMerge/UserMerge.php" );
 require_once( "$IP/extensions/VideoFlash/VideoFlash.php" ); // both VideoFlash and Embed video for the mo
 require_once( "$IP/extensions/EmbedVideo/EmbedVideo.php");  // EmbedVideo recommended though

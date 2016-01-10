@@ -92,6 +92,7 @@ $smwgShowFactbox = 'SMW_FACTBOX_NONEMPTY';
 $smwgQConceptCaching = CONCEPT_CACHE_ALL; //LOTS OF CACHING!!!
 $smwgCacheType = CACHE_MEMCACHED;
 $smwgPDefaultType = '_txt';
+$smwgQEqualitySupport = SMW_EQ_NONE;
 
 $smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
 $smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;

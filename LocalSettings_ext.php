@@ -12,7 +12,7 @@ wfLoadExtensions( array(
 	'Comments',
 	'ConfirmEdit',
 	'Editcount',
-	'EditUser',
+	//'EditUser',
 	'EmbedVideo',
 	'Gadgets',
 	'GlobalCssJs',

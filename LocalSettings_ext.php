@@ -161,7 +161,7 @@ $wgAutoConfirmCount = 5;
 //LS_global MUST be before deepsea is included!
 wfLoadSkins( array(
 	'Vector',
-	'MonoBook',
+	'Monobook',
 	'DeepSea'
 ) );
 #require_once( "$IP/skins/monaco/monaco.php" );

@@ -28,12 +28,12 @@ wfLoadExtensions( array(
 	'SiteMatrix',
 	'SpamBlacklist',
 	'UserMerge',
-	'WikiLove',
 	'WikiEditor'
 ) );
 
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
+require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 
 // BlogPage extension settings
 $wgBlogPageDisplay['leftcolumn'] = false;

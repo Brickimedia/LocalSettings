@@ -16,7 +16,6 @@ wfLoadExtensions( array(
 	'EmbedVideo',
 	'Gadgets',
 	'GlobalCssJs',
-	'GlobalPreferences',
 	'GlobalUsage',
 	'InputBox',
 	'Interwiki',
@@ -34,6 +33,7 @@ wfLoadExtensions( array(
 ) );
 
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
+require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 
 // BlogPage extension settings
 $wgBlogPageDisplay['leftcolumn'] = false;

@@ -23,7 +23,7 @@ wfLoadExtensions( array(
 	'Nuke',
 	'ParserFunctions',
 	'PdfHandler',
-	'ProtectSite',
+	//'ProtectSite',
 	'Renameuser',
 	'SiteMatrix',
 	'SpamBlacklist',

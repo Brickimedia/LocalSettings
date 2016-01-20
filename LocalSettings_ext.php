@@ -309,6 +309,7 @@ require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 $wgBlacklistSettings['email']['files'] = array( 'http://meta.brickimedia.org/index.php?title=MediaWiki:Email-blacklist&action=raw&sb_ver=1' );
 
 //Global CSS/JS settings
+$wgUseGlobalSiteCssJs = true;
 $wgGlobalCssJsConfig = array(
 	'wiki' => 'meta',
 	'source' => 'meta',

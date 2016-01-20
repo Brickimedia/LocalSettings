@@ -22,7 +22,7 @@ wfLoadExtensions( array(
 	'MultimediaViewer',
 	'Nuke',
 	'ParserFunctions',
-	'Pdfhandler',
+	'PdfHandler',
 	'ProtectSite',
 	'Renameuser',
 	'SiteMatrix',

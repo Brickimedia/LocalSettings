@@ -313,7 +313,7 @@ $wgGlobalCssJsConfig = array(
 	'wiki' => 'meta',
 	'source' => 'meta',
 );
-$wgResourceLoaderSources['metawiki'] = array(
+$wgResourceLoaderSources['meta'] = array(
 	'apiScript' => 'http://meta.brickimedia.org/api.php',
 	'loadScript' => 'http://meta.brickimedia.org/load.php',
 );

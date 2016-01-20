@@ -15,7 +15,7 @@ wfLoadExtensions( array(
 	'EditUser',
 	'EmbedVideo',
 	'Gadgets',
-	'GlobalCssJs'
+	'GlobalCssJs',
 	'GlobalPreferences',
 	'GlobalUsage',
 	'InputBox',

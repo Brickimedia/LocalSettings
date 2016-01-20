@@ -15,6 +15,7 @@ wfLoadExtensions( array(
 	'EditUser',
 	'EmbedVideo',
 	'Gadgets',
+	'GlobalCssJs'
 	'GlobalPreferences',
 	'GlobalUsage',
 	'InputBox',
@@ -205,7 +206,6 @@ $wgPdfProcessor = 'gs';
 $wgPdfPostProcessor = 'convert';
 $wgPdfInfo = 'pdfinfo';
 
-// More extensions
 // GlobalUsage settings
 $wgGlobalUsageDatabase = 'meta';
 
@@ -217,8 +217,6 @@ require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatLinkUsernames = true;
 
 require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
-	$wgGlobalCssJsUrl = 'http://meta.brickimedia.org/index.php';
-require_once( "$IP/extensions/GlobalCssJs/GlobalCssJs.php" );
 
 //Global new talk page message alerts
 require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
@@ -309,3 +307,13 @@ require_once( "$IP/extensions/Renameuser/Renameuser.php" );
 
 // SpamBlacklist settings
 $wgBlacklistSettings['email']['files'] = array( 'http://meta.brickimedia.org/index.php?title=MediaWiki:Email-blacklist&action=raw&sb_ver=1' );
+
+//Global CSS/JS settings
+$wgGlobalCssJsConfig = array(
+	'wiki' => 'meta',
+	'source' => 'meta',
+);
+$wgResourceLoaderSources['metawiki'] = array(
+	'apiScript' => 'http://meta.brickimedia.org/api.php',
+	'loadScript' => 'http://meta.brickimedia.org/load.php',
+);

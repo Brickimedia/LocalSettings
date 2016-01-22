@@ -5,7 +5,6 @@
 # The following extensions were automatically enabled.
 wfLoadExtensions( array(
 	'AJAXPoll',
-	'BlogPage',
 	'Cite',
 	'CheckUser',
 	'CodeEditor',
@@ -34,10 +33,6 @@ wfLoadExtensions( array(
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
-
-// BlogPage extension settings
-$wgBlogPageDisplay['leftcolumn'] = false;
-$wgBlogPageDisplay['rightcolumn'] = false;
 	
 // Cite extension settings
 $wgCiteEnablePopups = true; // Pop-up citations
@@ -199,7 +194,11 @@ include_once( "$IP/extensions/HTMLTags/HTMLTags.php" );
 	$wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
 	$wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );
 
+// Blog namespace
+define("NS_BLOG", 500);
+define("NS_BLOG_TALK", 501);
 $wgExtraNamespaces[500] = "User_blog";
+$wgExtraNamespaces[501] = "User_blog_talk";
 
 // Pdfhandler settings
 $wgPdfProcessor = 'gs';

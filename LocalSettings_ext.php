@@ -26,6 +26,7 @@ wfLoadExtensions( array(
 	'Renameuser',
 	'SiteMatrix',
 	'SpamBlacklist',
+	'Thanks',
 	'UserMerge',
 	'WikiEditor'
 ) );

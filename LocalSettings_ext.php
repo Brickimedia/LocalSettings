@@ -37,7 +37,7 @@ require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 require_once( "$IP/extensions/Thanks/Thanks.php" );
-require_once( "$IP/extensions/QuizGame/QuizGame.php" );
+require_once( "$IP/extensions/QuizGame/QuestionGame.php" );
 	
 // Cite extension settings
 $wgCiteEnablePopups = true; // Pop-up citations

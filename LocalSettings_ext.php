@@ -22,6 +22,8 @@ wfLoadExtensions( array(
 	'Nuke',
 	'ParserFunctions',
 	'PdfHandler',
+	'PictureGame',
+	'PollNY',
 	//'ProtectSite',
 	'Renameuser',
 	'SiteMatrix',
@@ -30,10 +32,12 @@ wfLoadExtensions( array(
 	'WikiEditor'
 ) );
 
+// Not yet on new loading system:
 require_once( "$IP/extensions/AbuseFilter/AbuseFilter.php" );
 require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 require_once( "$IP/extensions/Thanks/Thanks.php" );
+require_once( "$IP/extensions/QuizGame/QuizGame.php" );
 	
 // Cite extension settings
 $wgCiteEnablePopups = true; // Pop-up citations

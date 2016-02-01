@@ -167,7 +167,7 @@ $wgGroupPermissions['sysadmin']['userrights'] = true;
 $wgGroupPermissions['sysadmin']['checkuser'] = true;
 $wgGroupPermissions['sysadmin']['checkuserlog'] = true;
 $wgGroupPermissions['sysadmin']['edituser'] = true;
-
+$wgGroupPermissions['sysadmin']['nuke'] = true;
 
 #bot approval group
 if( $bmProject != "en" ) { // remove the group on Brickipedia

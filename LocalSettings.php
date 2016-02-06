@@ -270,17 +270,14 @@ function showRefreshedAdvert( &$footerExtra ) {
 $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 
 $refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
-$refreshedMeta = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickimedia.svg\" src=\"$refreshedImagePath/brickimedia.png\" width='144' height='30'/></svg>";
-$refreshedEn = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/brickipedia.svg\" src=\"$refreshedImagePath/brickipedia.png\" width='144' height='30'/></svg>";
-$refreshedCustoms = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/customs.svg\" src=\"$refreshedImagePath/customs.png\" width='144' height='30'/></svg>";
-$refreshedStories = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/stories.svg\" src=\"$refreshedImagePath/stories.png\" width='144' height='30'/></svg>";
-$refreshedIdeas = "<img src='$refreshedImagePath/ideas.svg' width='150' height='20' alt='' />";
-$refreshedAdmin = "<svg width='144' height='30'><image xlink:href=\"$refreshedImagePath/admin.svg\" src=\"$refreshedImagePath/admin.png\" width='144' height='30'/></svg>";
-$refreshedGBC = "<img src='$refreshedImagePath/gbc.svg' width='140' alt='' />";
-//$refreshedDev = "<img width='169' src='$refreshedImagePath/dev.png' alt='' />";
-//$refreshedBooks = "<svg width='168' height='24'><image xlink:href=\"$refreshedImagePath/books.svg\" src=\"$refreshedImagePath/books.png\" width='168' height='24' /></svg>";
-//$refreshedMinifigures = "<img width='150' height='33' src='$refreshedImagePath/lmo.png' alt='' />";
-//$refreshedData = "<img width='160' src='$refreshedImagePath/data.png' alt='' />";
+$refreshedMeta = "<img src=\"$refreshedImagePath/brickimedia.svg\" width=\"144\" height=\"30\" alt=\"Meta\" />";
+$refreshedEn = "<img src=\"$refreshedImagePath/brickipedia.svg\" width=\"144\" height=\"30\" alt=\"Brickipedia\" />";
+$refreshedCustoms = "<img src=\"$refreshedImagePath/customs.svg\" width=\"144\" height=\"30\" alt=\"Customs\" />";
+$refreshedStories = "<img src=\"$refreshedImagePath/stories.svg\" width=\"144\" height=\"30\" alt=\"Stories\" />";
+$refreshedIdeas = "<img src=\"$refreshedImagePath/ideas.svg\" width=\"150\" height=\"20\" alt=\"Ideas Wiki\" />";
+$refreshedAdmin = "<img src=\"$refreshedImagePath/admin.svg\" width=\"144\" height=\"30\" alt=\"Admin Wiki\" />";
+$refreshedGBC = "<img src=\"$refreshedImagePath/gbc.svg\" width=\"140\" height=\"40\" alt=\"Great Ball Contraption Wiki\" />";
+//$refreshedBooks = "<img src=\"$refreshedImagePath/books.svg\" width=\"168\" height=\"24\" alt=\"Brickibooks\" />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

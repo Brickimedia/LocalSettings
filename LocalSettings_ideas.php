@@ -77,3 +77,5 @@ $wgRC2UDPPrefix = "";
 
 # Indefinitely blocking autoconfirmed users from creating pages
 $wgGroupPermissions['autoconfirmed']['create'] = false;
+# Indefnitely block accounts to be created on this wiki locally
+$wgGroupPermissions['*']['createaccount'] = false;

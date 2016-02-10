@@ -235,17 +235,12 @@ $wgSharedTables = array(
 	'user_properties',
 	'user_relationship',
 	'user_relationship_request',
-	'spam_regex',
-	'blockedby',
-	'stats_blockedby',
 	'abuse_filter',
 	'abuse_filter_action',
 	'abuse_filter_history',
 	'abuse_filter_log',
 	'spoofuser',
-	'sites',
-	'phalanx',
-	'phalanx_stats'
+	'sites'
 );
 
 // SKINS

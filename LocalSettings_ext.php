@@ -18,6 +18,7 @@ wfLoadExtensions( array(
 	'GlobalUsage',
 	'InputBox',
 	'Interwiki',
+	'MassMessage',
 	'MultimediaViewer',
 	'Nuke',
 	'ParserFunctions',
@@ -321,3 +322,5 @@ $wgResourceLoaderSources['meta'] = array(
 	'apiScript' => 'http://meta.brickimedia.org/api.php',
 	'loadScript' => 'http://meta.brickimedia.org/load.php',
 );
+
+$wgMassMessageAccountUsername = 'Brickimedia message delivery';

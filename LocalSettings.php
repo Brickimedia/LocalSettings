@@ -244,7 +244,7 @@ $wgSharedTables = array(
 );
 
 // SKINS
-require_once( "$IP/skins/Refreshed/Refreshed.php" );
+wfLoadSkin( 'Refreshed' );
 $wgDefaultSkin = 'refreshed';
 function showRefreshedAdvert( &$footerExtra ) {
 	$footerExtra = '

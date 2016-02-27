@@ -14,6 +14,7 @@ wfLoadExtensions( array(
 	//'EditUser',
 	'EmbedVideo',
 	'Gadgets',
+	'GlobalContribs',
 	'GlobalCssJs',
 	'GlobalUsage',
 	'InputBox',
@@ -214,7 +215,6 @@ $wgPdfInfo = 'pdfinfo';
 $wgGlobalUsageDatabase = 'meta';
 
 require_once( "$IP/extensions/AntiSpoof/AntiSpoof.php" );
-require_once( "$IP/extensions/GlobalContribs/GlobalContribs.php" );
 require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;

@@ -15,6 +15,7 @@ $wgDefaultSkin = 'refreshed';
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;
+$wgGroupPermissions['sysop']['change-rating'] = true;
 $wgGroupPermissions['sysadmin']['upload'] = true;
 $wgGroupPermissions['*']['createtalk'] = true;
 $wgGroupPermissions['*']['createpage'] = true;

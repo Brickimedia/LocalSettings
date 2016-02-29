@@ -108,7 +108,7 @@ switch ( $host[0] ) {
 		$ls_path = "LocalSettings_fanatics.php";
 		$bmProject = "fanatics";
 		$wgServer = "http://fanatics.brickimedia.org";
-		$wgDBname = "fanatics";
+		$wgDBname = "customs";
 		$gaAccount = "UA-38958899-3";
 		break;
 	case "dev":

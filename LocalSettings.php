@@ -104,11 +104,11 @@ switch ( $host[0] ) {
 		$wgDBname = "en";
 		$gaAccount = "UA-38958899-2";
 		break;
-	case "customs":
-		$ls_path = "LocalSettings_customs.php";
-		$bmProject = "customs";
-		$wgServer = "http://customs.brickimedia.org";
-		$wgDBname = "customs";
+	case "fanatics":
+		$ls_path = "LocalSettings_fanatics.php";
+		$bmProject = "fanatics";
+		$wgServer = "http://fanatics.brickimedia.org";
+		$wgDBname = "fanatics";
 		$gaAccount = "UA-38958899-3";
 		break;
 	case "dev":
@@ -194,7 +194,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'gbc' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'fanatics', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -219,7 +219,7 @@ $wgConf->settings = array(
 		'dev' => 'http://dev.brickimedia.org',
 		'admin' => 'http://admin.brickimedia.org',
 		'stories' => 'http://stories.brickimedia.org',
-		'customs' => 'http://customs.brickimedia.org',
+		'fanatics' => 'http://fanatics.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',
 	)
@@ -267,7 +267,7 @@ $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 $refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
 $refreshedMeta = "<img src=\"$refreshedImagePath/brickimedia.svg\" width=\"144\" height=\"30\" alt=\"Meta\" />";
 $refreshedEn = "<img src=\"$refreshedImagePath/brickipedia.svg\" width=\"144\" height=\"30\" alt=\"Brickipedia\" />";
-$refreshedCustoms = "<img src=\"$refreshedImagePath/customs.svg\" width=\"144\" height=\"30\" alt=\"Customs\" />";
+$refreshedFanatics = "<img src=\"$refreshedImagePath/fanatics.svg\" width=\"144\" height=\"30\" alt=\"Fanatics\" />";
 $refreshedStories = "<img src=\"$refreshedImagePath/stories.svg\" width=\"144\" height=\"30\" alt=\"Stories\" />";
 $refreshedIdeas = "<img src=\"$refreshedImagePath/ideas.svg\" width=\"150\" height=\"20\" alt=\"Ideas Wiki\" />";
 $refreshedAdmin = "<img src=\"$refreshedImagePath/admin.svg\" width=\"144\" height=\"30\" alt=\"Admin Wiki\" />";

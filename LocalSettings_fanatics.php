@@ -1,13 +1,13 @@
 <?php
 
-$wgSitename = "Brickimedia Customs";
-$wgMetaNamespace = "Customs";
+$wgSitename = "Brickimedia Fanatics";
+$wgMetaNamespace = "Fanatics";
 $wgNamespaceAliases['BC'] = NS_PROJECT;
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
-$wgPasswordSender = "customs";
-$wgPasswordSenderName = "Brickimedia Customs";
+$wgPasswordSender = "Fanatics";
+$wgPasswordSenderName = "Brickimedia Fanatics";
 
-$wgLogo = "http://images.brickimedia.org/4/4e/Customs-Logo.png";
+$wgLogo = "http://images.brickimedia.org/4/4e/Fanatics-Logo.png";
 $wgFavicon = "http://images.brickimedia.org/favicons/favicon.ico";
 
 $wgLanguageCode = "en";
@@ -16,18 +16,14 @@ $wgDefaultSkin = 'refreshed';
 //ArticleRatings
 require_once( "$IP/extensions/ARE/ArticleRatings.php" );
 
-$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat', 'reviewer' );
-$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'reviewer' );
-$wgAddGroups['reviewer'][] = 'reviewer'; //Allow CQM users to add other members to that group
-$wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow CQM users to remove other members to that group
-$wgAddGroups['sysop'][] = 'reviewer';
-$wgRemoveGroups['sysop'][] ='reviewer';
+$wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller', 'bureaucrat' );
+$wgRemoveGroups['bureaucrat'] = array( 'sysop', 'bot', 'rollback', 'patroller' );
 $wgGroupPermissions['sysop']['change-rating'] = true;
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing
 require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
-enableSemantics('customs.brickimedia.org');
+enableSemantics('fanatics.brickimedia.org');
 
 #SocialProfile
 $wgUserStatsPointValues['edit'] = 5; // Points awarded on a mainspace edit
@@ -70,8 +66,8 @@ require_once("$IP/extensions/GlobalUsage/GlobalUsage.php");
 
 # Refreshed
 $wgRefreshedHeader = array(
-	'url' => 'http://customs.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedCustoms,
+	'url' => 'http://fanatics.brickimedia.org/wiki/Main_Page',
+	'img' => $refreshedFanatics,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
@@ -82,7 +78,7 @@ $wgRefreshedHeader = array(
 	)
 );
 
-# #brickimedia-rc-customs IRC
+# #brickimedia-rc-fanatics IRC
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51660';
 $wgRC2UDPPrefix = "";

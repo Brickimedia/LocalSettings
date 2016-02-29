@@ -53,12 +53,6 @@ $wgGroupPermissions['patroller']['movefile'] = true;
 $wgGroupPermissions['patroller']['globalblock-exempt'] = true;
 $wgGroupPermissions['patroller']['rollback'] = true; #HAH! It's part of patroller now! :D
 
-#reviewer
-$wgGroupPermissions['reviewer']['edit'] = true;
-$wgGroupPermissions['reviewer']['changeRating'] = true;
-$wgAddGroups['reviewer'][] = array('reviewer');
-$wgRemoveGroups['reviewer'][] = array('reviewer');
-
 #bot
 $wgGroupPermissions['bot']['bot']              = true;
 $wgGroupPermissions['bot']['autoconfirmed']    = true;

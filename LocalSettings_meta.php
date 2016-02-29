@@ -35,7 +35,7 @@ $wgGroupPermissions['sysop']['abusefilter-revert'] = true;
 $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 
-$wgLocalDatabases = array( 'en', 'customs', 'dev', 'gbc', 'ideas', 'admin' );
+$wgLocalDatabases = array( 'en', 'fanatics', 'dev', 'gbc', 'ideas', 'admin' );
 
 $wgExtraNamespaces[104] = "Board";
 $wgNamespaceProtection[104] = array( 'boardedit' );
@@ -81,7 +81,7 @@ $wgRefreshedHeader = array(
 	'img' => $refreshedMeta,
 	'dropdown' => array(
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
-		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
+		'http://fanatics.brickimedia.org/wiki/Main_Page' => $refreshedFanatics,
 		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
 		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
 		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,

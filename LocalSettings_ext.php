@@ -39,7 +39,7 @@ require_once( "$IP/extensions/GlobalPreferences/GlobalPreferences.php" );
 require_once( "$IP/extensions/WikiLove/WikiLove.php" );
 require_once( "$IP/extensions/Thanks/Thanks.php" );
 require_once( "$IP/extensions/QuizGame/QuestionGame.php" );
-
+	
 // Cite extension settings
 $wgCiteEnablePopups = true; // Pop-up citations
 
@@ -48,7 +48,7 @@ unset( $wgGroupPermissions['commentadmin'] );
 $wgGroupPermissions['sysop']['commentadmin'] = true;
 $wgCommentsInRecentChanges = true;
 $wgCommentsSortDescending = true;
-
+	
 require_once( "$IP/extensions/CSS/CSS.php" );
 require_once( "$IP/extensions/DPLForum/DPLforum.php" );
 require_once( "$IP/extensions/GlobalUserrights/GlobalUserrights.php" );
@@ -56,7 +56,7 @@ require_once( "$IP/extensions/GlobalBlocking/GlobalBlocking.php" );
 
 // GlobalPreferences settings
 $wgGlobalPreferencesDB = 'shared';
-
+	
 require_once( "$IP/extensions/VoteNY/Vote.php" );
 require_once( "$IP/extensions/MediawikiPlayer/MediawikiPlayer.php" );
 // ParserFunctions settings
@@ -235,10 +235,10 @@ $newTalkGlobalDatabases = array(
 				"url" => "http://en.brickimedia.org/wiki/",
 				"name" => "Brickipedia (en)"
 		),
-		"fanatics" => array(
-				"db" => "fanatics",
-				"url" => "http://fanatics.brickimedia.org/wiki/",
-				"name" => "Brickimedia Fanatics"
+		"customs" => array(
+				"db" => "customs",
+				"url" => "http://customs.brickimedia.org/wiki/",
+				"name" => "Brickimedia Customs"
 		),
 		"ideas" => array(
 				"db" => "ideas",
@@ -271,9 +271,9 @@ $wgSiteMatrixSites = array(
 		'host' => 'en.brickimedia.org',
 		'prefix' => 'b',
 	),
-	'fanatics' => array(
-		'name' => 'Brickimedia Fanatics',
-		'host' => 'fanatics.brickimedia.org',
+	'customs' => array(
+		'name' => 'Brickimedia Customs',
+		'host' => 'customs.brickimedia.org',
 		'prefix' => 'c',
 	),
 	'gbc' => array(
@@ -292,7 +292,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'fanatics', 'gbc', 'ideas', 'meta', 'admin');
+$wgLocalDatabases = array( 'en', 'customs', 'gbc', 'ideas', 'meta', 'admin');
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

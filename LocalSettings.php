@@ -88,6 +88,8 @@ if( $wgCommandLineMode ) {
 
 $bmSmallWiki = false; // overridden when needed
 
+require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" ); // needs to be here, can't be in LocalSettings_ext.php or else $gaAccount will be overridden
+
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
 	case "meta":
@@ -95,7 +97,7 @@ switch ( $host[0] ) {
 		$bmProject = "meta";
 		$wgServer = "http://meta.brickimedia.org";
 		$wgDBname = "meta";
-		$gaAccount = "";
+		$gaAccount = "UA-38958899-7";
 		break;
 	case "en":
 		$ls_path = "LocalSettings_en.php";

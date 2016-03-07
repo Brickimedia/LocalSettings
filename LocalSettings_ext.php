@@ -220,8 +220,6 @@ require_once( "$IP/extensions/MediaWikiChat/MediaWikiChat.php" );
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
 
-require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" );
-
 //Global new talk page message alerts
 require_once( "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php" );
 $newTalkGlobalDatabases = array(

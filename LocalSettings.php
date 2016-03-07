@@ -88,8 +88,6 @@ if( $wgCommandLineMode ) {
 
 $bmSmallWiki = false; // overridden when needed
 
-require_once( "$IP/extensions/googleAnalytics/googleAnalytics.php" ); // needs to be here, can't be in LocalSettings_ext.php or else $gaAccount will be overridden
-
 $host = explode( ".", $_SERVER["HTTP_HOST"] );
 switch ( $host[0] ) {
 	case "meta":
@@ -97,21 +95,18 @@ switch ( $host[0] ) {
 		$bmProject = "meta";
 		$wgServer = "http://meta.brickimedia.org";
 		$wgDBname = "meta";
-		$gaAccount = "UA-38958899-7";
 		break;
 	case "en":
 		$ls_path = "LocalSettings_en.php";
 		$bmProject = "en";
 		$wgServer = "http://en.brickimedia.org";
 		$wgDBname = "en";
-		$gaAccount = "UA-38958899-2";
 		break;
 	case "customs":
 		$ls_path = "LocalSettings_customs.php";
 		$bmProject = "customs";
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
-		$gaAccount = "UA-38958899-3";
 		break;
 	case "dev":
 		$ls_path = "LocalSettings_dev.php";
@@ -119,7 +114,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://dev.brickimedia.org";
 		$wgDBname = "dev";
 		$bmSmallWiki = true;
-		$gaAccount = "UA-38958899-5";
 		break;
 	case "admin":
 		$ls_path = "LocalSettings_admin.php";
@@ -138,7 +132,6 @@ switch ( $host[0] ) {
 		$bmProject = "ideas";
 		$wgServer = "http://ideas.brickimedia.org";
 		$wgDBname = "ideas";
-		$gaAccount = "UA-38958899-4";
 		break;
 	case "greatballcontraption":
 	case "gbc":
@@ -147,7 +140,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://greatballcontraption.com";
 		$wgDBname = "gbc";
 		$bmSmallWiki = true;
-		$gaAccount = "UA-38958899-6";
 		if ( $host[1] === "brickimedia" ) {
 			header( "Location: http://greatballcontraption.com{$_SERVER['REQUEST_URI']}" );
 		}

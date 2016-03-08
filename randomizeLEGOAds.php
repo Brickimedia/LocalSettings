@@ -9,4 +9,4 @@ $themes = array(
   "easter",
   "", //default
 );
-echo '<iframe src="/LEGOAffiliateAd.php?theme=' . $items[array_rand($items)] . '&size=' . $_GET['size'] . '" style="border:0;max-width:12em;" scrolling="no" allowtransparency="true"></iframe>';
+echo '<iframe src="/showLEGOAffiliateAd.php?theme=' . $items[array_rand($items)] . '&size=' . $_GET['size'] . '" style="border:0;max-width:12em;" scrolling="no" allowtransparency="true"></iframe>';

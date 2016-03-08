@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta http-equiv="refresh" content="120">
     <script language="javascript" type="text/javascript">
       function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';

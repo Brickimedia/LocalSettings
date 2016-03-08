@@ -58,19 +58,19 @@ switch ( $_GET['theme'] ) {
   case "ninjago":
     switch ( $_GET['size'] ) {
       case "125":
-        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001388&type=4&subid=0"><IMG alt="FREE Kai's Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-125x125.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001388&type=4&subid=0">';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001388&type=4&subid=0"><IMG alt="FREE Kai\'s Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-125x125.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001388&type=4&subid=0">';
         break;
       case "728":
-        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001391&type=4&subid=0"><IMG alt="FREE Kai's Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-728x90.jpg"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001391&type=4&subid=0">';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001391&type=4&subid=0"><IMG alt="FREE Kai\'s Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-728x90.jpg"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001391&type=4&subid=0">';
         break;
       case "120":
-        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001387&type=4&subid=0"><IMG alt="FREE Kai's Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-120x90.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001387&type=4&subid=0">';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001387&type=4&subid=0"><IMG alt="FREE Kai\'s Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-120x90.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001387&type=4&subid=0">';
         break;
       case "160":
-        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001393&type=4&subid=0"><IMG alt="FREE Kai's Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-160x600.jpg"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001393&type=4&subid=0">';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001393&type=4&subid=0"><IMG alt="FREE Kai\'s Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-160x600.jpg"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001393&type=4&subid=0">';
         break;
       case "234":
-        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001389&type=4&subid=0"><IMG alt="FREE Kai's Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-234x60.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001389&type=4&subid=0">';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001389&type=4&subid=0"><IMG alt="FREE Kai\'s Mini Dragon with purchases of $35 or more!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/30422-dragon/30422-dragon-234x60.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001389&type=4&subid=0">';
         break;
       default:
         echo 'Error: Required paramter "size" not specified.';

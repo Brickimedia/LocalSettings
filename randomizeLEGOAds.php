@@ -1,5 +1,6 @@
 <html>
   <head>
+  	<base target="_blank" />
     <meta http-equiv="refresh" content="120">
     <script language="javascript" type="text/javascript">
       function resizeIframe(obj) {

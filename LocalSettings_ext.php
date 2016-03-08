@@ -194,7 +194,7 @@ $wgAllowExternalImages = true;
 
 // HTML (feel free to disable; testing still)
 include_once( "$IP/extensions/HTMLTags/HTMLTags.php" );
-	$wgHTMLTagsAttributes['iframe'] = array( 'src', 'width', 'height', 'style' );
+	$wgHTMLTagsAttributes['iframe'] = array( 'src', 'width', 'height', 'style', 'scrolling' );
 	$wgHTMLTagsAttributes['form'] = array( 'action', 'method' );
 	$wgHTMLTagsAttributes['input'] = array( 'type', 'name', 'value', 'src', 'border', 'alt' );
 	$wgHTMLTagsAttributes['img'] = array( 'alt', 'border', 'src', 'width', 'height' );

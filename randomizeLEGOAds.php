@@ -1,12 +1,24 @@
-<?php
-$themes = array(
-  "starwars",
-  "duplo",
-  "ninjago",
-  "city",
-  "friends",
-  "creator",
-  "easter",
-  "", //default
-);
-echo '<iframe src="/showLEGOAffiliateAd.php?theme=' . $items[array_rand($items)] . '&size=' . $_GET['size'] . '" style="border:0;max-width:12em;" scrolling="no" allowtransparency="true"></iframe>';
+<html>
+  <head>
+    <script language="javascript" type="text/javascript">
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+  </head>
+  <body>
+    <?php
+      $themes = array(
+        "starwars",
+        "duplo",
+        "ninjago",
+        "city",
+        "friends",
+        "creator",
+        "easter",
+        "", //default
+      );
+      echo '<iframe width="' . $_GET['size'] . '" src="/showLEGOAffiliateAd.php?theme=' . $items[array_rand($items)] . '&size=' . $_GET['size'] . '" scrolling="no" frameborder="0" onload="resizeIframe(this)" allowtransparency="true"></iframe>';
+    ?>
+  </body>
+</html>

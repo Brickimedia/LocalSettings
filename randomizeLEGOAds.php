@@ -5,6 +5,12 @@
         obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
       }
     </script>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <?php

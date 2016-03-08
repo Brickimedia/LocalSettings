@@ -180,7 +180,7 @@ switch ( $_GET['theme'] ) {
         echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10000435&type=4&subid=0"><IMG alt="LEGO Brand Retail" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/LEGOgeneric_160x600.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10000435&type=4&subid=0">';
         break;
       default:
-        echo 'Error: Required paramter "size" not specified.';
+        echo '<a href="http://click.linksynergy.com/fs-bin/click?id=flo3EmTGydA&offerid=115554.10001373&type=4&subid=0"><IMG alt="The LEGO® Easter Sale is on! Save up to 20% on select items!" border="0" src="http://cache.lego.com/2057/images/shop/Affiliate/2016/easter-sale/easter-sale-234x60.gif"></a><IMG border="0" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=flo3EmTGydA&bids=115554.10001373&type=4&subid=0">';
         break;
     }
     break;

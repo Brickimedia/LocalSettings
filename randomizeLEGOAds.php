@@ -18,7 +18,7 @@
         "easter",
         "", //default
       );
-      echo '<iframe width="' . $_GET['size'] . '" src="/showLEGOAffiliateAd.php?theme=' . $items[array_rand($items)] . '&size=' . $_GET['size'] . '" scrolling="no" frameborder="0" onload="resizeIframe(this)" allowtransparency="true"></iframe>';
+      echo '<iframe width="' . $_GET['size'] . '" src="/showLEGOAffiliateAd.php?theme=' . $themes[array_rand($themes)] . '&size=' . $_GET['size'] . '" scrolling="no" frameborder="0" onload="resizeIframe(this)" allowtransparency="true"></iframe>';
     ?>
   </body>
 </html>

@@ -244,15 +244,7 @@ function showRefreshedAdvert( &$footerExtra ) {
 	$footerExtra = '
 		<div id="advert">
 			<p>' . wfMessage( 'refreshed-advert' )->plain() . '</p>
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- Refreshed ad -->
-			<ins class="adsbygoogle"
-				style="display:inline-block;width:728px;height:90px"
-				data-ad-client="ca-pub-9543775174763951"
-				data-ad-slot="7733872730"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			<iframe height="90" width="728" src="/showAdSenseAds.php?size=728" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
 		</div>';
 	return true;
 }

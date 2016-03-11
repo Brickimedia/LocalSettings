@@ -35,10 +35,10 @@ switch ( $_GET['size'] ) {
                 break;
         default:
                 echo '<ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-9393485036030091"
-                     data-ad-slot="7756942160"
-                     data-ad-format="auto"></ins>';
+                    style="display:block"
+                    data-ad-client="ca-pub-9543775174763951"
+                    data-ad-slot="9788714334"
+                    data-ad-format="auto"></ins>';
                 break;
 }
 ?>

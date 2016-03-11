@@ -10,12 +10,6 @@ $wgPasswordSenderName = "Brickimedia Meta";
 $wgLanguageCode = "en";
 $wgDefaultSkin = 'refreshed';
 
-$wgGroupPermissions['board']['read'] = true;
-$wgGroupPermissions['board']['edit'] = true;
-$wgGroupPermissions['board']['userrights-interwiki'] = true;
-$wgGroupPermissions['board']['userrights'] = true;
-$wgGroupPermissions['board']['boardedit'] = true;
-$wgGroupPermissions['board']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-global'] = true;
 $wgGroupPermissions['sysadmin']['userrights-interwiki'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
@@ -23,8 +17,6 @@ $wgGroupPermissions['sysadmin']['globalblock'] = true;
 $wgGroupPermissions['sysadmin']['globalunblock'] = true;
 $wgAddGroups['sysadmin'] = array( 'sysadmin' );
 $wgRemoveGroups['sysadmin'] = array( 'sysadmin' );
-
-$wgGroupPermissions['boardedit']['boardedit'] = true;
 
 $wgGroupPermissions['sysop']['globalblock'] = true;
 $wgGroupPermissions['sysop']['globalunblock'] = true;
@@ -36,12 +28,6 @@ $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 
 $wgLocalDatabases = array( 'en', 'customs', 'dev', 'gbc', 'ideas', 'admin' );
-
-$wgExtraNamespaces[104] = "Board";
-$wgNamespaceProtection[104] = array( 'boardedit' );
-$wgNamespacesWithSubpages[104] = true;
-$wgExtraNamespaces[105] = 'Board_talk';
-$wgNamespacesWithSubpages[105] = true;
 
 //uploading
 $wgEnableUploads = true;

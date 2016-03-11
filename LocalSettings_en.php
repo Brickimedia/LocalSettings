@@ -24,10 +24,8 @@ $wgGroupPermissions['*']['createpage'] = true;
 $wgGroupPermissions['sysop']['nuke'] = false;
 
 // User groups
-$wgAddGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );
-$wgRemoveGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'reviewer', 'newsreporter', 'blockedfromchat' );
-$wgAddGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to add other members to that group
-$wgRemoveGroups['reviewer'][] = 'reviewer'; //Allow QCG and RQM users to remove other members to that group
+$wgAddGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'newsreporter', 'blockedfromchat' );
+$wgRemoveGroups['sysop'] = array( 'sysop', 'bot', 'patroller', 'newsreporter', 'blockedfromchat' );
 // Remove the bureaucrat group
 $wgGroupPermissions['sysop'] = array_merge( $wgGroupPermissions['sysop'], $wgGroupPermissions['bureaucrat'] );
 unset( $wgGroupPermissions['bureaucrat'] );

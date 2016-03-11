@@ -16,22 +16,22 @@ switch ( $_GET['size'] ) {
                 echo '<!-- Square 250 -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:250px;height:250px"
-                     data-ad-client="ca-pub-9393485036030091"
-                     data-ad-slot="2497640960"></ins>';
+                     data-ad-client="ca-pub-9543775174763951"
+                     data-ad-slot="8311981130"></ins>';
                 break;
         case "728":
                 echo '<!-- Leaderboard Ad -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:728px;height:90px"
-                     data-ad-client="ca-pub-9393485036030091"
-                     data-ad-slot="9488014163"></ins>';
+                     data-ad-client="ca-pub-9543775174763951"
+                     data-ad-slot="5358514734"></ins>';
                 break;
         case "320":
                 echo '<!-- Mobile 320 Ad -->
                 <ins class="adsbygoogle"
                      style="display:inline-block;width:320px;height:100px"
-                     data-ad-client="ca-pub-9393485036030091"
-                     data-ad-slot="4824678565"></ins>';
+                     data-ad-client="ca-pub-9543775174763951"
+                     data-ad-slot="6835247939"></ins>';
                 break;
         default:
                 echo '<ins class="adsbygoogle"

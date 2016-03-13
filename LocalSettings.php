@@ -121,12 +121,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://admin.brickimedia.org";
 		$wgDBname = "admin";
 		break;
-	case "stories":
-		$ls_path = "LocalSettings_stories.php";
-		$bmProject = "stories";
-		$wgServer = "http://stories.brickimedia.org";
-		$wgDBname = "stories";
-		break;
 	case "ideas":
 		$ls_path = "LocalSettings_ideas.php";
 		$bmProject = "ideas";
@@ -148,39 +142,6 @@ switch ( $host[0] ) {
 		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );
 		exit( 0 ); // just to make sure nothing else happens
 		break;
-/*	case "data":
-		$ls_path = "LocalSettings_data.php";
-		$bmProject = "data";
-		$wgServer = "http://data.brickimedia.org";
-		$wgDBname = "data";
-		break;*/
-/*	case "answers":
-		$ls_path = "LocalSettings_answers.php";
-		$bmProject = "answers";
-		$wgServer = "http://answers.brickimedia.org";
-		$wgDBname = "answers";
-		$bmSmallWiki = true;
-		break;*/
-/*	case "books":
-		$ls_path = "LocalSettings_books.php";
-		$bmProject = "books";
-		$wgServer = "http://books.brickimedia.org";
-		$wgDBname = "books";
-		$bmSmallWiki = true;
-		break;*/
-/*	case "minifigures":
-		$ls_path = "LocalSettings_minifigures.php";
-		$bmProject = "minifigures";
-		$wgServer = "http://minifigures.brickimedia.org";
-		$wgDBname = "minifigures";
-		$bmSmallWiki = true;
-		break;
-	case "legominifiguresonline":
-	case "minifiguresonline":
-	case "lmo":
-		header( "Location: http://minifigures.brickimedia.org{$_SERVER['REQUEST_URI']}" );
-		exit( 0 );
-		break;*/
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" );
 		exit( 0 );
@@ -188,7 +149,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'stories', 'customs', 'ideas', 'gbc' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'customs', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -212,7 +173,6 @@ $wgConf->settings = array(
 		'en' => 'http://en.brickimedia.org',
 		'dev' => 'http://dev.brickimedia.org',
 		'admin' => 'http://admin.brickimedia.org',
-		'stories' => 'http://stories.brickimedia.org',
 		'customs' => 'http://customs.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',
@@ -254,7 +214,6 @@ $refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
 $refreshedMeta = "<img src=\"$refreshedImagePath/brickimedia.svg\" width=\"144\" height=\"30\" alt=\"Meta\" />";
 $refreshedEn = "<img src=\"$refreshedImagePath/brickipedia.svg\" width=\"144\" height=\"30\" alt=\"Brickipedia\" />";
 $refreshedCustoms = "<img src=\"$refreshedImagePath/customs.svg\" width=\"144\" height=\"30\" alt=\"Customs\" />";
-$refreshedStories = "<img src=\"$refreshedImagePath/stories.svg\" width=\"144\" height=\"30\" alt=\"Stories\" />";
 $refreshedIdeas = "<img src=\"$refreshedImagePath/ideas.svg\" width=\"150\" height=\"20\" alt=\"Ideas Wiki\" />";
 $refreshedAdmin = "<img src=\"$refreshedImagePath/admin.svg\" width=\"144\" height=\"30\" alt=\"Admin Wiki\" />";
 $refreshedGBC = "<img src=\"$refreshedImagePath/gbc.svg\" width=\"140\" height=\"40\" alt=\"Great Ball Contraption Wiki\" />";

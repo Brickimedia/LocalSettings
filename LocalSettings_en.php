@@ -54,7 +54,7 @@ define('NS_FAN', 112);
 define('NS_FAN_TALK', 113);
 $wgExtraNamespaces[NS_FAN] = 'Fan';
 $wgExtraNamespaces[NS_FAN_TALK] = 'Fan_talk';
-$wgNamespaceWithSubpages[NS_FAN] = true;
+$wgNamespacesWithSubpages[NS_FAN] = true;
 $wgContentNamespaces[] = 112;
 
 define('NS_INVENTORY', 114);
@@ -80,13 +80,6 @@ $wgExtraNamespaces[NS_PART] = 'Part';
 $wgExtraNamespaces[NS_PART_TALK] = 'Part_talk';
 $wgNamespacesWithSubpages[NS_PART] = true;
 $wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
-
-define('NS_FAN', '124');
-define('NS_FAN_TALK', '125');
-$wgExtraNamespaces[NS_FAN] = "Fan";
-$wgExtraNamespaces[NS_FAN_TALK] = "Fan_talk";
-$wgNamespaceWithSubpages[NS_FAN] = true;
-$wgContentNamespaces[] = 124;
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;
@@ -232,7 +225,7 @@ $wgNamespacesToBeSearchedDefault = array(
         NS_CATEGORY =>       false,
         NS_CATEGORY_TALK =>  false,
         NS_REVIEW =>         true,
-        NS_MAGAZINE =>       true,
+        NS_FAN =>            true,
         NS_INVENTORY =>      true,
         NS_PART =>           true,
         NS_NEWS =>           true

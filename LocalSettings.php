@@ -106,6 +106,19 @@ switch ( $host[1] ) {
                 break;
 }
 
+//GLOBAL TABLES
+$wgSharedDB = 'brickishared';
+$wgSharedTables = array(
+        'user',
+        'user_profile',
+        'user_properties',
+        'abuse_filter',
+        'abuse_filter_action',
+        'abuse_filter_history',
+        'abuse_filter_log',
+        'spoofuser'
+);
+
 // SKINS
 wfLoadSkin( 'Refreshed' );
 $wgDefaultSkin = 'refreshed';

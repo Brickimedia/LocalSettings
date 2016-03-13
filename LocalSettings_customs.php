@@ -94,4 +94,4 @@ $wgExtraNamespaces[NS_FAN_TALK] = "Fan_talk";
 $wgNamespaceWithSubpages[NS_FAN] = true;
 $wgContentNamespaces[] = 122;
 
-$wgReadOnly = "Preparing to merge with Brickipedia";
+//$wgReadOnly = "Preparing to merge with Brickipedia";

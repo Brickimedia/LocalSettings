@@ -54,6 +54,7 @@ define('NS_FAN', 112);
 define('NS_FAN_TALK', 113);
 $wgExtraNamespaces[NS_FAN] = 'Fan';
 $wgExtraNamespaces[NS_FAN_TALK] = 'Fan_talk';
+$wgNamespaceWithSubpages[NS_FAN] = true;
 $wgContentNamespaces[] = 112;
 
 define('NS_INVENTORY', 114);

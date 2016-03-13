@@ -80,12 +80,12 @@ $wgExtraNamespaces[NS_PART_TALK] = 'Part_talk';
 $wgNamespacesWithSubpages[NS_PART] = true;
 $wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
 
-define('NS_FAN', '122');
-define('NS_FAN_TALK', '123');
+define('NS_FAN', '124');
+define('NS_FAN_TALK', '125');
 $wgExtraNamespaces[NS_FAN] = "Fan";
 $wgExtraNamespaces[NS_FAN_TALK] = "Fan_talk";
 $wgNamespaceWithSubpages[NS_FAN] = true;
-$wgContentNamespaces[] = 122;
+$wgContentNamespaces[] = 124;
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
 $smwgNamespaceIndex = 100;
@@ -125,7 +125,7 @@ $wgUserStatsPointValues['user_image'] = 5; // Points awarded for adding your fir
 $wgUserStatsPointValues['poll_vote'] = 0; // Points awarded for taking a poll
 $wgUserStatsPointValues['quiz_points'] = 0; // Points awarded for answering a quiz question
 $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a quiz question
-$wgNamespacesForEditPoints = array( 0, 112, 114, 118, 120, 122 ); // Array of namespaces that can earn you points.
+$wgNamespacesForEditPoints = array( 0, 112, 114, 118, 120, 124 ); // Array of namespaces that can earn you points.
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
         'Newcomer' => 0,

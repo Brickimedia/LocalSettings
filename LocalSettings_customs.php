@@ -87,11 +87,11 @@ $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51660';
 $wgRC2UDPPrefix = "";
 
-define('NS_FAN', '124');
-define('NS_FAN_TALK', '125');
+define('NS_FAN', '112');
+define('NS_FAN_TALK', '113');
 $wgExtraNamespaces[NS_FAN] = "Fan";
 $wgExtraNamespaces[NS_FAN_TALK] = "Fan_talk";
 $wgNamespaceWithSubpages[NS_FAN] = true;
-$wgContentNamespaces[] = 122;
+$wgContentNamespaces[] = 112;
 
 //$wgReadOnly = "Preparing to merge with Brickipedia";

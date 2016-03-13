@@ -10,7 +10,6 @@ $wgLogo = 'http://images.brickimedia.org/a/ab/Brickipedia-Wiki-Logo.png';
 $wgFavicon = 'http://images.brickimedia.org/favicons/favicon.ico';
 
 $wgLanguageCode = 'en';
-$wgDefaultSkin = 'refreshed';
 
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
@@ -121,19 +120,19 @@ $wgUserStatsPointValues['quiz_created'] = 0; // Points awarded for creating a qu
 $wgNamespacesForEditPoints = array( 0, 112, 114, 118, 120 ); // Array of namespaces that can earn you points.
 // The actual user level definitions -- key is simple: 'Level name' => points needed
 $wgUserLevels = array(
-	'Newcomer' => 0,
-	'Beginner' => 500,
-	'Novice' => 1000,
-	'Amateur' => 1500,
-	'Thinking With Bricks' => 2000,
-	'Bricktastic' => 2500,
-	'Building Bigger' => 5000,
-	'Brick Master' => 7500,
-	'Master Builder' => 10000,
-	'LEGO Wizard' => 12500,
-	'Outstanding Brickipedian' => 15000,
-	'Honorable Brickipedian' => 20000,
-	'Legendary Brickipedian' => 25000,
+        'Newcomer' => 0,
+        'Beginner' => 500,
+        'Novice' => 1000,
+        'Amateur' => 1500,
+        'Thinking With Bricks' => 2000,
+        'Bricktastic' => 2500,
+        'Building Bigger' => 5000,
+        'Brick Master' => 7500,
+        'Master Builder' => 10000,
+        'LEGO Wizard' => 12500,
+        'Outstanding Brickipedian' => 15000,
+        'Honorable Brickipedian' => 20000,
+        'Legendary Brickipedian' => 25000,
 );
 $wgUserProfileDisplay['stats'] = true;
 
@@ -143,8 +142,8 @@ require_once("$IP/extensions/ImageMap/ImageMap.php");
 /* Change the main page url used in things like the logo to a url of another page on the wiki */
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfChangeMainPageURL';
 function lfChangeMainPageURL( $sk, &$tpl ) {
-	$tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText( 'LEGO Wiki' )->getLocalURL();
-	return true;
+        $tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText( 'LEGO Wiki' )->getLocalURL();
+        return true;
 }
 
 #trusted
@@ -154,7 +153,7 @@ $wgGroupPermissions['patroller']['trusted'] = true;
 
 #Namespace Aliases (LC)
 $wgNamespaceAliases = array(
-	'BP' => NS_PROJECT,
+        'BP' => NS_PROJECT,
 );
 
 #Verbatim
@@ -163,11 +162,11 @@ require_once("$IP/extensions/Verbatim/verbatim.php");
 # Article Ratings
 global $bmMobile;
 if ( !$bmMobile ) {
-	require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
-	require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
+        require_once( "$IP/extensions/EmailCapture/EmailCapture.php" );
+        require_once( "$IP/extensions/ArticleFeedbackv5/ArticleFeedbackv5.php" );
 
-	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
-	$wgArticleFeedbackDashboard = true;
+        $wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
+        $wgArticleFeedbackDashboard = true;
 }
 
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );
@@ -182,55 +181,52 @@ require_once( "$IP/extensions/Snippet/Snippet.php" );
 
 # Refreshed
 $wgRefreshedHeader = array(
-	'url' => 'http://en.brickimedia.org/wiki/Main_Page',
-	'img' => $refreshedEn,
-	'dropdown' => array(
-		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
-		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
-		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
-		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
-		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
-		//'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,
-	)
+        'url' => 'http://en.brickimedia.org/wiki/Main_Page',
+        'img' => $refreshedEn,
+        'dropdown' => array(
+                'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC
+        )
 );
 
 # #brickimedia-rc-en IRC
+/*
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51664';
 $wgRC2UDPPrefix = '';
+*/
 
 # Parents link in footer
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfParentsLink';
 function lfParentsLink( $sk, &$tpl ) {
-	$tpl->set( 'parents', $sk->footerLink( 'parents', 'parentspage' ) );
-	$tpl->data['footerlinks']['places'][] = 'parents';
-	return true;
+        $tpl->set( 'parents', $sk->footerLink( 'parents', 'parentspage' ) );
+        $tpl->data['footerlinks']['places'][] = 'parents';
+        return true;
 }
 $wgExtensionMessagesFiles['Parents'] = __DIR__ . '/extensions/i18n/Parents.i18n.php';
 
 // Search fixes
 $wgNamespacesToBeSearchedDefault = array(
-	NS_MAIN =>           true,
-	NS_TALK =>           false,
-	NS_USER =>           false,
-	NS_USER_TALK =>      false,
-	NS_PROJECT =>        false,
-	NS_PROJECT_TALK =>   false,
-	NS_FILE =>           false,
-	NS_FILE_TALK =>      false,
-	NS_MEDIAWIKI =>      false,
-	NS_MEDIAWIKI_TALK => false,
-	NS_TEMPLATE =>       false,
-	NS_TEMPLATE_TALK =>  false,
-	NS_HELP =>           false,
-	NS_HELP_TALK =>      false,
-	NS_CATEGORY =>       false,
-	NS_CATEGORY_TALK =>  false,
-	NS_REVIEW =>         true,
-	NS_MAGAZINE =>       true,
-	NS_INVENTORY =>      true,
-	NS_PART =>           true,
-	NS_NEWS =>           true
+        NS_MAIN =>           true,
+        NS_TALK =>           false,
+        NS_USER =>           false,
+        NS_USER_TALK =>      false,
+        NS_PROJECT =>        false,
+        NS_PROJECT_TALK =>   false,
+        NS_FILE =>           false,
+        NS_FILE_TALK =>      false,
+        NS_MEDIAWIKI =>      false,
+        NS_MEDIAWIKI_TALK => false,
+        NS_TEMPLATE =>       false,
+        NS_TEMPLATE_TALK =>  false,
+        NS_HELP =>           false,
+        NS_HELP_TALK =>      false,
+        NS_CATEGORY =>       false,
+        NS_CATEGORY_TALK =>  false,
+        NS_REVIEW =>         true,
+        NS_MAGAZINE =>       true,
+        NS_INVENTORY =>      true,
+        NS_PART =>           true,
+        NS_NEWS =>           true
 );
 
 // ArticleRatings - must be after wgContentNamespaces

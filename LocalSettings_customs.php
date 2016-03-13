@@ -86,3 +86,12 @@ $wgRefreshedHeader = array(
 $wgRC2UDPAddress = '127.0.0.1';
 $wgRC2UDPPort = '51660';
 $wgRC2UDPPrefix = "";
+
+define('NS_FAN', '122');
+define('NS_FAN_TALK', '123');
+$wgExtraNamespaces[NS_FAN] = "Fan";
+$wgExtraNamespaces[NS_FAN_TALK] = "Fan_talk";
+$wgNamespaceWithSubpages[NS_FAN] = true;
+$wgContentNamespaces[] = 122;
+
+$wgReadOnly = "Preparing to merge with Brickipedia";

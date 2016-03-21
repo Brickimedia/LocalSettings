@@ -108,13 +108,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://customs.brickimedia.org";
 		$wgDBname = "customs";
 		break;
-	case "dev":
-		$ls_path = "LocalSettings_dev.php";
-		$bmProject = "dev";
-		$wgServer = "http://dev.brickimedia.org";
-		$wgDBname = "dev";
-		$bmSmallWiki = true;
-		break;
 	case "ideas":
 		$ls_path = "LocalSettings_ideas.php";
 		$bmProject = "ideas";
@@ -143,7 +136,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'customs', 'ideas', 'gbc' );
+$bmAllProjects = array( 'meta', 'en', 'customs', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -165,7 +158,6 @@ $wgConf->settings = array(
 	'wgServer' => array(
 		'meta' => 'http://meta.brickimedia.org',
 		'en' => 'http://en.brickimedia.org',
-		'dev' => 'http://dev.brickimedia.org',
 		'customs' => 'http://customs.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',

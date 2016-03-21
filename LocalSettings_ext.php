@@ -247,11 +247,6 @@ $newTalkGlobalDatabases = array(
 				"db" => "gbc",
 				"url" => "http://greatballcontraption/wiki/",
 				"name" => "Great Ball Contraption Wiki"
-		),
-		"admin" => array(
-				"db" => "admin",
-				"url" => "http://admin.brickimedia.org/wiki/",
-				"name" => "Brickimedia Admin Wiki"
 		)
 );
 
@@ -290,7 +285,7 @@ $wgSiteMatrixSites = array(
 		'prefix' => 'm',
 	),
 );
-$wgLocalDatabases = array( 'en', 'customs', 'gbc', 'ideas', 'meta', 'admin');
+$wgLocalDatabases = array( 'en', 'customs', 'gbc', 'ideas', 'meta');
 $wgConf->wikis = $wgLocalDatabases;
 
 // Echo

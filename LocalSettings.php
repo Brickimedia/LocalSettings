@@ -115,12 +115,6 @@ switch ( $host[0] ) {
 		$wgDBname = "dev";
 		$bmSmallWiki = true;
 		break;
-	case "admin":
-		$ls_path = "LocalSettings_admin.php";
-		$bmProject = "admin";
-		$wgServer = "http://admin.brickimedia.org";
-		$wgDBname = "admin";
-		break;
 	case "ideas":
 		$ls_path = "LocalSettings_ideas.php";
 		$bmProject = "ideas";
@@ -149,7 +143,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'dev', 'admin', 'customs', 'ideas', 'gbc' );
+$bmAllProjects = array( 'meta', 'en', 'dev', 'customs', 'ideas', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -172,7 +166,6 @@ $wgConf->settings = array(
 		'meta' => 'http://meta.brickimedia.org',
 		'en' => 'http://en.brickimedia.org',
 		'dev' => 'http://dev.brickimedia.org',
-		'admin' => 'http://admin.brickimedia.org',
 		'customs' => 'http://customs.brickimedia.org',
 		'ideas' => 'http://ideas.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',
@@ -215,9 +208,7 @@ $refreshedMeta = "<img src=\"$refreshedImagePath/brickimedia.svg\" width=\"144\"
 $refreshedEn = "<img src=\"$refreshedImagePath/brickipedia.svg\" width=\"144\" height=\"30\" alt=\"Brickipedia\" />";
 $refreshedCustoms = "<img src=\"$refreshedImagePath/customs.svg\" width=\"144\" height=\"30\" alt=\"Customs\" />";
 $refreshedIdeas = "<img src=\"$refreshedImagePath/ideas.svg\" width=\"150\" height=\"20\" alt=\"Ideas Wiki\" />";
-$refreshedAdmin = "<img src=\"$refreshedImagePath/admin.svg\" width=\"144\" height=\"30\" alt=\"Admin Wiki\" />";
 $refreshedGBC = "<img src=\"$refreshedImagePath/gbc.svg\" width=\"140\" height=\"40\" alt=\"Great Ball Contraption Wiki\" />";
-//$refreshedBooks = "<img src=\"$refreshedImagePath/books.svg\" width=\"168\" height=\"24\" alt=\"Brickibooks\" />";
 
 require_once( "$IP/skins/Custard/Custard.php" );
 require_once( "$IP/skins/Lia/Lia.php");

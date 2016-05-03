@@ -98,6 +98,7 @@ $smwgNamespacesWithSemanticLinks[NS_REVIEW] = true;
 $smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
 $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 $smwgNamespacesWithSemanticLinks[NS_PART] = true;
+$smwgNamespacesWithSemanticLinks[NS_FAN] = true;
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;
@@ -228,7 +229,7 @@ $wgNamespacesToBeSearchedDefault = array(
 	NS_CATEGORY =>       false,
 	NS_CATEGORY_TALK =>  false,
 	NS_REVIEW =>         true,
-	NS_FAN =>       true,
+	NS_FAN =             true,
 	NS_INVENTORY =>      true,
 	NS_PART =>           true,
 	NS_NEWS =>           true

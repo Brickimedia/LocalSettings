@@ -50,11 +50,12 @@ $wgAddGroups['sysop'][] = 'newsreporter';
 $wgRemoveGroups['sysop'][] = 'newsreporter';
 $wgContentNamespaces[] = 2000;
 
-#Magazine, Inventory and Review namespaces
-define('NS_MAGAZINE', 112);
-define('NS_MAGAZINE_TALK', 113);
-$wgExtraNamespaces[NS_MAGAZINE] = 'Magazine';
-$wgExtraNamespaces[NS_MAGAZINE_TALK] = 'Magazine_talk';
+#Fan, Inventory and Review namespaces
+define('NS_FAN', 112);
+define('NS_FAN_TALK', 113);
+$wgExtraNamespaces[NS_FAN] = 'Fan';
+$wgExtraNamespaces[NS_FAN_TALK] = 'Fan_talk';
+$wgNamespacesWithSubpages[NS_FAN] = true;
 $wgContentNamespaces[] = 112;
 
 define('NS_INVENTORY', 114);

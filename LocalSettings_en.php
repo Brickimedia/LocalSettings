@@ -140,7 +140,7 @@ $wgUserLevels = array(
 $wgUserProfileDisplay['stats'] = true;
 
 #for {{colourbox}}
-require_once("$IP/extensions/ImageMap/ImageMap.php");
+require_once( "$IP/extensions/ImageMap/ImageMap.php" );
 
 /* Change the main page url used in things like the logo to a url of another page on the wiki */
 $wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfChangeMainPageURL';
@@ -180,7 +180,11 @@ require_once( "$IP/extensions/Tabber/Tabber.php" );
 $wgEnableProfileInfo = true;
 $wgProfileToDatabase = true;
 
+#Snippet
 require_once( "$IP/extensions/Snippet/Snippet.php" );
+
+#Donate
+require_once( "$IP/extensions/Donate/Donate.php" );
 
 # Refreshed
 $wgRefreshedHeader = array(

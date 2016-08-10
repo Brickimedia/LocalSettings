@@ -27,7 +27,6 @@ wfLoadExtensions( array(
 	'PollNY',
 	//'ProtectSite',
 	'Renameuser',
-	'SiteMatrix',
 	'SpamBlacklist',
 	'UserMerge',
 	'WikiEditor'
@@ -250,35 +249,8 @@ $wgEnotifUserTalk = true;
 $wgDefaultUserOptions['enotifwatchlistpages'] = 0;
 $wgDefaultUserOptions['enotifusertalkpages'] = 1;
 
-//SiteMatrix settings
-$wgSiteMatrixFile = "$IP/langlist";
-$wgSiteMatrixSites = array(
-	'bricki' => array(
-		'name' => 'Brickipedia',
-		'host' => 'en.brickimedia.org',
-		'prefix' => 'b',
-	),
-	'customs' => array(
-		'name' => 'Brickimedia Customs',
-		'host' => 'customs.brickimedia.org',
-		'prefix' => 'c',
-	),
-	'gbc' => array(
-		'name' => 'Great Ball Contraption Wiki',
-		'host' => 'greatballcontraption.com',
-		'prefix' => 'gbc',
-	),
-	'ideas' => array(
-		'name' => 'LEGO Ideas Wiki',
-		'host' => 'ideas.brickimedia.org',
-		'prefix' => 'i',
-	),
-	'meta' => array(
-		'name' => 'Meta',
-		'host' => 'meta.brickimedia.org',
-		'prefix' => 'm',
-	),
-);
+// This was used for the SiteMatrix extension in the past.
+// @todo CHECKME: Can these two lines be safely removed?
 $wgLocalDatabases = array( 'en', 'customs', 'gbc', 'ideas', 'meta');
 $wgConf->wikis = $wgLocalDatabases;
 

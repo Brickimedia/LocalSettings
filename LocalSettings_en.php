@@ -34,7 +34,14 @@ unset( $wgAddGroups['bureaucrat'] );
 unset( $wgRemoveGroups['bureaucrat'] );
 unset( $wgGroupsAddToSelf['bureaucrat'] );
 unset( $wgGroupsRemoveFromSelf['bureaucrat'] );
+// Remove the chat moderator group
 
+unset( $wgGroupPermissions['modchat'] );
+unset( $wgRevokePermissions['modchat'] );
+unset( $wgAddgroups['modchat'] );
+unset( $wgRemoveGroups['modchat'] );
+unset( $wgGroupsAddToSelf['modchat'] );
+unset( $wgGroupsRemoveFromSelf['modchat'] );
 #News namespace
 define('NS_NEWS', 2000);
 define('NS_NEWS_TALK', 2001);

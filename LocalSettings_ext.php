@@ -29,6 +29,7 @@ wfLoadExtensions( array(
 	'Renameuser',
 	'SpamBlacklist',
 	'UserMerge',
+	'VoteNY',
 	'WikiEditor'
 ) );
 
@@ -56,7 +57,6 @@ require_once "$IP/extensions/GlobalBlocking/GlobalBlocking.php";
 // GlobalPreferences settings
 $wgGlobalPreferencesDB = 'shared';
 
-require_once "$IP/extensions/VoteNY/Vote.php";
 require_once "$IP/extensions/MediawikiPlayer/MediawikiPlayer.php";
 // ParserFunctions settings
 	$wgAllowSlowParserFunctions = true;

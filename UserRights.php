@@ -35,7 +35,7 @@ $wgGroupPermissions['user']['createblogpost'] = true;
 #autoconfirmed
 $wgGroupPermissions['autoconfirmed']['ajaxpoll-vote'] = true;
 $wgGroupPermissions['autoconfirmed']['autoconfirmed'] = true;
-$wgGroupPermissions['autoconfirmed']['vote'] = true;
+$wgGroupPermissions['autoconfirmed']['voteny'] = true;
 $wgGroupPermissions['autoconfirmed']['upload_by_url'] = true;
 $wgGroupPermissions['autoconfirmed']['chat'] = true;
 $wgGroupPermissions['autoconfirmed']['abusefilter-log-detail'] = true;

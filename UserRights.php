@@ -101,7 +101,6 @@ $wgGroupPermissions['sysop']['smw-admin']      = true;
 $wgGroupPermissions['sysop']['movefile']         = true;
 $wgGroupPermissions['sysop']['unblockself']      = true;
 $wgGroupPermissions['sysop']['suppressredirect'] = true;
-$wgGroupPermissions['sysop']['trackback']        = true;
 $wgGroupPermissions['sysop']['deleterevision'] = true; #for admins too!
 $wgGroupPermissions['sysop']['deletelogentry'] = true; #for admins too!
 $wgGroupPermissions['sysop']['interwiki'] = true;
@@ -159,7 +158,7 @@ $wgGroupPermissions['sysadmin']['import'] = true;
 $wgGroupPermissions['sysadmin']['importupload'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
 $wgGroupPermissions['sysadmin']['checkuser'] = true;
-$wgGroupPermissions['sysadmin']['checkuserlog'] = true;
+$wgGroupPermissions['sysadmin']['checkuser-log'] = true;
 $wgGroupPermissions['sysadmin']['edituser'] = true;
 $wgGroupPermissions['sysadmin']['nuke'] = true;
 
@@ -180,9 +179,3 @@ $wgGroupPermissions['smwadministrator']['smw-admin'] = false;
 unset( $wgGroupPermissions['steward'] );
 unset( $wgGroupPermissions['smwadministrator'] );
 unset( $wgGroupPermissions['staff'] );
-
-#small-wiki administrators
-$wgGroupPermissions['swsysop']['read'] = true;
-if ( $bmSmallWiki ) {
-	$wgGroupPermissions['swsysop'] = $wgGroupPermissions['sysop'];
-}

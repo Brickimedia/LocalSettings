@@ -16,6 +16,7 @@ wfLoadExtensions( array(
 	'Gadgets',
 	'GlobalCssJs',
 	'GlobalUsage',
+	'GlobalUserrights',
 	'InputBox',
 	'Interwiki',
 	'MassMessage',
@@ -51,7 +52,6 @@ $wgCommentsSortDescending = true;
 
 require_once "$IP/extensions/CSS/CSS.php";
 require_once "$IP/extensions/DPLForum/DPLforum.php";
-require_once "$IP/extensions/GlobalUserrights/GlobalUserrights.php";
 require_once "$IP/extensions/GlobalBlocking/GlobalBlocking.php";
 
 // GlobalPreferences settings

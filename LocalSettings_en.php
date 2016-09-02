@@ -149,13 +149,6 @@ $wgUserProfileDisplay['stats'] = true;
 #for {{colourbox}}
 require_once( "$IP/extensions/ImageMap/ImageMap.php" );
 
-/* Change the main page url used in things like the logo to a url of another page on the wiki */
-$wgHooks['SkinTemplateOutputPageBeforeExec'][] = 'lfChangeMainPageURL';
-function lfChangeMainPageURL( $sk, &$tpl ) {
-	$tpl->data['nav_urls']['mainpage']['href'] = Title::newFromText( 'LEGO Wiki' )->getLocalURL();
-	return true;
-}
-
 #trusted
 $wgRestrictionLevels[] = 'trusted';
 $wgGroupPermissions['sysop']['trusted'] = true;

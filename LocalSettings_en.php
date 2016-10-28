@@ -170,6 +170,13 @@ if ( !$bmMobile ) {
 
 	$wgArticleFeedbackLotteryOdds = 100; // Will turn on the voting on all pages
 	$wgArticleFeedbackDashboard = true;
+	$wgArticleFeedbackv5Namespaces = array( 
+		NS_MAIN, 
+		NS_PART,
+		NS_INVENTORY,
+		NS_HELP, 
+		NS_PROJECT 
+	);
 }
 
 require_once( "$IP/extensions/WikiArticleFeeds/WikiArticleFeeds.php" );

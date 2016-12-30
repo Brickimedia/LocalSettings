@@ -208,7 +208,7 @@ $wgGlobalUsageDatabase = "meta";
 
 require_once "$IP/extensions/AntiSpoof/AntiSpoof.php";
 require_once "$IP/extensions/GlobalContribs/GlobalContribs.php";
-require_once "$IP/extensions/MediaWikiChat/MediaWikiChat.php";
+wfLoadExtension( 'MediaWikiChat' );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;

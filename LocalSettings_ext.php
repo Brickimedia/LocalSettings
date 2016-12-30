@@ -30,7 +30,7 @@ wfLoadExtensions( array(
 	"Renameuser",
 	"SpamBlacklist",
 	"UserMerge",
-//	"VoteNY", also breaking
+	"VoteNY",
 	"WikiEditor"
 ) );
 

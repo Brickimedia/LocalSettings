@@ -16,7 +16,7 @@ wfLoadExtensions( array(
 	"Gadgets",
 	"GlobalCssJs",
 	"GlobalUsage",
-//	"GlobalUserrights", breaking the site 30dec16, commenting out now to get site back up
+	"GlobalUserrights",
 	"InputBox",
 	"Interwiki",
 	"MassMessage",

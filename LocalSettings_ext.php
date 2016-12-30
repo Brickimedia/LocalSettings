@@ -126,7 +126,7 @@ $wgRestrictDisplayTitle = false;
 
 // Brickimedia Footer Icon
 $wgFooterIcons["brickimedia"]["brickimedia"] = array(
-	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png"',
+	"src" => "http://www.brickimedia.org/img/brickimedia-tag.png",
 	"url" => "http://www.brickimedia.org",
 	"alt" => "Brickimedia",
 	"height" => "31",
@@ -218,27 +218,27 @@ require_once "$IP/extensions/NewTalkGlobal/NewTalkGlobal.php";
 $newTalkGlobalDatabases = array(
 	"meta" => array(
 		"db" => "meta",
-		"url" => "http://meta.brickimedia.org/wiki/"",
+		"url" => "http://meta.brickimedia.org/wiki/",
 		"name" => "Meta"
 	),
 	"en" => array(
 		"db" => "en",
-		"url" => "http://en.brickimedia.org/wiki/"",
-		"name" => "Brickipedia (en)""
+		"url" => "http://en.brickimedia.org/wiki/",
+		"name" => "Brickipedia (en)"
 	),
 	"customs" => array(
 		"db" => "customs",
-		"url" => "http://customs.brickimedia.org/wiki/"",
+		"url" => "http://customs.brickimedia.org/wiki/",
 		"name" => "Brickimedia Customs"
 	),
 	"ideas" => array(
 		"db" => "ideas",
-		"url" => "http://ideas.brickimedia.org/wiki/"",
+		"url" => "http://ideas.brickimedia.org/wiki/",
 		"name" => "LEGO Ideas Wiki"
 	),
 	"gbc" => array(
 		"db" => "gbc",
-		"url" => "http://greatballcontraption/wiki/"",
+		"url" => "http://greatballcontraption/wiki/",
 		"name" => "Great Ball Contraption Wiki"
 	)
 );
@@ -278,7 +278,7 @@ $wgGlobalCssJsConfig = array(
 	"source" => "meta",
 );
 $wgResourceLoaderSources["meta"] = array(
-	"apiScript" => "http://meta.brickimedia.org/api.php"',
+	"apiScript" => "http://meta.brickimedia.org/api.php",
 	"loadScript" => "http://meta.brickimedia.org/load.php",
 );
 

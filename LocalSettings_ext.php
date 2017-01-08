@@ -249,11 +249,6 @@ $wgEnotifUserTalk = true;
 $wgDefaultUserOptions["enotifwatchlistpages"] = 0;
 $wgDefaultUserOptions["enotifusertalkpages"] = 1;
 
-// This was used for the SiteMatrix extension in the past.
-// @todo CHECKME: Can these two lines be safely removed?
-$wgLocalDatabases = array( "en", "customs", "gbc", "ideas", "meta");
-$wgConf->wikis = $wgLocalDatabases;
-
 // Echo
 require_once "$IP/extensions/Echo/Echo.php";
 

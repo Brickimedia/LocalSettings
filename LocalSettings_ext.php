@@ -226,11 +226,6 @@ $newTalkGlobalDatabases = array(
 		"url" => "http://en.brickimedia.org/wiki/",
 		"name" => "Brickipedia (en)"
 	),
-	"customs" => array(
-		"db" => "customs",
-		"url" => "http://customs.brickimedia.org/wiki/",
-		"name" => "Brickimedia Customs"
-	),
 	"ideas" => array(
 		"db" => "ideas",
 		"url" => "http://ideas.brickimedia.org/wiki/",

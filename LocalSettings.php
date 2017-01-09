@@ -102,12 +102,6 @@ switch ( $host[0] ) {
 		$wgServer = "http://en.brickimedia.org";
 		$wgDBname = "en";
 		break;
-	case "ideas":
-		$ls_path = "LocalSettings_ideas.php";
-		$bmProject = "ideas";
-		$wgServer = "http://ideas.brickimedia.org";
-		$wgDBname = "ideas";
-		break;
 	case "greatballcontraption":
 	case "gbc":
 		$ls_path = "LocalSettings_gbc.php";
@@ -130,7 +124,7 @@ switch ( $host[0] ) {
 }
 
 //SiteConfiguration - this is for GlobaUsage
-$bmAllProjects = array( 'meta', 'en', 'ideas', 'gbc' );
+$bmAllProjects = array( 'meta', 'en', 'gbc' );
 $wgLocalDatabases = $bmAllProjects;
 $wgConf->wikis = $wgLocalDatabases;
 function wikiCallback( SiteConfiguration $conf, $wiki ){
@@ -152,7 +146,6 @@ $wgConf->settings = array(
 	'wgServer' => array(
 		'meta' => 'http://meta.brickimedia.org',
 		'en' => 'http://en.brickimedia.org',
-		'ideas' => 'http://ideas.brickimedia.org',
 		'gbc' => 'http://gbc.brickimedia.org',
 	)
 );
@@ -191,7 +184,6 @@ $wgHooks['RefreshedFooter'][] = 'showRefreshedAdvert';
 $refreshedImagePath = "$wgStylePath/Refreshed/refreshed/images";
 $refreshedMeta = "<img src=\"$refreshedImagePath/brickimedia.svg\" width=\"144\" height=\"30\" alt=\"Meta\" />";
 $refreshedEn = "<img src=\"$refreshedImagePath/brickipedia.svg\" width=\"144\" height=\"30\" alt=\"Brickipedia\" />";
-$refreshedIdeas = "<img src=\"$refreshedImagePath/ideas.svg\" width=\"150\" height=\"20\" alt=\"Ideas Wiki\" />";
 $refreshedGBC = "<img src=\"$refreshedImagePath/gbc.svg\" width=\"140\" height=\"40\" alt=\"Great Ball Contraption Wiki\" />";
 
 require_once( "$IP/skins/Custard/Custard.php" );

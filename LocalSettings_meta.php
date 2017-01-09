@@ -27,7 +27,7 @@ $wgGroupPermissions['sysop']['abusefilter-revert'] = true;
 $wgGroupPermissions['sysop']['abusefilter-view-private'] = true;
 $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 
-$wgLocalDatabases = array( 'en', 'dev', 'gbc', 'ideas', 'admin' );
+$wgLocalDatabases = array( 'en', 'dev', 'gbc', 'admin' );
 
 // Google Analytics
 require_once "$IP/extensions/googleAnalytics/googleAnalytics.php";
@@ -73,7 +73,6 @@ $wgRefreshedHeader = array(
 	'img' => $refreshedMeta,
 	'dropdown' => array(
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
-		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
 		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
 		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
 		//'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,

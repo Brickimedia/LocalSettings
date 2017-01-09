@@ -73,9 +73,7 @@ $wgRefreshedHeader = array(
 	'img' => $refreshedMeta,
 	'dropdown' => array(
 		'http://en.brickimedia.org/wiki/Main_Page' => $refreshedEn,
-		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
-		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,
-		//'http://minifigures.brickimedia.org/wiki/Main_Page' => $refreshedMinifigures,
+		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC
 	)
 );
 

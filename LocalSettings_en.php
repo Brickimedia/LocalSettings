@@ -199,7 +199,6 @@ $wgRefreshedHeader = array(
 	'img' => $refreshedEn,
 	'dropdown' => array(
 		'http://meta.brickimedia.org/wiki/Main_Page' => $refreshedMeta,
-		'http://customs.brickimedia.org/wiki/Main_Page' => $refreshedCustoms,
 		'http://ideas.brickimedia.org/wiki/Main_Page' => $refreshedIdeas,
 		'http://greatballcontraption.com/wiki/Main_Page' => $refreshedGBC,
 		//'http://books.brickimedia.org/wiki/Main_Page' => $refreshedBooks,

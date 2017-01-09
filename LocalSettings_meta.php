@@ -29,6 +29,12 @@ $wgGroupPermissions['sysop']['abusefilter-log-private'] = true;
 
 $wgLocalDatabases = array( 'en', 'dev', 'gbc', 'ideas', 'admin' );
 
+// Google Analytics
+require_once "$IP/extensions/googleAnalytics/googleAnalytics.php";
+$wgGoogleAnalyticsAccount = 'UA-38958899-7';
+$wgGoogleAnalyticsAnonymizeIP = false;
+$wgGoogleAnalyticsIgnoreSpecials = array();
+
 //uploading
 $wgEnableUploads = true;
 $wgUploadSizeWarning = 8388608;

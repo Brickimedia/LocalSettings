@@ -12,6 +12,12 @@ $wgFavicon = "http://images.brickimedia.org/favicons/gbc.ico";
 
 $wgLanguageCode = "en";
 
+// Google Analytics
+require_once "$IP/extensions/googleAnalytics/googleAnalytics.php";
+$wgGoogleAnalyticsAccount = 'UA-38958899-6';
+$wgGoogleAnalyticsAnonymizeIP = false;
+$wgGoogleAnalyticsIgnoreSpecials = array();
+
 # Refreshed
 $wgRefreshedHeader = array(
 	'url' => 'http://greatballcontraption.com/wiki/Main_Page',

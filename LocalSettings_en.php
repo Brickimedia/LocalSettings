@@ -12,6 +12,12 @@ $wgFavicon = 'http://images.brickimedia.org/favicons/favicon.ico';
 $wgLanguageCode = 'en';
 $wgDefaultSkin = 'refreshed';
 
+// Google Analytics
+require_once "$IP/extensions/googleAnalytics/googleAnalytics.php";
+$wgGoogleAnalyticsAccount = 'UA-38958899-2';
+$wgGoogleAnalyticsAnonymizeIP = false;
+$wgGoogleAnalyticsIgnoreSpecials = array();
+
 $wgGroupPermissions['*']['edit'] = true;
 $wgGroupPermissions['user']['upload'] = false;
 $wgGroupPermissions['sysop']['upload'] = true;

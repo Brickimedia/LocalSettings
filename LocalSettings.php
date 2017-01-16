@@ -113,10 +113,6 @@ switch ( $host[0] ) {
 			header( "Location: http://greatballcontraption.com{$_SERVER['REQUEST_URI']}" );
 		}
 		break;
-	case "cuusoo":
-		header( "Location: http://ideas.brickimedia.org{$_SERVER['REQUEST_URI']}" );
-		exit( 0 ); // just to make sure nothing else happens
-		break;
 	default:
 		header( "Location: http://www.brickimedia.org/notfound.html" );
 		exit( 0 );

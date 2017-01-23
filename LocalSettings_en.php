@@ -96,6 +96,7 @@ $wgNamespacesWithSubpages[NS_PART] = true;
 $wgContentNamespaces[] = 120;                           //track namespace in Special:Statistics
 
 //Semantic MediaWiki -- Do not touch unless you know what you are doing.
+/*
 $smwgNamespaceIndex = 100;
 
 require_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
@@ -112,6 +113,7 @@ $smwgNamespacesWithSemanticLinks[NS_INVENTORY] = true;
 $smwgNamespacesWithSemanticLinks[NS_NEWS] = true;
 $smwgNamespacesWithSemanticLinks[NS_PART] = true;
 $smwgNamespacesWithSemanticLinks[NS_FAN] = true;
+*/
 
 #Namespace subpages
 $wgNamespacesWithSubpages[NS_PROJECT] = true;

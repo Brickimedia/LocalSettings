@@ -5,7 +5,6 @@ $wgCookieDomain = ".greatballcontraption.com";
 $wgSitename = "The Great Ball Contraption Wiki";
 $wgMetaNamespace = "GBC";
 $wgPasswordSender = "gbc";
-$wgPasswordSenderName = "Great Ball Contraption Wiki";
 
 $wgLogo = "http://images.brickimedia.org/thumb/2/22/GBC_Logo.png/140px-GBC_Logo.png";
 $wgFavicon = "http://images.brickimedia.org/favicons/gbc.ico";
